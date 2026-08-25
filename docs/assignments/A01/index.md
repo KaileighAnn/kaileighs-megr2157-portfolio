@@ -1,4 +1,3 @@
-<img width="265" height="439" alt="tong-arms" src="https://github.com/user-attachments/assets/d22b5cfb-77d8-44a4-b17d-53bf5a3ab4ad" />
 # A1 – Create Portfolio
 ## Decide
 
@@ -90,13 +89,13 @@ The two metal arms form the main body of the tongs. The arms are long and rigid 
 
 ##### Component 2 - Spring/Pivot Mechanism
 
-![Spring and pivot mechanism of kitchen tongs](tong-spring-pivot.jpg)
+<img width="269" height="444" alt="tong-spring-pivot" src="https://github.com/user-attachments/assets/94721767-3f67-43ba-8734-f14fce844be0" />
 
 The spring and pivot mechanism connects the tong body and allows the arms to rotate relative to each other. The coil spring provides a restoring force that pushes the arms apart when the user releases the handles. When the handles are squeezed, energy is stored in the spring. When the hand force is removed, the spring releases that stored energy and returns the tongs toward their open position.
 
 ##### Component 3 - Pull/Locking Ring
 
-![Pull and locking ring of kitchen tongs](tong-locking-ring.jpg)
+<img width="265" height="443" alt="tong-locking-ring" src="https://github.com/user-attachments/assets/5b50d81a-d87e-4c90-9288-7b4614833fe8" />
 
 The pull/locking ring allows the tongs to be held in the closed position for storage. Pulling the ring engages the locking mechanism and prevents the spring from opening the arms. Releasing the lock allows the spring mechanism to open the tongs again. The circular shape also provides an easy surface for the user to grip when operating the locking feature.
 
