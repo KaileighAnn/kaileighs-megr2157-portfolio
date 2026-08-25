@@ -1,3 +1,4 @@
+<img width="265" height="439" alt="tong-arms" src="https://github.com/user-attachments/assets/d22b5cfb-77d8-44a4-b17d-53bf5a3ab4ad" />
 # A1 – Create Portfolio
 ## Decide
 
@@ -82,7 +83,8 @@ For the purpose of this analysis, the tongs are modeled as three main components
 
 ##### Component 1 - Arms (Tong Body)
 
-![Metal arms and gripping ends of kitchen tongs](tong-arms.jpg)
+<img width="265" height="439" alt="tong-arms" src="https://github.com/user-attachments/assets/c129aa79-e513-423e-a280-ca9c52b18d98" />
+
 
 The two metal arms form the main body of the tongs. The arms are long and rigid with a formed cross-section that increases stiffness while keeping the weight low. The gripping ends are shaped with slight bends and scallops to increase contact with the object and help prevent it from slipping. The length of the arms also creates distance between the user's hand and the object being handled.
 
