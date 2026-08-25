@@ -1,5 +1,3 @@
-## About Me
-
 ### Kaileigh Hill
 
 I am a mechanical engineering student at UNC Charlotte pursuing a concentration in Precision Engineering and Metrology. My interest in engineering started before college. In middle school, I started robotics clubs, which gave me an early opportunity to build things, solve problems, and see how different mechanical and electrical components could work together. That interest continued into high school, where I participated in an engineering program and was able to learn more about engineering and the different paths I could take within the field. Those experiences helped me realize that I enjoyed understanding how things work and finding hands-on solutions to problems, which eventually led me to choose mechanical engineering in college.
