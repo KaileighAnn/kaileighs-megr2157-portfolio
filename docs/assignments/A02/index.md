@@ -703,7 +703,9 @@ If I wanted to make the pin less likely to fail, I could increase the diameter. 
 
 ### AI Use
 
-I used AI to help make my portfolio look better and improve the formatting. I asked AI how to **bold certain words**, **center text**, and **make a chart/table in GitHub Markdown**. I used the responses as a guide when formatting my portfolio.
+## AI Use
+
+I used AI as a tool while working on this assignment. I mainly used it to help me organize my work and format my GitHub portfolio. I still completed the calculations, made the design decisions, and checked the final work myself. Below are the exact prompts and responses from the AI that I used while completing this assignment. I asked AI how to **bold certain words**, **center text**, and **make a chart/table in GitHub Markdown**. I used the responses as a guide when formatting my portfolio.
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e9f4e4ee-f534-47d3-98ad-7c7e85ab0370" width="30%" />
   <img src="https://github.com/user-attachments/assets/8fcb1726-2a26-4412-90c2-e954533a09a7" width="30%" />
