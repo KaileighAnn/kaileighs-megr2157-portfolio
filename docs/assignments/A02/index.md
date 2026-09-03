@@ -2,6 +2,7 @@
 
 ## Objective
 
+The objective of this project was to design and analyze a truss that can support the given loads while keeping the design strong, stable, and lightweight.
 
 ## Analyze
 # Assignment 2: Truss Stress
@@ -576,6 +577,139 @@ I also learned that a design that works mathematically still needs to be adjuste
 Comparing my hand calculations with the Creo mass properties also showed me why analytical and CAD results may be slightly different. Small changes in geometry, selected dimensions, and material properties can affect the predicted weight of the final design.
 
 ---
+# 2157 Additional Analysis: Failure Modes
+
+## Part 1 – Truss Members
+
+For this part, I looked at the different ways that the members of my truss could fail. The members are either in tension, compression, or are zero-force members. The type of force in each member helped me determine which failure mode would be the most likely.
+
+The truss was designed using A500 structural steel. A500 steel is a ductile material, meaning that it will normally start to deform or yield before completely breaking.
+
+### Member Stress
+
+I used the internal forces that I calculated earlier and the cross-sectional area of my CAD members to compare the stress in each member.
+
+The cross-sectional area of each member is:
+
+<p align="center">
+A = 12 mm × 10 mm = 120 mm²
+</p>
+
+I calculated the normal stress using:
+
+<p align="center">
+σ = F / A
+</p>
+
+| Member | Force | Type | Stress | Expected Failure |
+|---|---:|---|---:|---|
+| BC | 40 kN | Tension | 333 MPa | Yielding |
+| BE | 32 kN | Compression | 267 MPa | Buckling |
+| EC | 0 kN | Zero Force | 0 MPa | None |
+| CD | 32 kN | Tension | 267 MPa | Yielding |
+| ED | 0 kN | Zero Force | 0 MPa | None |
+| EF | 32 kN | Compression | 267 MPa | Buckling |
+| FD | 0 kN | Zero Force | 0 MPa | None |
+| DA | 40 kN | Tension | 333 MPa | Yielding |
+| FA | 32 kN | Compression | 267 MPa | Buckling |
+
+### Tension Members
+
+Members **BC, CD, and DA** are in tension. BC and DA have the largest tensile force at 40 kN, which gives them a stress of about 333 MPa. CD has a smaller force of 32 kN and a stress of about 267 MPa.
+
+The most likely failure for these members would be **yielding**. Since the steel is ductile, I would expect it to start permanently deforming before it completely fractures. BC and DA would be the most concerning because they have the highest tensile stress.
+
+One way I could make these members less likely to fail would be to increase their cross-sectional area. This would lower the stress in the members because the same force would be spread over a larger area.
+
+### Compression Members
+
+Members **BE, EF, and FA** are in compression. Each of these members has a force of about 32 kN and a normal stress of about 267 MPa.
+
+The failure mode I would be most concerned about for these members is **buckling**. A long member under compression can bend sideways and become unstable instead of simply being crushed.
+
+One way I could reduce the chance of buckling would be to make the members thicker or use a cross section that is more resistant to bending. Adding more support to shorten the unsupported length could also help.
+
+### Zero-Force Members
+
+Members **EC, ED, and FD** had a calculated internal force of approximately zero for this loading condition. Because of this, they have essentially no normal stress and are not expected to fail under the current loading.
+
+Even though they are zero-force members for this situation, I would still keep them in the design because they help maintain the shape and stability of the truss and could carry forces if the loading changed.
+
+
+## Part 2 – Pin Connections
+
+The pins in my truss were designed as **single-shear connections**. Based on this, the failure mode I would be most concerned about is **shear failure** through the pin.
+
+My final CAD pin has:
+
+- Diameter = 11 mm
+- Length = 20 mm
+- Maximum pin force = 24 kN
+
+The cross-sectional area of the pin is:
+
+<p align="center">
+A = πd² / 4
+</p>
+
+<p align="center">
+A ≈ 95.0 mm²
+</p>
+
+I then calculated the shear stress:
+
+<p align="center">
+τ = V / A
+</p>
+
+<p align="center">
+τ ≈ 253 MPa ≈ 36.6 ksi
+</p>
+
+The assignment gives the hardened tool steel pins a shear yield strength of **170 ksi** and requires a safety factor of 4.
+
+Therefore, the allowable shear stress is:
+
+<p align="center">
+τ_allow = 170 ksi / 4 = 42.5 ksi
+</p>
+
+My calculated pin stress was about **36.6 ksi**, which is below the allowable value of **42.5 ksi**. This means that my 11 mm pin meets the required safety factor based on the shear calculation.
+
+If I wanted to make the pin less likely to fail, I could increase the diameter. A larger diameter would give the pin more cross-sectional area and lower the shear stress.
+
+
+## Failure Mode Summary
+
+| Component | Expected Failure | Why | Possible Improvement |
+|---|---|---|---|
+| BC | Yielding | High tension | Increase member area |
+| BE | Buckling | Compression | Increase member stiffness |
+| EC | None | Zero-force member | Keep for stability |
+| CD | Yielding | Tension | Increase member area |
+| ED | None | Zero-force member | Keep for stability |
+| EF | Buckling | Compression | Increase member stiffness |
+| FD | None | Zero-force member | Keep for stability |
+| DA | Yielding | High tension | Increase member area |
+| FA | Buckling | Compression | Increase member stiffness |
+| Pins | Shear failure | Single-shear connection | Increase pin diameter |
+
+
+## Sources
+
+- Steel Tube Institute, *ASTM A500*
+- American Institute of Steel Construction (AISC), *Fundamentals of Structural Stability for Steel Design*
+- Purdue University ME 323, *Shear Stress and Shear Strain*
+
+## AI Use
+
+I used AI to help make my portfolio look better and improve the formatting. I asked AI how to **bold certain words**, **center text**, and **make a chart/table in GitHub Markdown**. I used the responses as a guide when formatting my portfolio.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e9f4e4ee-f534-47d3-98ad-7c7e85ab0370" width="30%" />
+  <img src="https://github.com/user-attachments/assets/8fcb1726-2a26-4412-90c2-e954533a09a7" width="30%" />
+  <img src="https://github.com/user-attachments/assets/d10b0b05-1c7f-409b-9d13-003646bde3a3" width="30%" />
+</p>
+
 
 # Time Spent
 
@@ -586,11 +720,14 @@ I also spent additional time organizing my calculations and screenshots so that 
 ---
 
 # CAD File Download
-.....
+(https://1drv.ms/u/c/0D789EE8B59210B1/IQC-A7zkagX8Rpd1hksBIGsGAX1z3cEz0jxD31hSimy6TM8?e=X8K3lK)
 
 
 ## Decide
 _Which geometry did you select, and why? This is your first open design choice in the course — defend it._
+
+I chose a **triangular truss design** because triangles help make the truss stable and keep it from changing shape when a load is applied. I also chose this design because it was fairly simple while still spreading the forces between multiple members. Overall, I thought it would give me a **strong and lightweight truss** without making the design too complicated.
+
 
 ## Communicate
 
