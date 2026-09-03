@@ -720,11 +720,8 @@ I also spent additional time organizing my calculations and screenshots so that 
 ---
 
 # CAD File Download
-Here are links to the zip and individual parts.
 
-https://1drv.ms/u/c/0D789EE8B59210B1/IQC-A7zkagX8Rpd1hksBIGsGAX1z3cEz0jxD31hSimy6TM8?e=X8K3lK
-
-https://1drv.ms/f/c/0D789EE8B59210B1/IgCFjPF1MARST7YETP0XQTlcAZ5j4btZg8dbDuV9y8_sOKM?e=qofMVQ
+[A2_Truss_Creo_Files.zip](https://github.com/user-attachments/files/31771822/A2_Truss_Creo_Files.zip)
 
 
 ## Decide
