@@ -617,7 +617,7 @@ I calculated the normal stress using:
 
 Members **BC, CD, and DA** are in tension. BC and DA have the largest tensile force at 40 kN, which gives them a stress of about 333 MPa. CD has a smaller force of 32 kN and a stress of about 267 MPa.
 
-The most likely failure for these members would be **yielding**. Since the steel is ductile, I would expect it to start permanently deforming before it completely fractures. BC and DA would be the most concerning because they have the highest tensile stress.
+The most likely failure for these members would be yielding. Since the steel is ductile, I would expect it to start permanently deforming before it completely fractures. BC and DA would be the most concerning because they have the highest tensile stress.
 
 One way I could make these members less likely to fail would be to increase their cross-sectional area. This would lower the stress in the members because the same force would be spread over a larger area.
 
@@ -625,7 +625,7 @@ One way I could make these members less likely to fail would be to increase thei
 
 Members **BE, EF, and FA** are in compression. Each of these members has a force of about 32 kN and a normal stress of about 267 MPa.
 
-The failure mode I would be most concerned about for these members is **buckling**. A long member under compression can bend sideways and become unstable instead of simply being crushed.
+The failure mode I would be most concerned about for these members is buckling. A long member under compression can bend sideways and become unstable instead of simply being crushed.
 
 One way I could reduce the chance of buckling would be to make the members thicker or use a cross section that is more resistant to bending. Adding more support to shorten the unsupported length could also help.
 
@@ -638,7 +638,7 @@ Even though they are zero-force members for this situation, I would still keep t
 
 ## Part 2 – Pin Connections
 
-The pins in my truss were designed as **single-shear connections**. Based on this, the failure mode I would be most concerned about is **shear failure** through the pin.
+The pins in my truss were designed as single-shear connections. Based on this, the failure mode I would be most concerned about is shear failure through the pin.
 
 My final CAD pin has:
 
@@ -730,7 +730,7 @@ https://1drv.ms/f/c/0D789EE8B59210B1/IgCFjPF1MARST7YETP0XQTlcAZ5j4btZg8dbDuV9y8_
 ## Decide
 _Which geometry did you select, and why? This is your first open design choice in the course — defend it._
 
-I chose a **triangular truss design** because triangles help make the truss stable and keep it from changing shape when a load is applied. I also chose this design because it was fairly simple while still spreading the forces between multiple members. Overall, I thought it would give me a **strong and lightweight truss** without making the design too complicated.
+I chose a triangular truss design because triangles help make the truss stable and keep it from changing shape when a load is applied. I also chose this design because it was fairly simple while still spreading the forces between multiple members. Overall, I thought it would give me a strong and lightweight truss without making the design too complicated.
 
 
 ## Communicate
