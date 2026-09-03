@@ -322,5 +322,275 @@ W<sub>pins</sub> ≈ 0.167 lb
 
 ---
 
+# Step 4: CAD Model
 
+After completing my hand calculations, I created a 3D model of the truss in Creo 13. I used the same geometry and dimensions from my statics calculations and designed the truss members to meet the required cross-sectional area.
+
+I modeled the truss without the pins as one part and added additional material around each joint so that the required cross-sectional area would be maintained after the pin holes were created.
+
+---
+
+## CAD Design Process
+
+I first created a 2D sketch of the truss geometry using the dimensions from my hand calculations. The horizontal spacing between joints was set to 400 mm and the vertical distance was set to 300 mm.
+
+This sketch provided the centerline paths used to create the individual truss members.
+
+<img width="939" height="498" alt="image" src="https://github.com/user-attachments/assets/d5a052bb-6997-4d02-b4a7-e22cbb77dc0e" />
+
+
+This screenshot shows the initial 2D truss layout in Creo before any solid geometry was created. I kept the same geometry and dimensions that were used in my hand calculations.
+
+I then used the Sweep feature in Creo to create solid truss members along the paths of the original sketch.
+
+Each member was given the same rectangular cross section:
+
+<p align="center">
+12 mm × 10 mm
+</p>
+
+giving:
+
+<p align="center">
+A = 120 mm²
+</p>
+
+This is slightly larger than the calculated minimum area of 119.4 mm².
+
+<img width="936" height="493" alt="image" src="https://github.com/user-attachments/assets/2a7c942d-5fc7-4e43-a543-f08ecd5ed196" />
+
+
+After creating the centerline sketch, I used the Sweep feature to turn the sketch paths into solid truss members. All members were created with the same cross-sectional dimensions so that the CAD model remained consistent with the assumptions used in my calculations.
+
+---
+
+### Reinforced Pin Joints
+
+Before creating the pin holes, I added circular joint areas at all six connection points.
+
+Each joint pad was modeled with:
+
+- Outer diameter = 25 mm
+- Thickness = 10 mm
+
+<img width="930" height="489" alt="image" src="https://github.com/user-attachments/assets/76599b7e-3b2d-40f5-ba3e-c4fc8604cac1" />
+
+
+The larger joint areas provide additional material around the pin locations so that creating the holes does not remove too much material from the members.
+
+The remaining width through the center of the joint after creating an 11 mm hole is:
+
+<p align="center">
+25 mm - 11 mm = 14 mm
+</p>
+
+Therefore, the approximate remaining cross-sectional area through the joint is:
+
+<p align="center">
+A<sub>joint</sub> = (14)(10)
+</p>
+
+<p align="center">
+A<sub>joint</sub> = 140 mm²
+</p>
+
+Since:
+
+<p align="center">
+140 mm² > 120 mm²
+</p>
+
+the joint maintains at least the same cross-sectional area as the regular truss members.
+
+<img width="933" height="492" alt="image" src="https://github.com/user-attachments/assets/02fc8e94-2ee6-4b7e-a9a1-b877397c2b7e" />
+
+
+After reinforcing all six joints, I created an **11 mm diameter hole** through each joint. I selected 11 mm because the calculated minimum pin diameter was approximately 10.2 mm.
+
+This completed the truss portion of the CAD model before the pins were added.
+
+---
+
+## Material and Mass Properties
+
+The exact materials specified in the assignment were not available in the Creo material library.
+
+The truss was required to use **A500 structural steel**, so I selected **Low Carbon Steel** as the closest available material for the CAD mass calculation.
+
+The pins were required to use **hardened tool steel**, so I selected **Air-Hardening Tool Steel** from the Creo material library.
+
+Because the Creo material properties and densities are slightly different from the values used in my hand calculations, I expected the CAD weight to be close to, but not exactly the same as, my calculated value.
+
+<img width="930" height="523" alt="image" src="https://github.com/user-attachments/assets/503cea99-ba29-4a33-bea9-af0b59ae8192" />
+
+
+I used Creo's material properties tools to assign the appropriate material to each part of the model. This allowed Creo to use the modeled geometry and assigned material density to calculate the predicted mass.
+
+---
+
+### Pin Material
+
+For the pins, I selected **Air-Hardening Tool Steel** because it was the closest available Creo material to the hardened tool steel specified in the assignment.
+
+Creo lists a density of approximately:
+
+<p align="center">
+0.284 lb/in³
+</p>
+
+while the assignment specifies:
+
+<p align="center">
+0.278 lb/in³
+</p>
+
+This small difference in density contributes to the difference between the hand-calculated and CAD pin weights.
+
+<img width="938" height="746" alt="image" src="https://github.com/user-attachments/assets/d3b93c64-6fc3-4278-8ab9-8cfbce76b747" />
+
+
+---
+
+### Pin Mass Properties
+
+After assigning the pin material, I used Creo's Mass Properties tool to determine the mass of one pin.
+
+The CAD pin was modeled using:
+
+- Diameter = 11 mm
+- Length = 20 mm
+
+Creo calculated a mass of:
+
+<p align="center">
+1.4939 × 10⁻⁵ tonne
+</p>
+
+Converting this value to pounds-mass:
+
+<p align="center">
+0.0329 lbm per pin
+</p>
+
+<img width="934" height="531" alt="image" src="https://github.com/user-attachments/assets/0adc30ec-f5bc-429a-a156-cc4c33329eb0" />
+
+
+This screenshot verifies the final pin dimensions used in the CAD model. The 11 mm pin diameter is slightly larger than the calculated minimum diameter of 10.2 mm, while the 20 mm length matches the assumed length used in the hand calculations.
+
+<img width="940" height="527" alt="image" src="https://github.com/user-attachments/assets/de0fa7a3-a5bc-4106-83e4-e7f3f2d9df3b" />
+
+
+---
+
+## Truss Assembly
+
+I created a Creo assembly using the completed truss part and the pin part.
+
+I first aligned the cylindrical surface of each pin with the cylindrical surface of the corresponding joint hole so that the pin axis was centered with the hole.
+
+<img width="938" height="532" alt="image" src="https://github.com/user-attachments/assets/1f8ef461-7c33-4f4f-969c-ffc055d73603" />
+
+
+After aligning the pin with the hole, I added a second coincident constraint between the flat end of the pin and the face of the truss joint.
+
+This fully constrained the pin and controlled its position through the thickness of the truss.
+
+<img width="934" height="526" alt="image" src="https://github.com/user-attachments/assets/553d7a97-31a0-4402-857f-0e3ac1936447" />
+
+
+I repeated this process until all six identical pins were positioned at the six truss joints.
+
+The completed assembly contains:
+
+- 1 truss part
+- 6 identical pin parts
+
+<img width="934" height="529" alt="image" src="https://github.com/user-attachments/assets/9bde245e-0555-46d9-876a-7d41a3ce1071" />
+
+
+This completed assembly represents the final geometry used for the CAD mass-properties calculation.
+
+---
+
+## Final CAD Mass Properties
+
+After assigning materials to both the truss and pins, I used Creo's Mass Properties tool to calculate the predicted mass of the complete assembly.
+
+<img width="939" height="528" alt="image" src="https://github.com/user-attachments/assets/436b02a9-6cda-4845-9d13-5fc778c37389" />
+
+
+Creo predicted:
+
+| Component | CAD Mass |
+|---|---:|
+| Truss | 7.641 lbm |
+| Six pins | 0.198 lbm |
+| Complete assembly | **7.839 lbm** |
+
+The complete assembly mass corresponds to a weight of approximately:
+
+<p align="center">
+W<sub>CAD</sub> ≈ 34.87 N
+</p>
+
+---
+
+## Hand Calculation vs. CAD Weight
+
+My hand calculations predicted a truss weight of approximately **33.4 N** and a combined pin weight of approximately **0.167 lb**.
+
+This gives a total hand-calculated weight of approximately:
+
+<p align="center">
+W<sub>hand</sub> ≈ 34.14 N
+</p>
+
+The completed Creo model predicted:
+
+<p align="center">
+W<sub>CAD</sub> ≈ 34.87 N
+</p>
+
+The percent difference is:
+
+<p align="center">
+Percent Difference = ((34.87 - 34.14) / 34.14)(100)
+</p>
+
+<p align="center">
+Percent Difference ≈ 2.1%
+</p>
+
+The Creo model is approximately **2.1% heavier** than my hand calculation.
+
+This difference is reasonable because the CAD model includes additional material around the pin joints, uses an actual pin diameter of 11 mm rather than the exact calculated minimum diameter, and uses Creo material properties that are slightly different from the densities used in my hand calculations.
+
+---
+
+# Engineering Lessons Learned
+
+This assignment helped me better understand how statics calculations connect to an actual engineering design. I learned that the internal member forces determine the required cross-sectional area, while the forces at the connections determine the required pin size.
+
+I also learned that a design that works mathematically still needs to be adjusted when creating the CAD model. For example, I added material around the pin holes and selected member and pin dimensions that were slightly larger than the calculated minimum values.
+
+Comparing my hand calculations with the Creo mass properties also showed me why analytical and CAD results may be slightly different. Small changes in geometry, selected dimensions, and material properties can affect the predicted weight of the final design.
+
+---
+
+# Time Spent
+
+I spent approximately **18 hours** completing this assignment. The CAD model and documentation took the most time because I had to make several adjustments while creating the truss, joints, pins, and assembly in Creo.
+
+I also spent additional time organizing my calculations and screenshots so that the complete engineering design process was clearly documented and looked organized in my portfolio.
+
+---
+
+# CAD File Download
+.....
+
+
+## Decide
+_Which geometry did you select, and why? This is your first open design choice in the course — defend it._
+
+## Communicate
 
