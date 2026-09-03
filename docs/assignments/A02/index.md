@@ -1,20 +1,20 @@
-# A2 – Truss Stress Analysis
+## A2 – Truss Stress Analysis
 
-## Objective
+### Objective
 
 The objective of this project was to design and analyze a truss that can support the given loads while keeping the design strong, stable, and lightweight.
 
-## Analyze
-# Assignment 2: Truss Stress
+### Analyze
+## Assignment 2: Truss Stress
 
-## Introduction and Design Requirements
+### Introduction and Design Requirements
 
 For this assignment, I designed a lightweight planar truss that can support two applied loads while staying within the required dimensions. I used statics to determine the forces in each truss member and then used stress and material strength to determine the required cross-sectional area of the members and connecting pins. After completing the hand calculations, I created the truss in CAD and compared the CAD weight to my calculated weight.
 
 <img width="317" height="215" alt="image" src="https://github.com/user-attachments/assets/9153125e-1b39-4e37-a614-262ddf469ea3" />
 
 
-### Given
+#### Given
 
 - a = 0.4 m
 - b = 0.3 m
@@ -31,9 +31,9 @@ For this assignment, I designed a lightweight planar truss that can support two 
 
 ---
 
-# Step 1: Truss Geometry and Statics
+## Step 1: Truss Geometry and Statics
 
-## Initial Truss Design
+### Initial Truss Design
 
 This was my original truss design. I wanted to keep the design simple and lightweight, so I initially created the truss with only eight members. After looking back at what I learned in Statics, I realized that I needed to check whether the truss had enough members to be statically determinate and stable.
 
@@ -61,7 +61,7 @@ After adding the diagonal member, the truss satisfied the relationship `m + r = 
 
 ---
 
-## Truss Dimensions
+### Truss Dimensions
 
 After deciding on my final truss design, I calculated the length of each member using the given dimensions of `a = 0.4 m` and `b = 0.3 m`. The horizontal and vertical member lengths came directly from the given dimensions, while I used the Pythagorean theorem to determine the diagonal member lengths.
 
@@ -90,7 +90,7 @@ I calculated the total member length because it is later used to estimate the to
 
 ---
 
-## Overall Free Body Diagram
+### Overall Free Body Diagram
 
 After determining the dimensions of my truss, I created a free body diagram of the entire structure so I could identify the external forces and solve for the support reactions.
 
@@ -99,7 +99,7 @@ Point A is a pin support, so it can have reaction forces in both the x and y dir
 <img width="762" height="269" alt="image" src="https://github.com/user-attachments/assets/8766eb2b-5a5c-4b0b-afd9-1c754bff573a" />
 
 
-### Unknown Support Reactions
+#### Unknown Support Reactions
 
 - A<sub>x</sub>
 - A<sub>y</sub>
@@ -109,7 +109,7 @@ Point A is a pin support, so it can have reaction forces in both the x and y dir
 
 ---
 
-## Joint Free Body Diagrams
+### Joint Free Body Diagrams
 
 After solving for the support reactions of the entire truss, I separated the structure into individual joints. Drawing a free body diagram for each joint made it easier to identify the member forces acting at each connection and allowed me to use the equilibrium equations to solve for the internal forces.
 
@@ -119,7 +119,7 @@ I initially assumed that all unknown member forces were in tension, meaning the 
 
 ---
 
-## Symbolic Internal Force Calculations
+### Symbolic Internal Force Calculations
 
 After drawing the free body diagram for each joint, I used the Method of Joints to solve for the internal force in each truss member.
 
@@ -130,7 +130,7 @@ For the symbolic calculations, I kept the applied load as `P` and the truss dime
 
 ---
 
-## Numerical Internal Force Calculations
+### Numerical Internal Force Calculations
 
 After solving for the internal member forces symbolically, I substituted my selected load of `P = 24 kN` and the given dimensions of `a = 0.4 m` and `b = 0.3 m`.
 
@@ -157,9 +157,9 @@ Since 40 kN is the largest force magnitude in the truss, I used this value to de
 
 ---
 
-# Step 2: Truss Member Cross-Sectional Area
+## Step 2: Truss Member Cross-Sectional Area
 
-## Knowns and Unknowns
+### Knowns and Unknowns
 
 After calculating the internal forces in each truss member, I found that the largest force magnitude is 40 kN and occurs in members BC and DA.
 
@@ -170,7 +170,7 @@ Since every truss member is required to have the same cross-sectional area, I us
 
 ---
 
-## Symbolic Area Calculation
+### Symbolic Area Calculation
 
 To determine the minimum required cross-sectional area of the truss members, I used the normal stress relationship and the required safety factor.
 <img width="693" height="652" alt="image" src="https://github.com/user-attachments/assets/93957ff4-45f4-4f0b-9247-fe00c13c3ff4" />
@@ -178,7 +178,7 @@ To determine the minimum required cross-sectional area of the truss members, I u
 
 ---
 
-## Numerical Area Calculation
+### Numerical Area Calculation
 
 After solving for the minimum cross-sectional area symbolically, I substituted the largest internal force, safety factor, and assumed yield strength into the equation.
 
@@ -213,7 +213,7 @@ the selected CAD cross-sectional area is slightly larger than the calculated min
 
 ---
 
-## Approximate Truss Weight
+### Approximate Truss Weight
 
 After determining the minimum cross-sectional area of the truss members, I estimated the total weight of the truss.
 
@@ -232,9 +232,9 @@ This value is later compared with the weight predicted by the Creo CAD model.
 
 ---
 
-# Step 3: Pin Design
+## Step 3: Pin Design
 
-## Knowns and Unknowns
+### Knowns and Unknowns
 
 After determining the required size and approximate weight of the truss members, I moved on to designing the connecting pins.
 
@@ -245,7 +245,7 @@ The pins are made from hardened tool steel and are required to use a single-shea
 
 ---
 
-## Critical Pin FBD
+### Critical Pin FBD
 
 The support reactions at A and B are equal, with each having a reaction magnitude of 24 kN. Since both supports experience the same reaction magnitude, either support pin can be used for the critical pin calculation.
 
@@ -256,7 +256,7 @@ I selected pin A and created a free body diagram showing the force acting on the
 
 ---
 
-## Symbolic Pin Area Calculation
+### Symbolic Pin Area Calculation
 
 To determine the minimum required cross-sectional area of the pin, I used the shear stress equation and the required pin safety factor.
 
@@ -271,7 +271,7 @@ A = πd²/4
 
 ---
 
-## Numerical Pin Area Calculation
+### Numerical Pin Area Calculation
 
 After solving for the minimum pin area symbolically, I substituted the maximum pin force of 24 kN, a safety factor of 4, and the hardened tool-steel shear yield strength of 170 ksi.
 
@@ -300,7 +300,7 @@ This gives a pin diameter slightly larger than the theoretical minimum.
 
 ---
 
-## Approximate Pin Weight
+### Approximate Pin Weight
 
 After determining the minimum required cross-sectional area and diameter of the pins, I estimated the combined weight of all six pins.
 
@@ -323,7 +323,7 @@ W<sub>pins</sub> ≈ 0.167 lb
 
 ---
 
-# Step 4: CAD Model
+## Step 4: CAD Model
 
 After completing my hand calculations, I created a 3D model of the truss in Creo 13. I used the same geometry and dimensions from my statics calculations and designed the truss members to meet the required cross-sectional area.
 
@@ -331,7 +331,7 @@ I modeled the truss without the pins as one part and added additional material a
 
 ---
 
-## CAD Design Process
+### CAD Design Process
 
 I first created a 2D sketch of the truss geometry using the dimensions from my hand calculations. The horizontal spacing between joints was set to 400 mm and the vertical distance was set to 300 mm.
 
@@ -365,7 +365,7 @@ After creating the centerline sketch, I used the Sweep feature to turn the sketc
 
 ---
 
-### Reinforced Pin Joints
+#### Reinforced Pin Joints
 
 Before creating the pin holes, I added circular joint areas at all six connection points.
 
@@ -412,7 +412,7 @@ This completed the truss portion of the CAD model before the pins were added.
 
 ---
 
-## Material and Mass Properties
+### Material and Mass Properties
 
 The exact materials specified in the assignment were not available in the Creo material library.
 
@@ -429,7 +429,7 @@ I used Creo's material properties tools to assign the appropriate material to ea
 
 ---
 
-### Pin Material
+#### Pin Material
 
 For the pins, I selected **Air-Hardening Tool Steel** because it was the closest available Creo material to the hardened tool steel specified in the assignment.
 
@@ -452,7 +452,7 @@ This small difference in density contributes to the difference between the hand-
 
 ---
 
-### Pin Mass Properties
+#### Pin Mass Properties
 
 After assigning the pin material, I used Creo's Mass Properties tool to determine the mass of one pin.
 
@@ -483,7 +483,7 @@ This screenshot verifies the final pin dimensions used in the CAD model. The 11 
 
 ---
 
-## Truss Assembly
+### Truss Assembly
 
 I created a Creo assembly using the completed truss part and the pin part.
 
@@ -513,7 +513,7 @@ This completed assembly represents the final geometry used for the CAD mass-prop
 
 ---
 
-## Final CAD Mass Properties
+### Final CAD Mass Properties
 
 After assigning materials to both the truss and pins, I used Creo's Mass Properties tool to calculate the predicted mass of the complete assembly.
 
@@ -536,7 +536,7 @@ W<sub>CAD</sub> ≈ 34.87 N
 
 ---
 
-## Hand Calculation vs. CAD Weight
+### Hand Calculation vs. CAD Weight
 
 My hand calculations predicted a truss weight of approximately **33.4 N** and a combined pin weight of approximately **0.167 lb**.
 
@@ -568,7 +568,7 @@ This difference is reasonable because the CAD model includes additional material
 
 ---
 
-# Engineering Lessons Learned
+## Engineering Lessons Learned
 
 This assignment helped me better understand how statics calculations connect to an actual engineering design. I learned that the internal member forces determine the required cross-sectional area, while the forces at the connections determine the required pin size.
 
@@ -577,15 +577,15 @@ I also learned that a design that works mathematically still needs to be adjuste
 Comparing my hand calculations with the Creo mass properties also showed me why analytical and CAD results may be slightly different. Small changes in geometry, selected dimensions, and material properties can affect the predicted weight of the final design.
 
 ---
-# 2157 Additional Analysis: Failure Modes
+## 2157 Additional Analysis: Failure Modes
 
-## Part 1 – Truss Members
+### Part 1 – Truss Members
 
 For this part, I looked at the different ways that the members of my truss could fail. The members are either in tension, compression, or are zero-force members. The type of force in each member helped me determine which failure mode would be the most likely.
 
 The truss was designed using A500 structural steel. A500 steel is a ductile material, meaning that it will normally start to deform or yield before completely breaking.
 
-### Member Stress
+#### Member Stress
 
 I used the internal forces that I calculated earlier and the cross-sectional area of my CAD members to compare the stress in each member.
 
@@ -613,7 +613,7 @@ I calculated the normal stress using:
 | DA | 40 kN | Tension | 333 MPa | Yielding |
 | FA | 32 kN | Compression | 267 MPa | Buckling |
 
-### Tension Members
+#### Tension Members
 
 Members **BC, CD, and DA** are in tension. BC and DA have the largest tensile force at 40 kN, which gives them a stress of about 333 MPa. CD has a smaller force of 32 kN and a stress of about 267 MPa.
 
@@ -621,7 +621,7 @@ The most likely failure for these members would be yielding. Since the steel is 
 
 One way I could make these members less likely to fail would be to increase their cross-sectional area. This would lower the stress in the members because the same force would be spread over a larger area.
 
-### Compression Members
+#### Compression Members
 
 Members **BE, EF, and FA** are in compression. Each of these members has a force of about 32 kN and a normal stress of about 267 MPa.
 
@@ -629,14 +629,14 @@ The failure mode I would be most concerned about for these members is buckling. 
 
 One way I could reduce the chance of buckling would be to make the members thicker or use a cross section that is more resistant to bending. Adding more support to shorten the unsupported length could also help.
 
-### Zero-Force Members
+#### Zero-Force Members
 
 Members **EC, ED, and FD** had a calculated internal force of approximately zero for this loading condition. Because of this, they have essentially no normal stress and are not expected to fail under the current loading.
 
 Even though they are zero-force members for this situation, I would still keep them in the design because they help maintain the shape and stability of the truss and could carry forces if the loading changed.
 
 
-## Part 2 – Pin Connections
+### Part 2 – Pin Connections
 
 The pins in my truss were designed as single-shear connections. Based on this, the failure mode I would be most concerned about is shear failure through the pin.
 
@@ -679,7 +679,7 @@ My calculated pin stress was about **36.6 ksi**, which is below the allowable va
 If I wanted to make the pin less likely to fail, I could increase the diameter. A larger diameter would give the pin more cross-sectional area and lower the shear stress.
 
 
-## Failure Mode Summary
+### Failure Mode Summary
 
 | Component | Expected Failure | Why | Possible Improvement |
 |---|---|---|---|
@@ -695,13 +695,13 @@ If I wanted to make the pin less likely to fail, I could increase the diameter. 
 | Pins | Shear failure | Single-shear connection | Increase pin diameter |
 
 
-## Sources
+### Sources
 
 - Steel Tube Institute, *ASTM A500*
 - American Institute of Steel Construction (AISC), *Fundamentals of Structural Stability for Steel Design*
 - Purdue University ME 323, *Shear Stress and Shear Strain*
 
-## AI Use
+### AI Use
 
 I used AI to help make my portfolio look better and improve the formatting. I asked AI how to **bold certain words**, **center text**, and **make a chart/table in GitHub Markdown**. I used the responses as a guide when formatting my portfolio.
 <p align="center">
@@ -711,7 +711,7 @@ I used AI to help make my portfolio look better and improve the formatting. I as
 </p>
 
 
-# Time Spent
+## Time Spent
 
 I spent approximately **18 hours** completing this assignment. The CAD model and documentation took the most time because I had to make several adjustments while creating the truss, joints, pins, and assembly in Creo.
 
@@ -719,16 +719,16 @@ I also spent additional time organizing my calculations and screenshots so that 
 
 ---
 
-# CAD File Download
+## CAD File Download
 
 [A2_Truss_Creo_Files.zip](https://github.com/user-attachments/files/31771822/A2_Truss_Creo_Files.zip)
 
 
-## Decide
+### Decide
 _Which geometry did you select, and why? This is your first open design choice in the course — defend it._
 
 I chose a triangular truss design because triangles help make the truss stable and keep it from changing shape when a load is applied. I also chose this design because it was fairly simple while still spreading the forces between multiple members. Overall, I thought it would give me a strong and lightweight truss without making the design too complicated.
 
 
-## Communicate
+### Communicate
 
