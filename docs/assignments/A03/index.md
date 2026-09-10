@@ -220,18 +220,70 @@ I expected the results to be similar because the bar has a constant cross sectio
 
 The FEA also showed a maximum von Mises stress of approximately **0.562 ksi**, which was much lower than the given aluminum yield strength of **40 ksi**. Overall, the results showed that the bar met both the deflection and strength requirements.
 
-## Decide
-
-<!-- We will add the comparison between the hand calculations and FEA results here. -->
-
-## Communicate
-
-<!-- We will add the design reflection, lessons learned, mistakes, and time spent here. -->
-
 ## 2157 Portion: Variable Changes
 
-<!-- We will change the design parameters one at a time and document the results here. -->
+For the 2157 portion of the assignment, I changed the design parameters to see how they affected the calculated length of the bar. Before making the changes, I predicted whether the length would increase, decrease, or stay the same.
+
+### Original Design
+
+The original design used:
+
+- **Applied Load, F = 400 lbf**
+- **Diameter, d = 1.00 in**
+- **Maximum Deflection, δ = 0.009 in**
+- **Young's Modulus, E = 10 × 10⁶ psi**
+- **Calculated Length, L = 176.71 in**
+
+### Changing the Design Parameters
+
+For the modified design, I changed the applied load to **450 lbf** and the diameter to **0.75 in**.
+
+Before calculating the new length, I predicted that the required length would **decrease**. Increasing the applied load should decrease the allowable length, and decreasing the diameter reduces the cross-sectional area, which should also decrease the calculated length.
+
+The new cross-sectional area was:
+
+**A = πd² / 4**
+
+**A = π(0.75)² / 4**
+
+**A ≈ 0.4418 in²**
+
+The new length was then calculated using:
+
+**L = δEA / F**
+
+**L = (0.009)(10,000,000)(0.4418) / 450**
+
+**L ≈ 88.36 in**
+
+<p align="center">
+<img width="598" height="261" alt="image" src="https://github.com/user-attachments/assets/83aaceab-4b68-4103-bb3c-3687e285484d" />
+</p>
+
+<p align="center"><em>Figure 10. Updated SolidWorks equations after changing the applied load and diameter.</em></p>
+
+After the parameters were changed, SolidWorks automatically recalculated the bar length from **176.71 in** to approximately **88.36 in**. This matched my prediction that the required length would decrease.
+
+This showed how the parametric model can automatically update the geometry when the design variables are changed without manually recalculating or rebuilding the entire model.
+## Lessons Learned
+
+This assignment helped me better understand how parametric modeling can be used to connect engineering calculations directly to CAD geometry. Instead of manually entering the bar length, I used equations in SolidWorks so the model could automatically update when the design variables changed.
+
+I also learned more about using SimulationXpress for a basic FEA. The displacement and von Mises stress results helped verify that my hand calculations were reasonable and that the bar stayed well below the aluminum yield strength.
+
+One thing that confused me at first was the exaggerated deformation shown in the FEA animation. The visual deformation looked much larger than the actual displacement because SolidWorks increased the deformation scale to make the change easier to see. I also had to make sure the force direction was correct so the bar was in tension rather than compression.
+
+Overall, the biggest thing I learned was how hand calculations, parametric CAD, and FEA can all be used together to check the same design.
+
+### Mistakes Made
+
+One mistake I made was initially questioning whether the exaggerated deformation shown by SolidWorks represented the actual displacement. After reviewing the results, I realized the deformation was only visually scaled and the actual displacement was approximately **0.009 in**.
+
+I also had to double-check the material properties and safety factor because the yield strength included in the SolidWorks 6061 material library was different from the **40 ksi** yield strength specified in the assignment.
+
+### Time Spent
+
+The total time I spent completing this assignment was approximately **4 hours** from start to finish. This included the hand calculations, setting up the parametric equations, creating the CAD model, running the FEA, analyzing the results, and documenting everything in my portfolio.
 
 ## CAD File Download
 
-<!-- IMPORTANT: Add the downloadable SolidWorks CAD file here before submission. -->
