@@ -287,3 +287,6 @@ The total time I spent completing this assignment was approximately **4 hours** 
 
 ## CAD File Download
 
+The completed SolidWorks CAD model for this assignment can be downloaded below.
+
+[**Click here to download the A3 Parametric Bar CAD file**](https://onedrive.live.com/personal/0D789EE8B59210B1/_layouts/15/download.aspx?SourceUrl=%2Fpersonal%2F0D789EE8B59210B1%2FDocuments%2FA3P%2ESLDPRT)
