@@ -188,11 +188,7 @@ For this simple design, I would trust both results, but I would rely slightly mo
 
 The assignment also asked me to consider how a substantial pin hole would affect the stress in the bar without rerunning the FEA. For this hypothetical case, I used a hole-to-width ratio of **d/W = 0.50**.
 
-For a flat bar with a circular hole in tension, the stress concentration factor depends on how the nominal stress is defined. Because the assignment asks for the nominal stress away from the hole, I used a stress concentration factor of approximately:
-
-**Kt ≈ 4.32**
-
-The nominal stress away from the hole was approximately:
+Because the assignment asks for the nominal stress away from the hole, I used the far-field nominal stress of the original bar:
 
 **σnominal = F / A**
 
@@ -200,7 +196,11 @@ The nominal stress away from the hole was approximately:
 
 **σnominal ≈ 0.509 ksi**
 
-The estimated peak stress at the edge of the hypothetical hole is:
+For a flat bar with a circular hole in tension and a hole-to-width ratio of **d/W = 0.50**, I used a stress concentration factor of approximately:
+
+**Kt ≈ 4.32**
+
+The estimated peak stress at the edge of the hole is:
 
 **σpeak = Kt × σnominal**
 
@@ -216,7 +216,7 @@ Using the assignment-specified aluminum yield strength of **40 ksi**, the estima
 
 **n ≈ 18.2**
 
-Even with the stress concentration caused by the hypothetical pin hole, the estimated peak stress is still well below the aluminum yield strength. Therefore, the design would still pass the safety factor check.
+Even with the added stress concentration from the hypothetical pin hole, the estimated peak stress is still well below the aluminum yield strength, so the design would still pass the safety factor check.
 
 ## Design Reflection
 
