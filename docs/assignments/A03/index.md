@@ -188,29 +188,35 @@ For this simple design, I would trust both results, but I would rely slightly mo
 
 The assignment also asked me to consider how a substantial pin hole would affect the stress in the bar without rerunning the FEA. For this hypothetical case, I used a hole-to-width ratio of **d/W = 0.50**.
 
-For a flat bar with a circular hole under axial tension, the stress concentration factor at this ratio is approximately:
+For a flat bar with a circular hole in tension, the stress concentration factor depends on how the nominal stress is defined. Because the assignment asks for the nominal stress away from the hole, I used a stress concentration factor of approximately:
 
-**Kt ≈ 2.16**
+**Kt ≈ 4.32**
 
-Using the nominal stress from my FEA:
+The nominal stress away from the hole was approximately:
 
-**σnominal = 0.562 ksi**
+**σnominal = F / A**
 
-The estimated peak stress at the edge of the hole is:
+**σnominal = 400 lbf / 0.7854 in²**
+
+**σnominal ≈ 0.509 ksi**
+
+The estimated peak stress at the edge of the hypothetical hole is:
 
 **σpeak = Kt × σnominal**
 
-**σpeak = (2.16)(0.562 ksi)**
+**σpeak = (4.32)(0.509 ksi)**
 
-**σpeak ≈ 1.21 ksi**
+**σpeak ≈ 2.20 ksi**
 
 Using the assignment-specified aluminum yield strength of **40 ksi**, the estimated safety factor is:
 
-**n = 40 ksi / 1.21 ksi**
+**n = Sy / σpeak**
 
-**n ≈ 33.1**
+**n = 40 ksi / 2.20 ksi**
 
-Even with the added stress concentration from the hypothetical pin hole, the estimated peak stress is still well below the aluminum yield strength, so the design would still pass the safety factor check.
+**n ≈ 18.2**
+
+Even with the stress concentration caused by the hypothetical pin hole, the estimated peak stress is still well below the aluminum yield strength. Therefore, the design would still pass the safety factor check.
 
 ## Design Reflection
 
@@ -265,6 +271,7 @@ The new length was then calculated using:
 After the parameters were changed, SolidWorks automatically recalculated the bar length from **176.71 in** to approximately **88.36 in**. This matched my prediction that the required length would decrease.
 
 This showed how the parametric model can automatically update the geometry when the design variables are changed without manually recalculating or rebuilding the entire model.
+
 ## Lessons Learned
 
 This assignment helped me better understand how parametric modeling can be used to connect engineering calculations directly to CAD geometry. Instead of manually entering the bar length, I used equations in SolidWorks so the model could automatically update when the design variables changed.
