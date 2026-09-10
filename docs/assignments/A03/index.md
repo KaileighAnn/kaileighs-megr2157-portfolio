@@ -56,6 +56,170 @@ I entered these relationships into the SolidWorks Equations, Global Variables, a
 
 SolidWorks calculated a bar length of **176.71 in**, which matches my hand-calculated value of **176.71 in**. This confirmed that the equations and parameters were entered correctly. The model can now update automatically when one of the design parameters is changed.
 
+### Creating the Parametric Bar
+
+After setting up the global variables and equations, I created the geometry of the bar in SolidWorks. I started by creating a circular sketch centered at the origin. Instead of manually entering the diameter, I linked the diameter dimension to the global variable **d**. This gave the bar a diameter of **1.00 in** and allows the diameter to update automatically if the parameter is changed.
+
+<p align="center">
+  <img width="960" height="600" alt="Circular sketch with parametric diameter" src="https://github.com/user-attachments/assets/31797338-7925-4c65-9741-4d521e197843" />
+</p>
+
+<p align="center"><em>Figure 3. Circular sketch with the diameter linked to the global variable d.</em></p>
+
+Next, I used **Extruded Boss/Base** to create the bar. Instead of manually entering the calculated length, I linked the extrusion depth to the global variable **L**. SolidWorks used the parametric equation to determine the required bar length of **176.71 in**.
+
+<p align="center">
+  <img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/16a64687-7719-45da-8f38-52b929e0b954" />
+
+</p>
+
+<p align="center"><em>Figure 4. Completed parametric bar with a calculated length of 176.71 in.</em></p>
+
+By linking the dimensions to the global variables, the geometry of the bar will automatically update when the design parameters are changed. This will allow me to test how changing different parameters affects the required length of the bar later in the assignment.
+
+### Selecting the Aluminum Material
+
+After creating the parametric bar, I assigned an aluminum material in SolidWorks so the finite element analysis would use realistic material properties. I selected **6061 Alloy** from the SolidWorks material library.
+
+<p align="center">
+  <img width="960" height="600" alt="6061 aluminum material properties in SolidWorks" src="https://github.com/user-attachments/assets/a8fdb3da-0f8e-4308-a3b4-3de801d4531a" />
+</p>
+
+<p align="center"><em>Figure 5. 6061 Alloy material properties selected in SolidWorks.</em></p>
+
+The material library listed the Elastic Modulus as **6.9 × 10¹⁰ Pa**, which is approximately **10 × 10⁶ psi**. This closely matches the Young's Modulus value used in my hand calculations, so the material was appropriate for comparing the analytical and FEA results.
+
+For the final safety factor calculation, I will use the assignment-specified aluminum yield strength of **40 ksi**.
+
+### FEA Setup
+
+After completing the parametric model and assigning the material, I used **SOLIDWORKS SimulationXpress** to perform the finite element analysis. I set up the analysis to represent the same direct tension loading condition used in my hand calculations.
+
+#### Fixture
+
+I first applied a fixed geometry fixture to one circular end of the bar. This prevents that end of the bar from moving and provides the reaction needed for the applied tensile load.
+
+<p align="center">
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/b7f3d27c-b68a-4f0a-92d4-143ce71475e3" />
+</p>
+
+<p align="center"><em>Figure 6. Fixed geometry applied to one end of the aluminum bar.</em></p>
+
+#### Applied Load
+
+I then selected the circular face on the opposite end of the bar and applied a **400 lbf** force normal to the face. The direction of the force was reversed so that it pointed away from the fixed end, placing the bar in direct tension.
+
+<p align="center">
+<img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/8d2d5136-898e-47a6-aadd-8e49b95b323a" />
+
+</p>
+
+<p align="center"><em>Figure 7. A 400 lbf tensile load applied normal to the opposite end of the bar.</em></p>
+
+Using a fixed end and a 400 lbf axial load allows the FEA setup to represent the same loading conditions used in the axial deflection hand calculation.
+
+### FEA Deflection Results
+
+After setting up the fixture, 400 lbf tensile load, and aluminum material, I ran the analysis in SolidWorks SimulationXpress. I first looked at the displacement results to compare the FEA deflection to the maximum deflection used in my parametric design.
+
+<p align="center">
+<img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/0b443b59-7e67-4eb7-a65f-6fe9d0fc9084" />
+</p>
+
+<p align="center"><em>Figure 8. FEA displacement map of the aluminum bar under a 400 lbf tensile load.</em></p>
+
+The FEA showed a maximum resultant displacement of **0.2289 mm**, which converts to approximately **0.00901 in**. My parametric hand calculation used a maximum axial deflection of **0.00900 in**, so the two results are very close.
+
+The deformation shown in the image is exaggerated by SolidWorks with a deformation scale of **1,960.67** so that the small change in length can be seen more clearly. The actual deformation of the bar is only about **0.009 in**.
+
+### FEA von Mises Stress Results
+
+Next, I viewed the von Mises stress results from the FEA to determine the maximum stress in the bar under the 400 lbf tensile load.
+
+<p align="center">
+<img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/4fe2329c-8521-4566-ac9e-41d5319fd8c8" />
+</p>
+
+<p align="center"><em>Figure 9. von Mises stress map of the aluminum bar under a 400 lbf tensile load.</em></p>
+
+The FEA reported a maximum von Mises stress of **3.876 × 10⁶ Pa**, or approximately **0.562 ksi**. The assignment specifies a yield strength of **40 ksi** for aluminum. Since the maximum stress is much lower than the yield strength, the bar remains below yielding under the applied load.
+
+### Safety Factor
+
+To check whether the bar would yield under the applied load, I compared the maximum von Mises stress from the FEA to the aluminum yield strength given in the assignment.
+
+The safety factor was calculated using:
+
+**n = Sy / σmax**
+
+Using:
+
+**Sy = 40 ksi**
+
+**σmax = 0.562 ksi**
+
+The resulting safety factor is:
+
+**n = 40 / 0.562**
+
+**n ≈ 71.2**
+
+Since the safety factor is much greater than 1, the bar is well below the yield strength and passes the strength requirement for this loading condition.
+
+SolidWorks displayed a different factor of safety because its built-in 6061 material uses a different yield strength than the **40 ksi** value specified in the assignment. For this report, I used the assignment-provided yield strength.
+
+### Hand Calculation vs. FEA
+
+The axial deflection from my hand calculation was **0.00900 in**. The FEA reported a maximum displacement of **0.2289 mm**, which is approximately **0.00901 in**.
+
+The percent difference between the two results was calculated using:
+
+**Percent Difference = |FEA - Hand Calculation| / Hand Calculation × 100**
+
+**Percent Difference = |0.00901 - 0.00900| / 0.00900 × 100**
+
+**Percent Difference ≈ 0.13%**
+
+The two values are essentially the same. This is expected because the bar has a uniform cross section, the loading is purely axial, and there are no holes, notches, or other stress concentrations in the original geometry.
+
+For this simple design, I would trust both results, but I would rely slightly more on the hand calculation because the geometry and loading match the assumptions of the axial deformation equation very closely. The FEA is still useful because it verifies that the CAD model behaves as expected.
+
+### Hypothetical Pin Hole Stress Concentration
+
+The assignment also asked me to consider how a substantial pin hole would affect the stress in the bar without rerunning the FEA. For this hypothetical case, I used a hole-to-width ratio of **d/W = 0.50**.
+
+For a flat bar with a circular hole under axial tension, the stress concentration factor at this ratio is approximately:
+
+**Kt ≈ 2.16**
+
+Using the nominal stress from my FEA:
+
+**σnominal = 0.562 ksi**
+
+The estimated peak stress at the edge of the hole is:
+
+**σpeak = Kt × σnominal**
+
+**σpeak = (2.16)(0.562 ksi)**
+
+**σpeak ≈ 1.21 ksi**
+
+Using the assignment-specified aluminum yield strength of **40 ksi**, the estimated safety factor is:
+
+**n = 40 ksi / 1.21 ksi**
+
+**n ≈ 33.1**
+
+Even with the added stress concentration from the hypothetical pin hole, the estimated peak stress is still well below the aluminum yield strength, so the design would still pass the safety factor check.
+
+## Design Reflection
+
+The parametric design and FEA gave very similar results for the bar. My hand calculation was based on a maximum deflection of **0.00900 in**, while the FEA resulted in approximately **0.00901 in**. The percent difference was only about **0.13%**, which showed that the parametric equation and SolidWorks simulation agreed very closely.
+
+I expected the results to be similar because the bar has a constant cross section and is only being loaded in direct tension. There are no changes in geometry or stress concentrations in the original design that would make the analysis more complicated. For this design, I would trust the hand calculation slightly more because the geometry and loading closely match the assumptions of the axial deflection equation. However, the FEA was useful for verifying my calculations and showing how the stress and displacement were distributed throughout the bar.
+
+The FEA also showed a maximum von Mises stress of approximately **0.562 ksi**, which was much lower than the given aluminum yield strength of **40 ksi**. Overall, the results showed that the bar met both the deflection and strength requirements.
+
 ## Decide
 
 <!-- We will add the comparison between the hand calculations and FEA results here. -->
