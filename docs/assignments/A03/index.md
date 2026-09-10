@@ -170,13 +170,13 @@ SolidWorks displayed a different factor of safety because its built-in 6061 mate
 
 ### Hand Calculation vs. FEA
 
-The axial deflection from my hand calculation was **0.00900 in**. The FEA reported a maximum displacement of **0.2289 mm**, which is approximately **0.00901 in**.
+The axial deflection from my hand calculation was **0.00900 in**. The FEA reported a maximum displacement of **0.2289 mm**, which is approximately **0.0090118 in**.
 
 The percent difference between the two results was calculated using:
 
 **Percent Difference = |FEA - Hand Calculation| / Hand Calculation × 100**
 
-**Percent Difference = |0.00901 - 0.00900| / 0.00900 × 100**
+**Percent Difference = |0.0090118 - 0.00900| / 0.00900 × 100**
 
 **Percent Difference ≈ 0.13%**
 
