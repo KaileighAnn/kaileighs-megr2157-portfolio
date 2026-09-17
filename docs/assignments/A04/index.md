@@ -1,88 +1,59 @@
-## Analyze
-
-
-## Decide
-
-
-## Communicate
-
-
 # A04 - Motor Mount
 
-## Analyze
+## Objective
 
-### Objective
+The objective of this assignment is to design a motor mount for a 24V DC gear motor subjected to a 300 N load. The mount will be designed using beam bending equations and evaluated based on both yield strength and maximum deflection. A safety factor of 3 and a maximum allowable deflection of 0.30 mm will be used.
 
-The goal of this assignment is to design a motor mount for a 24V DC gear motor. The mount must support an applied load of 300 N while meeting both strength and stiffness requirements.
+The motor mount will consist of two main features: one attached to the motor and one attached to a rigid wall. Both features will be analyzed separately to determine the required cross-sectional geometry. The final design will then be modeled parametrically in CAD with appropriate clearance holes and features to minimize deflection.
 
-The design will be analyzed using beam bending equations with a safety factor of 3 and a maximum allowable deflection of 0.30 mm.
+## Material Selection
 
-The mount is divided into two main features:
+For this motor mount, I selected **PLA (Polylactic Acid)** as the material. PLA was chosen because it has a relatively high stiffness compared to other common 3D printing materials, making it a good choice for limiting deflection in the motor mount.
 
-- **Feature 1:** Attaches to the motor
-- **Feature 2:** Attaches to the rigid wall
+The material properties used for the calculations are:
 
-Each feature will be analyzed separately before creating the final motor mount.
+- **Material:** PLA
+- **Elastic Modulus, E:** 3000 MPa
+- **Yield Strength, σy:** 60 MPa
+- **Safety Factor, N:** 3
 
-### Motor
+The allowable stress is calculated using:
 
-The motor used for this design is the **Brushed 24V DC Gear Motor with a 99.5:1 Planetary Gearbox**.
+**σallow = σy / N**
 
-Important dimensions from the motor drawing will be used to determine the size and location of the shaft and mounting holes in the final design.
+**σallow = 60 MPa / 3**
 
-### Material Selection
+**σallow = 20 MPa**
 
-I chose **PLA** for the motor mount because its stiffness makes it a good option for limiting deflection.
-
-Material properties used:
-
-| Property | Value |
-|---|---:|
-| Material | PLA |
-| Elastic Modulus, $E$ | 3000 MPa |
-| Yield Strength, $\sigma_y$ | 60 MPa |
-| Safety Factor, $N$ | 3 |
-| Maximum Deflection | 0.30 mm |
-
-The allowable stress is:
-
-$$
-\sigma_{allow}=\frac{\sigma_y}{N}
-$$
-
-$$
-\sigma_{allow}=\frac{60}{3}=20\text{ MPa}
-$$
-
-$$
-\boxed{\sigma_{allow}=20\text{ MPa}}
-$$
-
----
+These properties will be used for the stress and deflection calculations for both features of the motor mount.
 
 ## Feature 1
 
-Feature 1 is the portion of the mount that attaches to the motor. For the beam calculations, I simplified this feature as a cantilever beam.
+Feature 1 is the portion of the motor mount that attaches to the motor. For the analysis, this feature is approximated as a cantilever beam. The motor weight is neglected as specified in the assignment.
 
 ### Knowns and Unknowns
 
-**Knowns:**
+#### Knowns
 
-- $P=300$ N
-- $N=3$
-- $\delta_{max}=0.30$ mm
-- $E=3000$ MPa
-- $\sigma_y=60$ MPa
-- $\sigma_{allow}=20$ MPa
+- Applied force: **P = 300 N**
+- Safety factor: **N = 3**
+- Maximum allowable deflection: **δmax = 0.30 mm**
+- Elastic modulus of PLA: **E = 3000 MPa**
+- Yield strength of PLA: **σy = 60 MPa**
+- Allowable stress: **σallow = 20 MPa**
+- Motor diameter: approximately **28 mm**
 
-**Unknowns:**
+#### Unknowns
 
-- Required cross-sectional geometry
-- Required dimension based on strength
-- Required dimension based on deflection
+The required cross-sectional geometry of Feature 1 must be determined using both strength and stiffness requirements.
 
-### Free Body Diagram
+The primary unknowns are:
 
-[INSERT FEATURE 1 FBD HERE]
+- **b** = width of the beam cross section
+- **h** = thickness of the beam cross section
+- **I** = area moment of inertia
+- **σmax** = maximum bending stress
+- Required cross-sectional dimensions based on yield strength
+- Required cross-sectional dimensions based on the **0.30 mm deflection limit**
 
-The 300 N load is applied at the free end of the feature. The opposite end is treated as fixed for the beam analysis.
+The larger cross-sectional requirement from the stress and deflection analyses will control the final design.
