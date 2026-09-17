@@ -38,22 +38,26 @@ Feature 1 is the portion of the motor mount that attaches to the motor. For the 
 - Applied force: **P = 300 N**
 - Safety factor: **N = 3**
 - Maximum allowable deflection: **δmax = 0.30 mm**
-- Elastic modulus of PLA: **E = 3000 MPa**
-- Yield strength of PLA: **σy = 60 MPa**
+- Material: **PLA**
+- Elastic modulus: **E = 3000 MPa**
+- Yield strength: **σy = 60 MPa**
 - Allowable stress: **σallow = 20 MPa**
-- Motor diameter: approximately **28 mm**
+- Motor diameter: **28 mm**
+- Base: **b = 30 mm**
+- Width: **w = 30 mm**
+- Motor weight is neglected
+- Feature 1 is modeled as a cantilever beam
 
 #### Unknowns
 
-The required cross-sectional geometry of Feature 1 must be determined using both strength and stiffness requirements.
+The following values will be determined using the beam bending equations:
 
-The primary unknowns are:
-
-- **b** = width of the beam cross section
-- **h** = thickness of the beam cross section
+- **h** = required height of Feature 1
+- **Lstrength** = maximum allowable length based on yield strength
+- **Ldeflection** = maximum allowable length based on the 0.30 mm deflection requirement
 - **I** = area moment of inertia
+- **Mmax** = maximum bending moment
 - **σmax** = maximum bending stress
-- Required cross-sectional dimensions based on yield strength
-- Required cross-sectional dimensions based on the **0.30 mm deflection limit**
+- **Lfinal** = final length selected for Feature 1
 
-The larger cross-sectional requirement from the stress and deflection analyses will control the final design.
+The results from the strength and deflection calculations will be compared, and the more restrictive value will be used to determine the final geometry of Feature 1.
