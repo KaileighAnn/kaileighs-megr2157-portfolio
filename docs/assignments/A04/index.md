@@ -162,8 +162,29 @@ The calculated dimensions were used to determine the final geometry of Feature 2
 
 **h = 10 mm**
 
-
 # Motor Mount Design
+
+After completing the calculations for both features, I used the calculated dimensions to create the motor mount in SolidWorks. The design was developed around the dimensions of the selected motor while also including the required wall mounting surface and clearance holes.
+
+## Initial Motor Mount Design
+
+I first created the main mounting geometry and added the opening for the motor and shaft. The two mounting surfaces were positioned perpendicular to each other to create the basic shape of the motor mount.
+
+<img width="957" height="600" alt="Screenshot 2026-09-16 224741" src="https://github.com/user-attachments/assets/7aaa9df1-4919-42ac-b6da-a44b6e713728" />
+
+## Wall Mounting Feature
+
+I then added the wall mounting portion of the design. Four clearance holes were added to provide attachment points between the motor mount and the rigid wall.
+
+<img width="1913" height="1200" alt="Screenshot 2026-09-16 225758" src="https://github.com/user-attachments/assets/861bbd6e-7c7e-4e23-8735-6b859752319f" />
+
+## Final Motor Mount Design
+
+The final design combines the motor mounting feature and wall mounting feature into a single part. The motor is positioned within the main mounting area, while the second surface provides the connection to the rigid wall.
+
+The final model includes the motor and shaft clearance, four wall mounting holes, and the dimensions determined from my beam calculations.
+
+<img width="1914" height="1200" alt="Screenshot 2026-09-16 230951" src="https://github.com/user-attachments/assets/b7b57163-be57-4754-831b-9cae475da33a" />
 
 
 ## Motor Mount Research
@@ -185,10 +206,15 @@ The links I used for design inspiration are included in the Appendix.
 
 After completing the calculations for both features, I created an isometric sketch of my motor mount. The calculated dimensions were used to help determine the overall size and shape of the design.
 
-PIC
+<img width="449" height="319" alt="image" src="https://github.com/user-attachments/assets/6185e179-e58c-46f1-9e5c-0b0da4a82ef5" />
 
 
-# CAD Model
+## CAD File
+
+The final SolidWorks CAD file can be downloaded below.
+
+[Download A04 Motor Mount CAD File](...)
+ 
 
 ## Parametric Modeling
 
