@@ -89,9 +89,7 @@ The minimum required height based on strength was:
 
 ### Design for Deflection
 
-The second approach was based on limiting the maximum deflection of Feature 1 to **0.30 mm**. My symbolic and numerical calculations are shown below.
-
-PIC
+The second approach was based on limiting the maximum deflection of Feature 1 to **0.30 mm**. My symbolic and numerical calculations are shown above.
 
 The minimum required height based on deflection was:
 
