@@ -160,23 +160,23 @@ The calculated dimensions were used to determine the final geometry of Feature 2
 
 **h = 10 mm**
 
-# Motor Mount Design
+## Motor Mount Design
 
 After completing the calculations for both features, I used the calculated dimensions to create the motor mount in SolidWorks. The design was developed around the dimensions of the selected motor while also including the required wall mounting surface and clearance holes.
 
-## Initial Motor Mount Design
+### Initial Motor Mount Design
 
 I first created the main mounting geometry and added the opening for the motor and shaft. The two mounting surfaces were positioned perpendicular to each other to create the basic shape of the motor mount.
 
 <img width="957" height="600" alt="Screenshot 2026-09-16 224741" src="https://github.com/user-attachments/assets/7aaa9df1-4919-42ac-b6da-a44b6e713728" />
 
-## Wall Mounting Feature
+### Wall Mounting Feature
 
 I then added the wall mounting portion of the design. Four clearance holes were added to provide attachment points between the motor mount and the rigid wall.
 
 <img width="1913" height="1200" alt="Screenshot 2026-09-16 225758" src="https://github.com/user-attachments/assets/861bbd6e-7c7e-4e23-8735-6b859752319f" />
 
-## Final Motor Mount Design
+### Final Motor Mount Design
 
 The final design combines the motor mounting feature and wall mounting feature into a single part. The motor is positioned within the main mounting area, while the second surface provides the connection to the rigid wall.
 
@@ -185,7 +185,7 @@ The final model includes the motor and shaft clearance, four wall mounting holes
 <img width="1914" height="1200" alt="Screenshot 2026-09-16 230951" src="https://github.com/user-attachments/assets/b7b57163-be57-4754-831b-9cae475da33a" />
 
 
-## Motor Mount Research
+### Motor Mount Research
 
 Before creating my final design, I looked at different motor mount designs to get an idea of common mounting methods and ways to make the mount more rigid.
 
@@ -200,35 +200,35 @@ Some of the features I considered were:
 The links I used for design inspiration are included in the Appendix.
 
 
-# Engineering Drawing
+## Engineering Drawing
 
 I created a multiview engineering drawing of my final motor mount design. The drawing includes the front, right, top, and isometric views along with the necessary dimensions and hole locations.
 
 <img width="449" height="319" alt="image" src="https://github.com/user-attachments/assets/6185e179-e58c-46f1-9e5c-0b0da4a82ef5" />
 
 
-## CAD File
+### CAD File
 
 The final SolidWorks CAD file can be downloaded below.
 
 [Download A04 Motor Mount CAD File](a4.SLDPRT)
 
  
-# Mistakes and Changes
+## Mistakes and Changes
 
 One of the main changes I made during the design process was rounding my calculated dimensions to practical dimensions for CAD. Feature 1 required a minimum dimension of **10.63 mm**, so I increased it to **11 mm**. Feature 2 required approximately **9.576 mm**, so I increased it to **10 mm**.
 
 I also made adjustments while creating the CAD model to make sure the motor clearance, shaft hole, mounting holes, and overall geometry fit together correctly.
 
 
-# Lessons Learned
+## Lessons Learned
 
 This assignment helped me understand how beam calculations can be used to determine actual dimensions before creating a part in CAD. I also learned that designing for strength does not necessarily mean that the design will meet the deflection requirement. For Feature 1, deflection controlled the final dimension because it required a larger cross section than the strength calculation.
 
 I also learned how useful parametric modeling can be when dimensions need to be adjusted during the design process. Using the calculated values as the starting point helped connect the engineering analysis directly to the final CAD model.
 
 
-# Time Spent
+## Time Spent
 
 - Calculations: **2 hours**
 - Research and sketching: **1 hour**
@@ -239,9 +239,9 @@ I also learned how useful parametric modeling can be when dimensions need to be 
 **Total Time: 9 hours**
 
 
-# Appendix
+## Appendix
 
-## Motor Mount Research Links
+### Motor Mount Research Links
 
 1. [DC Motor Mount Design - AranaCorp](https://www.aranacorp.com/en/product/dcmotor-mount/)
 
@@ -250,7 +250,7 @@ I also learned how useful parametric modeling can be when dimensions need to be 
 3. [3D Printed Motor Mounting Bracket - Cults3D](https://cults3d.com/en/3d-model/tool/motor-mounting-bracket)
 
 
-## Motor Information
+### Motor Information
 
 The motor used for this assignment was the **Brushed 24V DC Gear Motor 3.6Kg.cm/46RPM with 99.5:1 Planetary Gearbox**.
 
