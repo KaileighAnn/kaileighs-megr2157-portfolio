@@ -61,3 +61,12 @@ The following values will be determined using the beam bending equations:
 - **Lfinal** = final length selected for Feature 1
 
 The results from the strength and deflection calculations will be compared, and the more restrictive value will be used to determine the final geometry of Feature 1.
+
+### Free Body Diagram
+
+The free body diagram below shows Feature 1 modeled as a cantilever beam. The 300 N load is applied downward at the free end of the beam, while the opposite end is fixed.
+
+The cross section is modeled as a rectangle with a width **b** and height **h**.
+
+<img width="682" height="495" alt="image" src="https://github.com/user-attachments/assets/2a7f9c33-ad4f-442c-bdd0-09c5b2c0623d" />
+
