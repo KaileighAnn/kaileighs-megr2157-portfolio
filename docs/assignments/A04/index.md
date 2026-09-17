@@ -200,9 +200,9 @@ Some of the features I considered were:
 The links I used for design inspiration are included in the Appendix.
 
 
-## Isometric Sketch
+# Engineering Drawing
 
-After completing the calculations for both features, I created an isometric sketch of my motor mount. The calculated dimensions were used to help determine the overall size and shape of the design.
+I created a multiview engineering drawing of my final motor mount design. The drawing includes the front, right, top, and isometric views along with the necessary dimensions and hole locations.
 
 <img width="449" height="319" alt="image" src="https://github.com/user-attachments/assets/6185e179-e58c-46f1-9e5c-0b0da4a82ef5" />
 
