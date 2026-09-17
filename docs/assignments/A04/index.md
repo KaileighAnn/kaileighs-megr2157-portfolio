@@ -213,96 +213,9 @@ After completing the calculations for both features, I created an isometric sket
 
 The final SolidWorks CAD file can be downloaded below.
 
-[Download A04 Motor Mount CAD File](...)
+[Download A04 Motor Mount CAD File](a4.SLDPRT)
+
  
-
-## Parametric Modeling
-
-I created the final motor mount in SolidWorks using the dimensions determined from my calculations. I used parametric dimensions where appropriate so that important dimensions could be changed without completely rebuilding the model.
-
-Important dimensions used in the final design included:
-
-- **Motor mounting width: 30 mm**
-- **Feature 1 thickness: 11 mm**
-- **Feature 2 thickness: 10 mm**
-- **Motor clearance: approximately 28 mm**
-- **Shaft clearance: 6 mm**
-- **Wall mounting holes: 3.4 mm**
-
-
-## Initial CAD Model
-
-I started by creating the basic geometry for the motor mounting feature using the dimensions determined from my calculations.
-
-PIC
-
-
-## Motor and Shaft Clearance
-
-Next, I added clearance for the motor and motor shaft. The motor dimensions were used to make sure the motor could fit correctly within the mount.
-
-PIC
-
-
-## Wall Mounting Feature
-
-The second feature was then added to create the wall mounting portion of the design.
-
-Four **3.4 mm clearance holes** were added for the mounting bolts.
-
-PIC
-
-
-## Design Features to Minimize Deflection
-
-The dimensions determined from the deflection calculations were used as minimum dimensions for the final design.
-
-Instead of using the exact calculated values, I rounded the dimensions upward. Feature 1 was increased from **10.63 mm to 11 mm**, and Feature 2 was increased from approximately **9.576 mm to 10 mm**.
-
-I also kept additional material around the mounting surfaces and corners to increase the rigidity of the mount and help reduce deflection.
-
-
-## Final CAD Model
-
-After completing both mounting features and adding all required clearance holes, I completed the final motor mount.
-
-PIC
-
-
-## CAD File
-
-The final SolidWorks CAD file can be downloaded below.
-
-**[Download Motor Mount CAD File](ADD CAD FILE LINK HERE)**
-
-
-# Engineering Drawing
-
-## Multiview Drawing
-
-After completing the 3D CAD model, I created a multiview engineering drawing of the motor mount.
-
-The drawing includes:
-
-- Front View
-- Right Side View
-- Top View
-- Isometric View
-- Size and location dimensions
-- Hole callouts
-- Center marks and centerlines
-- Third-angle projection
-- Title block
-- Material and scale
-
-The drawing was dimensioned to clearly communicate the geometry of the final motor mount.
-
-
-## Final Engineering Drawing
-
-PIC
-
-
 # Mistakes and Changes
 
 One of the main changes I made during the design process was rounding my calculated dimensions to practical dimensions for CAD. Feature 1 required a minimum dimension of **10.63 mm**, so I increased it to **11 mm**. Feature 2 required approximately **9.576 mm**, so I increased it to **10 mm**.
@@ -319,22 +232,24 @@ I also learned how useful parametric modeling can be when dimensions need to be 
 
 # Time Spent
 
-- Calculations: **___ hours**
-- Research and sketching: **___ hours**
-- CAD modeling: **___ hours**
-- Engineering drawing: **___ hours**
-- Portfolio documentation: **___ hours**
+- Calculations: **2 hours**
+- Research and sketching: **1 hour**
+- CAD modeling: **2.5 hours**
+- Engineering drawing: **1.5 hours**
+- Portfolio documentation: **2 hours**
 
-**Total Time: ___ hours**
+**Total Time: 9 hours**
 
 
 # Appendix
 
 ## Motor Mount Research Links
 
-1. [Motor Mount Design Inspiration 1](ADD LINK HERE)
-2. [Motor Mount Design Inspiration 2](ADD LINK HERE)
-3. [Motor Mount Design Inspiration 3](ADD LINK HERE)
+1. [DC Motor Mount Design - AranaCorp](https://www.aranacorp.com/en/product/dcmotor-mount/)
+
+2. [L-Bracket DC Motor Mount - Adafruit](https://www.adafruit.com/product/3768)
+
+3. [3D Printed Motor Mounting Bracket - Cults3D](https://cults3d.com/en/3d-model/tool/motor-mounting-bracket)
 
 
 ## Motor Information
