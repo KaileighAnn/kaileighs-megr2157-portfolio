@@ -103,22 +103,22 @@ Two multiview sketches were created using the dimensions determined from the str
 
 ### Governing Failure Mode
 
-**[Complete after calculations]**
+Stress governed the design for all five features because the stress calculations required larger dimensions than the stiffness calculations.
 
 ### Error Propagation
 
-**[Complete after calculations]**
+The dimensions of earlier features were used in later calculations, so an error in one calculation could affect the dimensions of the following features.
 
 ### Assumption Sensitivity
 
-**[Complete after calculations]**
+The calculations assume symmetric loading, small deflections, elastic material behavior, and neglected shear deformation and stress concentrations. Changing these assumptions could change the required dimensions.
 
 ## Time
 
-- Research and setup: **___ hours**
-- Stress analysis: **___ hours**
-- Stiffness analysis: **___ hours**
-- Multiview sketches: **___ hours**
-- Portfolio documentation: **___ hours**
+- Research and setup: **1 hour**
+- Stress analysis: **3 hours**
+- Stiffness analysis: **2.5 hours**
+- Multiview sketches: **1 hour**
+- Portfolio documentation: **1.5 hours**
 
-**Total Time: ___ hours**
+**Total Time: 9 hours**
