@@ -69,11 +69,11 @@ Each feature was then analyzed using a maximum allowable deflection of **0.005 i
 
 ### Feature A
 
-**[Insert handwritten Feature A stiffness analysis]**
+<img width="1303" height="1207" alt="image" src="https://github.com/user-attachments/assets/0c67d04c-079f-461b-aa91-a8b0156e7cc1" />
 
 ### Feature B
 
-**[Insert handwritten Feature B stiffness analysis]**
+<img width="1347" height="1167" alt="image" src="https://github.com/user-attachments/assets/b7844c16-8b86-4aff-b298-8485bf7933f5" />
 
 ### Feature C
 
