@@ -69,23 +69,23 @@ Each feature was then analyzed using a maximum allowable deflection of **0.005 i
 
 ### Feature A
 
-<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/355c6ee1-ba6a-4fa4-ad89-f2d22e528867" />
+<img width="1303" height="1207" alt="image" src="https://github.com/user-attachments/assets/e87b52f7-955f-40b4-88f5-7179f0c8ecc3" />
 
 ### Feature B
 
-<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/7ddc7ce3-2868-416a-a5cf-a8bb8647aa31" />
+<img width="1347" height="1167" alt="image" src="https://github.com/user-attachments/assets/d3110a26-9c46-4d49-97c2-b7b4149ac518" />
 
 ### Feature C
 
-**[Insert handwritten Feature C stiffness analysis]**
+<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/938b4e42-ee99-4a28-9cc4-b39d5992455d" />
 
 ### Feature D
 
-**[Insert handwritten Feature D stiffness analysis]**
+<img width="1303" height="1207" alt="image" src="https://github.com/user-attachments/assets/b35d88d8-82e6-442b-940d-77094d54621f" />
 
 ### Feature E
 
-**[Insert handwritten Feature E stiffness analysis]**
+![Uploading image.png…]()
 
 ## Multiview Sketches
 
