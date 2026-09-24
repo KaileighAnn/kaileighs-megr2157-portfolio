@@ -93,11 +93,11 @@ Two multiview sketches were created using the dimensions determined from the str
 
 ### Stress Analysis Design
 
-**[Insert stress multiview sketch]**
+<img width="694" height="610" alt="image" src="https://github.com/user-attachments/assets/4a34cb19-5d8b-4575-9a50-b8350e57d25b" />
 
 ### Stiffness Analysis Design
 
-**[Insert stiffness multiview sketch]**
+<img width="1334" height="1179" alt="image" src="https://github.com/user-attachments/assets/33730d7d-6dcc-4edd-bd39-c0fdf6945c00" />
 
 ## Lessons Learned
 
