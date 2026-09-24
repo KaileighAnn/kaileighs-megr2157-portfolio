@@ -69,11 +69,11 @@ Each feature was then analyzed using a maximum allowable deflection of **0.005 i
 
 ### Feature A
 
-<img width="1303" height="1207" alt="image" src="https://github.com/user-attachments/assets/0c67d04c-079f-461b-aa91-a8b0156e7cc1" />
+<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/355c6ee1-ba6a-4fa4-ad89-f2d22e528867" />
 
 ### Feature B
 
-<img width="1347" height="1167" alt="image" src="https://github.com/user-attachments/assets/b7844c16-8b86-4aff-b298-8485bf7933f5" />
+<img width="1254" height="1254" alt="image" src="https://github.com/user-attachments/assets/7ddc7ce3-2868-416a-a5cf-a8bb8647aa31" />
 
 ### Feature C
 
