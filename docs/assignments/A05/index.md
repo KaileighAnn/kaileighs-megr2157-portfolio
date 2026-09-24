@@ -85,7 +85,7 @@ Each feature was then analyzed using a maximum allowable deflection of **0.005 i
 
 ### Feature E
 
-![Uploading image.png…]()
+<img width="1303" height="1207" alt="image" src="https://github.com/user-attachments/assets/43465e33-3c8e-4729-b371-4954e4ad1d78" />
 
 ## Multiview Sketches
 
