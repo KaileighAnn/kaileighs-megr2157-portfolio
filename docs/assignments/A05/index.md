@@ -41,9 +41,13 @@ Feature A supports the polyester strap and is analyzed first because its resulti
 
 ### Feature B
 
-**[Insert handwritten Feature B stress analysis]**
+Feature B connects Feature A to the upper portion of the bracket. The load from Feature A is transferred into Feature B, which is modeled as an axially loaded bar.
+
+<img width="871" height="756" alt="image" src="https://github.com/user-attachments/assets/cee9e0b0-742a-4db4-9c59-940b06b215ee" />
 
 ### Feature C
+
+Feature C transfers the load through the T-beam and is modeled as a simply supported beam with a concentrated load at the center.
 
 **[Insert handwritten Feature C stress analysis]**
 
