@@ -122,3 +122,31 @@ The calculations assume symmetric loading, small deflections, elastic material b
 - Portfolio documentation: **1.5 hours**
 
 **Total Time: 9 hours**
+
+# 2157 Fits – Link Design
+
+# 2157 Fits
+
+## 1. Link Design
+
+I designed the link using strength and stiffness. The minimum area from stress was **0.120 in²**. The selected design has an area of **0.125 in²**.
+
+The calculated deflection was **0.00288 in**, which is less than the allowable **0.005 in**.
+
+<img width="137.4" height="114.5" alt="image" src="https://github.com/user-attachments/assets/1f0c7a96-b39f-4363-a8ac-956854aa5d34" />
+
+## 2. Feature A Fit
+
+I selected a **Class RC4 running/sliding fit (H8/f7)** for Feature A using the *Machinery's Handbook*, **p. 654**. I would use **reaming** to manufacture the hole.
+
+<img width="115.2" height="153.6" alt="image" src="https://github.com/user-attachments/assets/e0d2d628-2227-4c49-9a01-e2256c13f61b" />
+
+## 3. 1-Inch Shaft Fit
+
+I selected a **Class FN1 force fit** for the 1-inch shaft because it requires light assembly pressure. I would use reaming to manufacture the hole.
+
+### Manufacturing Reference
+
+I used the machining process table from the *Machinery's Handbook*, **p. 650**, to select the manufacturing processes.
+
+<img width="115.2" height="153.6" alt="image" src="https://github.com/user-attachments/assets/601a6217-95cd-4eac-8200-d1c90b490f81" />
