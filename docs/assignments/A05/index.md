@@ -49,15 +49,19 @@ Feature B connects Feature A to the upper portion of the bracket. The load from 
 
 Feature C transfers the load through the T-beam and is modeled as a simply supported beam with a concentrated load at the center.
 
-**[Insert handwritten Feature C stress analysis]**
+<img width="1313" height="1198" alt="image" src="https://github.com/user-attachments/assets/58b5b483-11ed-4ff1-9177-d348a2784008" />
 
 ### Feature D
 
-**[Insert handwritten Feature D stress analysis]**
+Feature D transfers the load from Feature C into the upper portion of the T-beam. The minimum thickness was determined using the load carried from the previous feature.
+
+<img width="1363" height="1154" alt="image" src="https://github.com/user-attachments/assets/d23e08d1-1f87-4a0c-8983-50a94880c91b" />
 
 ### Feature E
 
-**[Insert handwritten Feature E stress analysis]**
+Feature E consists of two symmetric sections that transfer the load into the rigid T-beam. Each section carries half of the total load and is analyzed using bending stress.
+
+<img width="1334" height="1179" alt="image" src="https://github.com/user-attachments/assets/9b7294cf-3e2e-46db-a058-ff0e9711b379" />
 
 ## Stiffness Analysis
 
