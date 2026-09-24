@@ -105,6 +105,8 @@ Two multiview sketches were created using the dimensions determined from the str
 
 Stress governed the design for all five features because the stress calculations required larger dimensions than the stiffness calculations.
 
+For Feature A, stress governed the design. Stress required a diameter of **0.849 in**, while stiffness required **0.168 in**, a difference of **0.681 in**.
+
 ### Error Propagation
 
 The dimensions of earlier features were used in later calculations, so an error in one calculation could affect the dimensions of the following features.
@@ -124,8 +126,6 @@ The calculations assume symmetric loading, small deflections, elastic material b
 **Total Time: 9 hours**
 
 # 2157 Fits – Link Design
-
-# 2157 Fits
 
 ## 1. Link Design
 
