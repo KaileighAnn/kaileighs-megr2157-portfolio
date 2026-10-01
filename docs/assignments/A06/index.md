@@ -50,10 +50,22 @@ Before creating the bracket, I created parameters for the important dimensions o
 
 The starting values were based on the final dimensions selected from the strength and stiffness analysis in the previous assignment.
 
-![Parameter Table](YOUR-IMAGE-LINK)
+<img width="605" height="415" alt="image" src="https://github.com/user-attachments/assets/6954d8db-0d4d-4e34-b370-cc6b5344e6a7" />
 
 ### Creating the Model
 
 I began creating the bracket using the parameters defined above instead of entering fixed dimensions. This allows changes to the parameters to automatically update the corresponding features of the model.
 
-![Beginning CAD Model](YOUR-IMAGE-LINK)
+<img width="627" height="409" alt="image" src="https://github.com/user-attachments/assets/184e0253-6db6-4b20-8027-3145374f559b" />
+
+<img width="1918" height="1198" alt="image" src="https://github.com/user-attachments/assets/40281d42-9f57-493e-beb6-5785e50710b8" />
+
+<img width="1345" height="867" alt="image" src="https://github.com/user-attachments/assets/a384689b-5691-4cf6-aa1a-1e9ace182bf2" />
+
+<img width="1177" height="850" alt="image" src="https://github.com/user-attachments/assets/b550359d-22bd-4dc8-8c59-ee926c64e83d" />
+
+<img width="787" height="808" alt="image" src="https://github.com/user-attachments/assets/1974c8fd-0b64-46f8-8d6b-f2148980617c" />
+
+
+
+
