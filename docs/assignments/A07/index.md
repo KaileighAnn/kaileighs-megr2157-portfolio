@@ -63,23 +63,88 @@ A static stress analysis will be performed in SolidWorks Simulation. Three mesh 
 Three bracket designs will be evaluated. Geometry changes will be made based on the FEA results to improve strength, stiffness, and mass.
 
 
-### Design I – FEA Setup
+### Design I – Original Bracket FEA
 
-The original bracket from A06 was used for the first static simulation in SolidWorks. The geometry and material were kept unchanged to establish a baseline for comparison with later designs.
+The original bracket from A06 was analyzed using SolidWorks Simulation to evaluate its stress, displacement, and factor of safety. The geometry was kept unchanged to establish a baseline for future design improvements.
 
 #### Preprocessing
 
 1. Opened the original bracket model from A06.
 2. Created a new static study in SolidWorks Simulation.
-3. Verified the Aluminum 6061-T6 material.
-4. Identified the support locations and applied loading.
-5. Prepared the model for mesh validation.
+3. Assigned Aluminum 6061-T6 as the material.
+4. Applied fixed geometry to two interior mounting faces.
+5. Applied a 1,200 lbf downward load to the cylindrical feature.
+6. Generated a high-quality solid mesh.
+7. Ran the simulation to evaluate stress, displacement, and factor of safety.
 
-#### Simulation Setup Screenshot
+#### Simulation Setup
 
-![FEA Setup](images/A07/design1-setup.png)
+- **Study Type:** Static
+- **Material:** Aluminum 6061-T6
+- **Applied Load:** 1,200 lbf downward
+- **Fixtures:** Two interior mounting faces
+- **Mesh Type:** High-quality solid mesh
+- **Elements:** 1,280
+- **Nodes:** 2,367
+- **Failure Criterion:** Maximum von Mises Stress
 
-*Figure 2. Static study setup for the original bracket.*
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/6e6a013c-c837-43bf-bd96-af4c5844adf4" />
+
+*Figure 2. Static simulation setup showing the applied load and fixed supports.*
+
+#### Mesh Generation
+
+A high-quality solid mesh was generated to divide the bracket into smaller elements for FEA calculations.
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/fbc20111-2c64-4bd1-a912-fd7868640f5e" />
+
+*Figure 3. Initial mesh generated for Design I.*
+
+#### Stress Analysis
+
+The maximum von Mises stress was approximately 396,000 psi, exceeding the material yield strength of 40,000 psi. The highest stresses occurred near the narrow vertical connection between the bracket and cylindrical feature.
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/20b2dcfc-6f1b-4168-a376-3560f4292815" />
+
+*Figure 4. Von Mises stress distribution for Design I.*
+
+#### Displacement Analysis
+
+The maximum resultant displacement was 28.72 mm (1.131 in), exceeding the allowable displacement of 0.005 in. The largest displacement occurred near the cylindrical feature.
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/58f59ed7-81af-44d8-aaae-4075831e03fe" />
+
+*Figure 5. Resultant displacement distribution for Design I.*
+
+#### Factor of Safety
+
+The minimum factor of safety was approximately 0.10, which is below the required safety factor of 4.0.
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/560514fe-59ea-4808-9feb-c281500d3b83" />
+
+*Figure 6. Factor of safety distribution for Design I.*
+
+#### Initial FEA Results
+
+| Measurement | Design I Result |
+|---|---|
+| Maximum von Mises Stress | 396,000 psi |
+| Yield Strength | 40,000 psi |
+| Maximum Displacement | 1.131 in |
+| Allowable Displacement | 0.005 in |
+| Minimum Factor of Safety | 0.10 |
+| Required Factor of Safety | 4.0 |
+| Number of Elements | 1,280 |
+| Number of Nodes | 2,367 |
+
+#### Design I Analysis
+
+The initial simulation predicted stresses and displacement significantly exceeding the design requirements. The narrow vertical section experienced substantial bending under the applied load.
+
+SolidWorks reported excessive displacement during the simulation. Because the predicted stress exceeds the yield strength, the linear static results are preliminary and require validation of the boundary conditions and mesh convergence.
+
+The results identify the vertical connection as an important area to investigate when improving the bracket geometry.
+
 
 ### Design II – First Modification
 
