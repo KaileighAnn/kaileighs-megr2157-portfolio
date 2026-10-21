@@ -62,9 +62,24 @@ A static stress analysis will be performed in SolidWorks Simulation. Three mesh 
 
 Three bracket designs will be evaluated. Geometry changes will be made based on the FEA results to improve strength, stiffness, and mass.
 
-### Design I – Original Bracket
 
-The original A06 bracket will be evaluated without geometry changes.
+### Design I – FEA Setup
+
+The original bracket from A06 was used for the first static simulation in SolidWorks. The geometry and material were kept unchanged to establish a baseline for comparison with later designs.
+
+#### Preprocessing
+
+1. Opened the original bracket model from A06.
+2. Created a new static study in SolidWorks Simulation.
+3. Verified the Aluminum 6061-T6 material.
+4. Identified the support locations and applied loading.
+5. Prepared the model for mesh validation.
+
+#### Simulation Setup Screenshot
+
+![FEA Setup](images/A07/design1-setup.png)
+
+*Figure 2. Static study setup for the original bracket.*
 
 ### Design II – First Modification
 
