@@ -650,39 +650,50 @@ The results demonstrated that increasing the thickness of the middle support imp
 
 | Measurement | Design I | Design II | Design III |
 |---|---|---|---|
-| Maximum Stress | 240,900 psi | 217,700 psi | — |
-| Maximum Deflection | 0.618 in | 0.507 in | — |
-| Mass | 0.38 lb | 0.38 lb | — |
-| Minimum Safety Factor | 0.17 | 0.18 | — |
-| Number of Elements | 30,268 | 49,865 | — |
+| Maximum Stress | 240,900 psi | 217,700 psi | 25,904 psi |
+| Maximum Deflection | 0.618 in | 0.507 in | 0.01671 in |
+| Mass | 0.38 lb | 0.38 lb | 0.44 lb |
+| Minimum Safety Factor | 0.17 | 0.18 | 1.54 |
+| Number of Elements | 30,268 | 49,865 | 34,967 |
 
 
 ### Design Comparison
 
-Design 2 showed improvements compared to Design 1.
+Designs 1, 2, and 3 were compared using the refined mesh results to evaluate improvements in strength, stiffness, and factor of safety.
 
-- **Maximum Stress:** Decreased from 240,900 psi to approximately 217,700 psi.
-- **Maximum Displacement:** Decreased from 0.618 in to 0.507 in.
-- **Minimum Factor of Safety:** Increased from 0.17 to 0.18.
-- **Mass:** Remained approximately 0.38 lb for both designs.
+- **Maximum Stress:** Decreased from 240,900 psi in Design 1 to 217,700 psi in Design 2 and 25,904 psi in Design 3.
+- **Maximum Displacement:** Decreased from 0.618 in in Design 1 to 0.507 in in Design 2 and 0.01671 in in Design 3.
+- **Minimum Factor of Safety:** Increased from 0.17 in Design 1 to 0.18 in Design 2 and 1.54 in Design 3.
+- **Mass:** Increased from 0.38 lb in Designs 1 and 2 to 0.44 lb in Design 3.
 
-Although Design 2 improved the predicted structural performance, neither design satisfied the required factor of safety of 4 or maximum displacement of 0.005 in.
+Design 3 provided the greatest improvement in strength and stiffness. However, none of the three designs met the required factor of safety of 4.0 or maximum displacement of 0.005 in.
 
-Further geometry modifications will be investigated in Design 3.
+Further modifications would be necessary to satisfy all design requirements.
+
 
 ## Lessons Learned
 
-To be completed after completing the FEA simulations.
+This assignment demonstrated how FEA can be used to identify weak areas in a design and evaluate improvements.
+
+- Increasing the thickness of the middle support significantly reduced stress and displacement.
+- Finer meshes provided more detailed results and helped identify stress concentrations.
+- Design 3 performed the best but required additional material, increasing its mass.
+- Mesh convergence is important because results can change as the mesh becomes finer.
+- Although Design 3 improved significantly, it still did not meet the required factor of safety or displacement limit.
+
+Overall, I learned how to use SOLIDWORKS Simulation to compare different designs and make improvements based on FEA results.
+
 
 ## Time Spent
 
 | Activity | Time |
 |---|---|
-| FEA Setup | — |
-| Mesh Validation | — |
-| Design Optimization | — |
-| Documentation | — |
-| **Total** | **—** |
+| FEA Setup | 1.0 hr |
+| Mesh Validation | 1.5 hrs |
+| Design Optimization | 2.0 hrs |
+| Documentation | 1.0 hr |
+| **Total** | **5.5 hrs** |
+
 
 ## 2157 Students Only – Link FEA
 
