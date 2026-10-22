@@ -745,33 +745,33 @@ These are the initial simulation results. Further validation would be needed bef
 *Figure. Factor of safety distribution of the link.*\
 
 
-### Link Mesh Validation Results
+### Link FEA Mesh Validation
 
-Three mesh configurations were evaluated for the link.
+Three mesh densities were evaluated to check the consistency of the simulation results.
 
-| Result | Coarse | Fine | Refined |
+| Result | Coarse | Medium | Fine |
 |---|---|---|---|
-| Maximum Stress (MPa) | 0.02592 | 0.02697 | 0.02682 |
-| Maximum Displacement (mm) | 0.0004112 | 0.0004133 | 0.0004132 |
+| Maximum Stress (MPa) | 0.02592 | 0.02682 | 0.02697 |
+| Maximum Displacement (mm) | 0.0004112 | 0.0004132 | 0.0004133 |
 | Minimum FOS | ~11,000 | ~10,000 | ~10,000 |
-| Total Nodes | 2,431 | 91,249 | 9,946 |
-| Total Elements | 1,228 | 60,772 | 5,842 |
+| Total Nodes | 2,431 | 9,946 | 91,249 |
+| Total Elements | 1,228 | 5,842 | 60,772 |
 
 ### Mesh Convergence
 
-The two densest meshes were compared using percent difference.
+The two finest meshes were compared using percent change.
 
-**Stress convergence:**
+**Stress:**
 
-|0.02697 - 0.02682| / 0.02697 × 100 = 0.56%
+(0.02697 - 0.02682) / 0.02697 × 100 = 0.56%
 
-**Displacement convergence:**
+**Displacement:**
 
-|0.0004133 - 0.0004132| / 0.0004133 × 100 = 0.024%
+(0.0004133 - 0.0004132) / 0.0004133 × 100 = 0.024%
 
-Both values were below the 7% convergence requirement.
+Both stress and displacement changes were below the required 7% threshold.
 
-The Fine mesh contained the greatest number of elements and was therefore selected as the highest-resolution result.
+The Fine mesh contained the most elements and was selected for the final mesh convergence comparison.
 
 ### Link FEA Conclusion
 
@@ -780,8 +780,6 @@ The link was analyzed using SOLIDWORKS Simulation with a 600 lbf downward load. 
 However, the unusually low results require further validation before confirming that the link meets the design requirements.
 
 This analysis provided additional experience with applying fixtures, loads, and interpreting FEA results.
-
-
 
 ## CAD Files
 
