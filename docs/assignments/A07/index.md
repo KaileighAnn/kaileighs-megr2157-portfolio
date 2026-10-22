@@ -742,8 +742,36 @@ These are the initial simulation results. Further validation would be needed bef
 
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/44674ba0-a9e1-4282-9d92-e5a15d79fbe4" />
 
-*Figure. Factor of safety distribution of the link.*
+*Figure. Factor of safety distribution of the link.*\
 
+
+### Link Mesh Validation Results
+
+Three mesh configurations were evaluated for the link.
+
+| Result | Coarse | Fine | Refined |
+|---|---|---|---|
+| Maximum Stress (MPa) | 0.02592 | 0.02697 | 0.02682 |
+| Maximum Displacement (mm) | 0.0004112 | 0.0004133 | 0.0004132 |
+| Minimum FOS | ~11,000 | ~10,000 | ~10,000 |
+| Total Nodes | 2,431 | 91,249 | 9,946 |
+| Total Elements | 1,228 | 60,772 | 5,842 |
+
+### Mesh Convergence
+
+The two densest meshes were compared using percent difference.
+
+**Stress convergence:**
+
+|0.02697 - 0.02682| / 0.02697 × 100 = 0.56%
+
+**Displacement convergence:**
+
+|0.0004133 - 0.0004132| / 0.0004133 × 100 = 0.024%
+
+Both values were below the 7% convergence requirement.
+
+The Fine mesh contained the greatest number of elements and was therefore selected as the highest-resolution result.
 
 ### Link FEA Conclusion
 
