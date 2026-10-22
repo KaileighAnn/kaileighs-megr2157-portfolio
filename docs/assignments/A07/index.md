@@ -711,4 +711,16 @@ The link developed in A05 and modeled in A06 will also be analyzed using FEA to 
 
 ### Link Simulation Results
 
-To be completed after the bracket analysis.
+A linear static FEA was performed in SOLIDWORKS Simulation using Aluminum 6061-T6.
+
+The upper hole was fixed, and a 600 lbf downward load was applied to the lower hole.
+
+| Measurement | Simulation Result |
+|---|---|
+| Maximum von Mises Stress | 0.02674 MPa |
+| Maximum Displacement | 0.0004129 mm |
+| Minimum Factor of Safety | Approximately 10,280 |
+
+The simulation showed the highest stress around the lower hole and the greatest displacement near the bottom of the link.
+
+These are the initial simulation results. Further validation would be needed before drawing conclusions about the link's structural performance.
