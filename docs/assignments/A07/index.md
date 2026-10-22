@@ -670,6 +670,13 @@ Design 3 provided the greatest improvement in strength and stiffness. However, n
 
 Further modifications would be necessary to satisfy all design requirements.
 
+### Mesh Convergence Summary
+
+Three mesh densities were evaluated for each bracket design to determine the consistency of the FEA results.
+
+Design II achieved the required 7% convergence for both maximum stress and displacement.
+
+Designs I and III achieved displacement convergence but did not meet the 7% stress convergence requirement after three mesh attempts. As permitted by the assignment instructions, the finest mesh results were used for the final comparison.
 
 ## Lessons Learned
 
