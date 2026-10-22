@@ -724,3 +724,31 @@ The upper hole was fixed, and a 600 lbf downward load was applied to the lower h
 The simulation showed the highest stress around the lower hole and the greatest displacement near the bottom of the link.
 
 These are the initial simulation results. Further validation would be needed before drawing conclusions about the link's structural performance.
+
+
+#### Von Mises Stress
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/9b62d90d-02c1-4cd4-8acc-02ebd9673dfd" />
+
+*Figure. Von Mises stress distribution of the link.*
+
+#### Displacement
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ccfa43f6-c101-4854-bbc3-071dfdb698f7" />
+
+*Figure. Resultant displacement of the link.*
+
+#### Factor of Safety
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/44674ba0-a9e1-4282-9d92-e5a15d79fbe4" />
+
+*Figure. Factor of safety distribution of the link.*
+
+
+### Link FEA Conclusion
+
+The link was analyzed using SOLIDWORKS Simulation with a 600 lbf downward load. The initial results showed low stress and displacement values and a high factor of safety.
+
+However, the unusually low results require further validation before confirming that the link meets the design requirements.
+
+This analysis provided additional experience with applying fixtures, loads, and interpreting FEA results.
