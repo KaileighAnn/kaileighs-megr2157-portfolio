@@ -757,12 +757,8 @@ This analysis provided additional experience with applying fixtures, loads, and 
 
 ## CAD Files
 
-The following SolidWorks part files are available for download.
+All SolidWorks CAD models used in this assignment are available for download.
 
-- [Download Design 1 CAD File](CAD/A07_Bracket_Design1.SLDPRT)
-- [Download Design 2 CAD File](CAD/A07_Bracket_Design2.SLDPRT)
-- [Download Design 3 CAD File](CAD/A07_Bracket_Design3.SLDPRT)
-- [Download Link CAD File](CAD/A07_Link.SLDPRT)
-
+[A07_All_CAD_Files.zip](https://github.com/user-attachments/files/33798624/A07_All_CAD_Files.zip)
 
 
