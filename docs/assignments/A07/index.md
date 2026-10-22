@@ -13,8 +13,7 @@ The original bracket was designed using strength and stiffness calculations in A
 | Parameter | Value |
 |---|---|
 | Material | Aluminum 6061-T6 |
-| Applied Load | 600 lbf |
-| Total Strap Load | 1,200 lbf |
+| Applied Load | 600 lbf downward |
 | Safety Factor | 4 |
 | Yield Strength | 40,000 psi |
 | Modulus of Elasticity | 10 × 10⁶ psi |
@@ -37,25 +36,32 @@ The original bracket was designed using strength and stiffness calculations in A
 
 *Figure 1. Original bracket model from A06.*
 
+
 ## FEA Validation – Inner Loop
 
-A static stress analysis will be performed in SolidWorks Simulation. Three mesh sizes will be compared to evaluate convergence within 7%.
+A linear static FEA was performed in SolidWorks Simulation to evaluate the original bracket under a 600 lbf downward load. Three mesh densities were compared to evaluate convergence within 7%.
 
 ### Simulation Setup
 
 - **Study Type:** Static
 - **Material:** Aluminum 6061-T6
-- **Fixtures:** To be documented
-- **Applied Forces:** To be documented
-- **Mesh Sizes:** Coarse, Medium, Fine
+- **Fixtures:** Two interior mounting faces fixed
+- **Applied Force:** 600 lbf downward on the cylindrical feature
+- **Mesh Quality:** High
+- **Mesh Sizes:** Coarse, Fine, Refined
+- **Failure Criterion:** Maximum von Mises Stress
 
 ### Mesh Convergence
 
-| Mesh Size | Elements | Max Stress (psi) | Max Displacement (in) | Safety Factor |
-|---|---|---|---|---|
-| Coarse | — | — | — | — |
-| Medium | — | — | — | — |
-| Fine | — | — | — | — |
+| Mesh Size | Max Stress (psi) | Max Displacement (in) | Minimum Safety Factor |
+|---|---|---|---|
+| Coarse | 164,600 | 0.426 | 0.24 |
+| Fine | 220,500 | 0.601 | 0.18 |
+| Refined | 240,900 | 0.618 | 0.17 |
+
+The fine and refined mesh results differed by 8.47% in maximum stress and 2.75% in maximum displacement. Displacement met the 7% convergence requirement, but stress did not.
+
+Additional mesh refinement is needed to verify stress convergence.
 
 ## Design Optimization – Outer Loop
 
@@ -268,17 +274,6 @@ The original bracket did not satisfy the required stress, displacement, or facto
 
 The narrow vertical connection was identified as a critical area for future design improvements. Additional analysis and geometry modifications will be investigated in Design II to improve the bracket's strength and stiffness.
 
-
-#### Design I Analysis
-
-The initial simulation predicted stresses and displacement significantly exceeding the design requirements. The narrow vertical section experienced substantial bending under the applied load.
-
-SolidWorks reported excessive displacement during the simulation. Because the predicted stress exceeds the yield strength, the linear static results are preliminary and require validation of the boundary conditions and mesh convergence.
-
-The results identify the vertical connection as an important area to investigate when improving the bracket geometry.
-
-
-
 ## Design 2 – Modified Bracket
 
 ### Design
@@ -289,11 +284,24 @@ The updated model was created in SOLIDWORKS using Aluminum 6061-T6.
 
 ### Design Modifications
 
-- Modified the bracket geometry to improve structural support.
-- Maintained symmetry about the vertical centerline.
-- Retained the upper mounting section and U-shaped opening.
-- Retained the lower cylindrical loading feature.
-- Preserved the original loading and mounting conditions for comparison with Design 1.
+Design 2 was modified to improve the bracket's strength and stiffness while maintaining the original mounting and loading conditions.
+
+The updated geometry includes:
+
+- Overall upper bracket width of 3.10 in.
+- Upper section height of 1.34 in.
+- Center vertical support width of 1.34 in.
+- Lower cylindrical feature diameter of 1.10 in.
+- Symmetrical geometry about the vertical centerline.
+- Retained upper mounting opening and lower loading feature.
+
+The modified bracket was evaluated using coarse, fine, and refined meshes to compare its structural performance with Design 1.
+
+### Modified CAD Model
+
+<img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/1c33c237-41e4-40b0-a1b3-a0abf05ca6a6" />
+
+*Figure. Dimensioned sketch of the modified bracket geometry for Design 2.*
 
 ### Finite Element Analysis (FEA)
 
@@ -376,11 +384,33 @@ The results continued to show stresses above the material yield strength and dis
 
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/99bd0014-4cfc-4fbe-baff-882ce57097f2" />
 
+
 ### Mesh Comparison
 
-As the mesh was refined, the maximum stress increased from 1,125 MPa to 1,501 MPa, while maximum displacement increased from 11.90 mm to 12.88 mm.
+The fine and refined mesh results were compared to determine whether Design 2 satisfied the 7% convergence requirement.
 
-The displacement changed by approximately 1.3% between the fine and refined meshes, suggesting that displacement predictions were becoming more stable. However, the maximum stress continued to increase, so stress convergence was not demonstrated.
+**Percentage Difference Formula:**
+
+Percentage Difference = |Refined − Fine| / Refined × 100
+
+**Stress Convergence**
+
+Percentage Difference = |1,501 − 1,419| / 1,501 × 100
+
+**Stress Difference = 5.46%**
+
+**Displacement Convergence**
+
+Percentage Difference = |12.88 − 12.71| / 12.88 × 100
+
+**Displacement Difference = 1.32%**
+
+| Measurement | Percentage Difference | Requirement | Result |
+|---|---|---|---|
+| Maximum Stress | 5.46% | Less than 7% | Met |
+| Maximum Displacement | 1.32% | Less than 7% | Met |
+
+Both measurements satisfied the 7% convergence criterion between the fine and refined meshes. However, the maximum stress continued to increase with refinement, so further verification may be useful.
 
 ### Design Evaluation
 
@@ -407,17 +437,238 @@ The findings from Design 2 will be used to guide the development of Design 3, fo
 
 ### Design III – Second Modification
 
-To be completed after Design II.
+#### Design
+
+Design 3 was developed to improve the strength and stiffness of the bracket after evaluating the results from Designs 1 and 2.
+
+The main modification was increasing the thickness of the middle support section to reduce bending and displacement under the applied load.
+
+#### Design Modifications
+
+The following changes were made in SOLIDWORKS:
+
+- Reduced the cut-extrude depth from 0.90 in to 0.60 in to increase the thickness of the middle support.
+- Maintained the overall upper mounting geometry.
+- Retained the lower cylindrical loading feature.
+- Continued using Aluminum 6061-T6.
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/240af944-9dd3-45ce-9009-2d754a036c01" />
+
+The updated geometry was evaluated using coarse, fine, and refined meshes.
+
+#### Finite Element Analysis (FEA)
+
+Three linear static simulations were completed in SOLIDWORKS Simulation to evaluate the modified bracket.
+
+##### Simulation Settings
+
+| Parameter | Value |
+|---|---|
+| Study Type | Linear Static |
+| Material | Aluminum 6061-T6 |
+| Applied Load | 600 lbf downward |
+| Fixtures | Two upper interior mounting faces |
+| Load Location | Lower cylindrical feature |
+| Mesh Quality | High |
+| Failure Criterion | Maximum von Mises Stress |
+| Yield Strength | 40,000 psi |
+| Required Factor of Safety | 4.0 |
+| Maximum Allowable Displacement | 0.005 in |
+
+#### Mesh Generation
+
+Three mesh densities were used to evaluate how element size affected the simulation results.
+
+| Mesh | Maximum Element Size | Minimum Element Size | Total Nodes | Total Elements |
+|---|---|---|---|---|
+| Coarse | 0.30 in | 0.15 in | 2,980 | 1,660 |
+| Fine | 0.15 in | 0.075 in | To be recorded | To be recorded |
+| Refined | 0.10 in | 0.05 in | To be recorded | To be recorded |
+
+#### FEA Results
+
+| Mesh | Maximum Stress (MPa) | Maximum Displacement (mm) | Minimum Safety Factor |
+|---|---|---|---|
+| Coarse | 122.8 | 0.4057 | 2.24 |
+| Fine | 149.7 | 0.4202 | 1.84 |
+| Refined | 178.6 | 0.4245 | 1.54 |
+
+#### Coarse Mesh Analysis
+
+The coarse mesh was used for the initial simulation of Design 3.
+
+##### Von Mises Stress
+
+The maximum von Mises stress was approximately 122.8 MPa.
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/124d1957-9af5-40d7-a61a-82ea536f75a9" />
+
+*Figure. Von Mises stress distribution for the coarse mesh.*
+
+##### Displacement
+
+The maximum resultant displacement was 0.4057 mm (0.01597 in), exceeding the allowable displacement of 0.005 in.
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/3d374132-8255-4c01-a357-df5d93affe5e" />
+
+*Figure. Resultant displacement distribution for the coarse mesh.*
+
+##### Factor of Safety
+
+The minimum factor of safety was approximately 2.24, below the required value of 4.0.
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/a018409e-04db-4099-ae57-261383cee623" />
+
+*Figure. Factor of safety distribution for the coarse mesh.*
+
+#### Fine Mesh Analysis
+
+A finer mesh was generated to improve the resolution of the stress and displacement results.
+
+##### Von Mises Stress
+
+The maximum von Mises stress increased to approximately 149.7 MPa.
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/38b2f7e0-d418-4de7-ac1f-9a6f3de0a65b" />
+
+*Figure. Von Mises stress distribution for the fine mesh.*
+
+##### Displacement
+
+The maximum resultant displacement increased to 0.4202 mm (0.01654 in).
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/8e58c20c-70ce-4fdc-8ca1-add55bf3c974" />
+
+*Figure. Resultant displacement distribution for the fine mesh.*
+
+##### Factor of Safety
+
+The minimum factor of safety decreased to approximately 1.84.
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/27e11f40-da3f-4a96-b5d5-8b4824109b4a" />
+
+*Figure. Factor of safety distribution for the fine mesh.*
+
+#### Refined Mesh Analysis
+
+A refined mesh was generated for the final evaluation of Design 3.
+
+##### Von Mises Stress
+
+The maximum von Mises stress increased to approximately 178.6 MPa.
+
+Although this value remained below the material yield strength of approximately 275 MPa, it exceeded the allowable stress of 68.75 MPa required for a safety factor of 4.
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/4bc874d4-42f3-42ef-9268-87efd9c723bf" />
+
+*Figure. Von Mises stress distribution for the refined mesh.*
+
+##### Displacement
+
+The maximum resultant displacement was approximately 0.4245 mm (0.01671 in).
+
+This exceeded the maximum allowable displacement of 0.005 in.
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/732b50b4-087b-46ce-bdc0-934ce5f44e23" />
+
+*Figure. Resultant displacement distribution for the refined mesh.*
+
+##### Factor of Safety
+
+The minimum factor of safety was approximately 1.54, which was below the required value of 4.0.
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/ddc663e3-cce2-4814-8a6a-9a8c8b89155e" />
+
+*Figure. Factor of safety distribution for the refined mesh.*
+
+#### Mesh Convergence Evaluation
+
+The fine and refined mesh results were compared to determine whether the simulation satisfied the 7% convergence requirement.
+
+**Percentage Difference Formula:**
+
+Percentage Difference = |Refined − Fine| / Refined × 100
+
+**Stress Convergence**
+
+Percentage Difference = |178.6 − 149.7| / 178.6 × 100
+
+**Stress Difference = 16.18%**
+
+**Displacement Convergence**
+
+Percentage Difference = |0.4245 − 0.4202| / 0.4245 × 100
+
+**Displacement Difference = 1.01%**
+
+| Measurement | Percentage Difference | Requirement | Result |
+|---|---|---|---|
+| Maximum Stress | 16.18% | Less than 7% | Not Met |
+| Maximum Displacement | 1.01% | Less than 7% | Met |
+
+The displacement results satisfied the convergence requirement, but the stress results did not.
+
+Additional mesh refinement would be necessary to verify stress convergence.
+
+#### Final Design III Results
+
+| Measurement | Design III Result | Requirement | Status |
+|---|---|---|---|
+| Maximum von Mises Stress | 178.6 MPa | 68.75 MPa allowable | Not Met |
+| Maximum Displacement | 0.01671 in | 0.005 in maximum | Not Met |
+| Minimum Factor of Safety | 1.54 | 4.0 minimum | Not Met |
+| Material | Aluminum 6061-T6 | Aluminum 6061-T6 | Met |
+| Applied Load | 600 lbf | 600 lbf | Met |
+| Stress Mesh Convergence | 16.18% | Less than 7% | Not Met |
+| Displacement Mesh Convergence | 1.01% | Less than 7% | Met |
+
+#### Design III Analysis
+
+The FEA results showed that increasing the thickness of the middle support substantially improved the bracket's strength and stiffness compared with Designs 1 and 2.
+
+The maximum stress and displacement decreased significantly, while the minimum factor of safety increased.
+
+However, the refined mesh results still exceeded the allowable stress and displacement limits.
+
+The stress results also continued to increase with mesh refinement, indicating that further refinement was needed to establish convergence.
+
+#### Lessons Learned
+
+Design 3 demonstrated the importance of the middle support thickness in resisting bending under the applied load.
+
+Increasing the amount of material in this region reduced displacement and stress compared with the previous designs.
+
+The mesh refinement study also showed that the coarse mesh predicted a higher factor of safety than the refined mesh, demonstrating why mesh convergence must be evaluated.
+
+#### Design III Conclusion
+
+Design 3 showed substantial improvements over Designs 1 and 2. However, the final design did not satisfy the required factor of safety of 4.0 or maximum displacement of 0.005 in.
+
+The results demonstrated that increasing the thickness of the middle support improved structural performance, but additional modifications would be required to satisfy all design requirements.
 
 ## Final Results
 
 | Measurement | Design I | Design II | Design III |
 |---|---|---|---|
-| Maximum Stress and Location | — | — | — |
-| Maximum Deflection and Location | — | — | — |
-| Mass | — | — | — |
-| Safety Factor | — | — | — |
-| Number of Elements | — | — | — |
+| Maximum Stress | 240,900 psi | 217,700 psi | — |
+| Maximum Deflection | 0.618 in | 0.507 in | — |
+| Mass | 0.38 lb | 0.38 lb | — |
+| Minimum Safety Factor | 0.17 | 0.18 | — |
+| Number of Elements | 30,268 | 49,865 | — |
+
+
+### Design Comparison
+
+Design 2 showed improvements compared to Design 1.
+
+- **Maximum Stress:** Decreased from 240,900 psi to approximately 217,700 psi.
+- **Maximum Displacement:** Decreased from 0.618 in to 0.507 in.
+- **Minimum Factor of Safety:** Increased from 0.17 to 0.18.
+- **Mass:** Remained approximately 0.38 lb for both designs.
+
+Although Design 2 improved the predicted structural performance, neither design satisfied the required factor of safety of 4 or maximum displacement of 0.005 in.
+
+Further geometry modifications will be investigated in Design 3.
 
 ## Lessons Learned
 
