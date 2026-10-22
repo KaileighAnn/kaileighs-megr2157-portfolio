@@ -754,13 +754,15 @@ However, the unusually low results require further validation before confirming 
 This analysis provided additional experience with applying fixtures, loads, and interpreting FEA results.
 
 
+
 ## CAD Files
 
-The following SolidWorks CAD files were used to complete the bracket and link finite element analyses.
+The following SolidWorks part files are available for download.
 
-- [Download Design 1 CAD Model](CAD/Design1.SLDPRT)
-- [Download Design 2 CAD Model](CAD/Design2.SLDPRT)
-- [Download Design 3 CAD Model](CAD/Design3.SLDPRT)
-- [Download Link CAD Model](CAD/A07_Link.SLDPRT)
+- [Download Design 1 CAD File](CAD/A07_Bracket_Design1.SLDPRT)
+- [Download Design 2 CAD File](CAD/A07_Bracket_Design2.SLDPRT)
+- [Download Design 3 CAD File](CAD/A07_Bracket_Design3.SLDPRT)
+- [Download Link CAD File](CAD/A07_Link.SLDPRT)
+
 
 
