@@ -130,68 +130,27 @@ The selected 3/8-inch shaft satisfies the minimum static yielding safety factor 
 
 ### Free-Body Diagram
 
-**Figure 6.** Journal bearing free-body diagram.
+<img width="328" height="195" alt="image" src="https://github.com/user-attachments/assets/1fc80d63-e8cc-41de-add6-ecdcb51a6075" />
 
-*Insert the shaft supported by two journal bearings, each carrying a 5 lbf reaction.*
+**Figure 6.** Journal bearing free-body diagram.
 
 ### Equations and Calculations
 
-**Projected Bearing Area:**
+<img width="658" height="522" alt="image" src="https://github.com/user-attachments/assets/5165f9c9-251b-4fca-823f-8a4109625e6b" />
 
-$$
-A=dL
-$$
-
-$$
-A=(0.375)(0.5)=0.1875\text{ in}^2
-$$
-
-**Bearing Pressure:**
-
-$$
-P=\frac{W}{dL}
-$$
-
-$$
-P=\frac{5}{0.1875}=26.67\text{ psi}
-$$
-
-**Surface Velocity:**
-
-$$
-V=\frac{\pi dN}{12}
-$$
-
-$$
-V=\frac{\pi(0.375)(1500)}{12}
-=147.26\text{ ft/min}
-$$
-
-**PV Rating:**
-
-$$
-PV=P(V)
-$$
-
-$$
-PV=(26.67)(147.26)
-$$
-
-$$
-\boxed{PV=3927\text{ psi-ft/min}}
-$$
+**Figure 7.** Handwritten journal bearing calculations showing projected area, bearing pressure, surface velocity, and PV rating.
 
 ### Material Selection
 
-Oil-impregnated sintered bronze (SAE 841) was selected as the preliminary journal bearing material.
+Porous bronze (SAE 841) was selected as the journal bearing material using Table 4 on page 2440 of the Machinery's Handbook.
 
-| Parameter | Calculated | Reference Limit |
+| Parameter | Calculated | Maximum Allowable |
 |---|---|---|
-| Pressure | 26.67 psi | 2000 psi |
-| Velocity | 147.26 ft/min | 1200 ft/min |
-| PV | 3927 | 50,000 |
+| Bearing Pressure | 26.67 psi | 4500 psi |
+| Surface Velocity | 147.26 ft/min | 1500 ft/min |
+| PV Rating | 3927 | 50,000 |
 
-The calculated operating conditions are below the referenced limits for porous bronze bearings. The final selection should be checked against Table 4 on page 2440 of the assigned *Machinery's Handbook* edition.
+The calculated pressure, surface velocity, and PV rating are all below the maximum allowable limits for porous bronze. Therefore, the selected bearing meets the listed mechanical operating limits. Operating temperature must also remain below 160°F.
 
 ---
 
