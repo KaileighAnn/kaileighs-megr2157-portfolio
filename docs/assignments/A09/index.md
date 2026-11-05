@@ -95,77 +95,16 @@ The selected belt meets the minimum tensile safety factor of 3. No-slip operatio
 
 ### Free-Body Diagram
 
-<img width="537" height="325" alt="image" src="https://github.com/user-attachments/assets/c7bee035-3e21-4344-91a4-532eb0b369dc" />
+<img width="528" height="288" alt="image" src="https://github.com/user-attachments/assets/792e63d5-8bf1-4899-9bf9-2ea6e552c136" />
 
 **Figure 4.** Shaft free-body diagram.
 
 ### Equations and Calculations
 
-**Bearing Reactions:**
+<img width="793" height="1012" alt="image" src="https://github.com/user-attachments/assets/93bf05f2-dd91-4f04-b44a-b9f3f7fe5848" />
 
-Rₐ = Rᵦ = 10 / 2
 
-**Rₐ = Rᵦ = 5 lbf**
-
-**Maximum Bending Moment:**
-
-M = FL / 4
-
-M = (10 × 1) / 4
-
-**M = 2.5 in·lbf**
-
-**Minimum Shaft Diameter:**
-
-Using combined bending and torsion:
-
-d_min = [16(SF)√(4M³⁻¹ × M³ + 3T²) / (πSᵧ)]^(1/3)
-
-Simplified equation:
-
-d_min = [16(SF)√(4M² + 3T²) / (πSᵧ)]^(1/3)
-
-Substituting:
-
-d_min = [16(3)√(4(2.5)² + 3(6)²) / (π × 60000)]^(1/3)
-
-**d_min = 0.1432 in**
-
-**Selected Shaft Diameter:**
-
-**d = 0.375 in**
-
-**Bending Stress:**
-
-σ_b = 32M / (πd³)
-
-σ_b = 32(2.5) / [π(0.375)³]
-
-**σ_b = 482.89 psi**
-
-**Torsional Shear Stress:**
-
-τ = 16T / (πd³)
-
-τ = 16(6) / [π(0.375)³]
-
-**τ = 579.47 psi**
-
-**Equivalent Stress:**
-
-σ_VM = √(σ_b² + 3τ²)
-
-σ_VM = √(482.89² + 3(579.47)²)
-
-**σ_VM = 1113.79 psi**
-
-**Safety Factor:**
-
-SF = Sᵧ / σ_VM
-
-SF = 60000 / 1113.79
-
-**SF = 53.87**
+**Figure 5.** Handwritten shaft design calculations showing bearing reactions, maximum bending moment, minimum and selected shaft diameters, bending stress, torsional shear stress, equivalent stress, and safety factor.
 
 The selected 3/8-inch shaft satisfies the minimum static yielding safety factor under the assumed loading and material properties.
 
@@ -191,7 +130,7 @@ The selected 3/8-inch shaft satisfies the minimum static yielding safety factor 
 
 ### Free-Body Diagram
 
-**Figure 3.** Journal bearing free-body diagram.
+**Figure 6.** Journal bearing free-body diagram.
 
 *Insert the shaft supported by two journal bearings, each carrying a 5 lbf reaction.*
 
