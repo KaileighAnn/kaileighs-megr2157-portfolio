@@ -40,66 +40,16 @@ The objective of this assignment was to design a pulley system that transfers po
 
 ### Free-Body Diagram
 
+<img width="520" height="247" alt="image" src="https://github.com/user-attachments/assets/e15cb2de-a4af-4a5b-ac67-e41d33c496f8" />
+
 **Figure 1.** Belt and pulley free-body diagram.
-
-*Insert FBD showing the tight-side tension (7 lbf), loose-side tension (3 lbf), pulley radius (1.5 in), and shaft reaction.*
-
 
 ### Equations and Calculations
 
-**Belt Tensions:**
+<img width="765" height="895" alt="image" src="https://github.com/user-attachments/assets/e8b235f8-50d3-4bf4-9abd-5f90ca09840d" />
 
-T₀ = (T₁ + T₂) / 2
 
-T₀ = (7 + 3) / 2 = 5 lbf
-
-**Transmitted Torque:**
-
-M = (T₁ − T₂) × r
-
-M = (7 − 3) × 1.5
-
-**M = 6 in·lbf**
-
-**Allowable Belt Stress:**
-
-σ_allow = Sᵧ / SF
-
-σ_allow = 471 / 3
-
-**σ_allow = 157 psi**
-
-**Minimum Cross-Sectional Area:**
-
-A_min = T₁ / σ_allow
-
-A_min = 7 / 157
-
-**A_min = 0.04459 in²**
-
-**Minimum Belt Diameter:**
-
-d_min = √(4A / π)
-
-d_min = √(4 × 0.04459 / π)
-
-**d_min = 0.2383 in**
-
-**Belt Length:**
-
-L = 2C + πD
-
-L = 2(5) + π(3)
-
-**L = 19.425 in**
-
-**Outer Circumference:**
-
-L_outer = L + πd
-
-L_outer = 19.425 + π(0.25)
-
-**L_outer = 20.210 in**
+**Figure 2.** Handwritten belt design calculations showing belt tension, transmitted torque, allowable stress, minimum cross-sectional area, minimum belt diameter, belt length, and outer circumference.
 
 ### Belt Selection
 
@@ -107,7 +57,7 @@ A 1/4-inch polyurethane rubber belt was selected from McMaster-Carr (Part #3044K
 
 <img width="2172" height="724" alt="image" src="https://github.com/user-attachments/assets/48f490d6-cec2-4d9e-8c7c-34313243b51a" />
 
-**Figure 2.** Polyurethane round belt selection from McMaster-Carr.
+**Figure 3.** Polyurethane round belt selection from McMaster-Carr.
 
 **Actual Belt Area:**
 
