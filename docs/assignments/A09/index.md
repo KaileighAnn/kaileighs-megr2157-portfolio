@@ -1,4 +1,3 @@
-
 # A08: Pulley System Design
 
 ## Objective
@@ -96,85 +95,77 @@ The selected belt meets the minimum tensile safety factor of 3. No-slip operatio
 
 ### Free-Body Diagram
 
-**Figure 2.** Shaft free-body diagram.
+<img width="537" height="325" alt="image" src="https://github.com/user-attachments/assets/c7bee035-3e21-4344-91a4-532eb0b369dc" />
 
-*Insert a simply supported shaft with a 10 lbf center load, two bearing reactions of 5 lbf, and a 1-inch bearing spacing.*
+**Figure 4.** Shaft free-body diagram.
 
 ### Equations and Calculations
 
 **Bearing Reactions:**
 
-$$
-R_A=R_B=\frac{10}{2}=5\text{ lbf}
-$$
+Rₐ = Rᵦ = 10 / 2
+
+**Rₐ = Rᵦ = 5 lbf**
 
 **Maximum Bending Moment:**
 
-$$
-M=\frac{FL}{4}
-$$
+M = FL / 4
 
-$$
-M=\frac{10(1)}{4}=2.5\text{ in-lbf}
-$$
+M = (10 × 1) / 4
+
+**M = 2.5 in·lbf**
 
 **Minimum Shaft Diameter:**
 
 Using combined bending and torsion:
 
-$$
-d_{\min}=
-\left[
-\frac{16(SF)\sqrt{4M^2+3T^2}}
-{\pi S_y}
-\right]^{1/3}
-$$
+d_min = [16(SF)√(4M³⁻¹ × M³ + 3T²) / (πSᵧ)]^(1/3)
 
-$$
-d_{\min}=
-\left[
-\frac{16(3)\sqrt{4(2.5)^2+3(6)^2}}
-{\pi(60000)}
-\right]^{1/3}
-$$
+Simplified equation:
 
-$$
-\boxed{d_{\min}=0.1432\text{ in}}
-$$
+d_min = [16(SF)√(4M² + 3T²) / (πSᵧ)]^(1/3)
+
+Substituting:
+
+d_min = [16(3)√(4(2.5)² + 3(6)²) / (π × 60000)]^(1/3)
+
+**d_min = 0.1432 in**
 
 **Selected Shaft Diameter:**
 
-$$
-d=0.375\text{ in}
-$$
+**d = 0.375 in**
 
 **Bending Stress:**
 
-$$
-\sigma_b=\frac{32M}{\pi d^3}=482.89\text{ psi}
-$$
+σ_b = 32M / (πd³)
+
+σ_b = 32(2.5) / [π(0.375)³]
+
+**σ_b = 482.89 psi**
 
 **Torsional Shear Stress:**
 
-$$
-\tau=\frac{16T}{\pi d^3}=579.47\text{ psi}
-$$
+τ = 16T / (πd³)
+
+τ = 16(6) / [π(0.375)³]
+
+**τ = 579.47 psi**
 
 **Equivalent Stress:**
 
-$$
-\sigma_{VM}=\sqrt{\sigma_b^2+3\tau^2}
-$$
+σ_VM = √(σ_b² + 3τ²)
 
-$$
-\sigma_{VM}=1113.79\text{ psi}
-$$
+σ_VM = √(482.89² + 3(579.47)²)
+
+**σ_VM = 1113.79 psi**
 
 **Safety Factor:**
 
-$$
-SF=\frac{60000}{1113.79}=53.87
-$$
+SF = Sᵧ / σ_VM
+
+SF = 60000 / 1113.79
+
+**SF = 53.87**
 
 The selected 3/8-inch shaft satisfies the minimum static yielding safety factor under the assumed loading and material properties.
 
