@@ -182,8 +182,6 @@ The simplified frame member satisfies the minimum safety factor requirement. The
 
 **Figure 9.** Proposed pulley support frame.
 
-*Insert a labeled sketch of the frame showing the base, supports, shafts, and 5-inch center distance.*
-
 ---
 
 ## Part 5: Engineering Lessons Learned
@@ -198,13 +196,13 @@ I also learned how to calculate the minimum shaft diameter using bending and tor
 
 | Task | Time |
 |---|---|
-| Research and Design Selection | To be recorded |
-| Belt Calculations | To be recorded |
-| Shaft Calculations | To be recorded |
-| Bearing Calculations | To be recorded |
-| Frame Analysis | To be recorded |
-| Documentation | To be recorded |
-| **Total** | **To be recorded** |
+| Research and Design Selection | 30 min |
+| Belt Calculations | 45 min |
+| Shaft Calculations | 30 min |
+| Bearing Calculations | 30 min |
+| Frame Analysis | 45 min |
+| Documentation | 1 hr |
+| **Total** | **4 hrs** |
 
 ## References
 
