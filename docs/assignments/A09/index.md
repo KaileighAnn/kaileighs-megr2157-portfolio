@@ -172,62 +172,15 @@ A 6061-T6 aluminum frame was selected to support the two pulleys and maintain a 
 
 A simplified support member was modeled as a simply supported beam with a 10 lbf center load over a 5-inch span.
 
-**Maximum Bending Moment:**
+<img width="604" height="636" alt="image" src="https://github.com/user-attachments/assets/a1c8d7c9-dcc5-407a-b786-81441842df2f" />
 
-$$
-M=\frac{FL}{4}=\frac{10(5)}{4}
-=12.5\text{ in-lbf}
-$$
-
-**Moment of Inertia:**
-
-$$
-I=\frac{bh^3}{12}
-$$
-
-$$
-I=\frac{1(0.25)^3}{12}
-=0.001302\text{ in}^4
-$$
-
-**Maximum Bending Stress:**
-
-$$
-\sigma=\frac{Mc}{I}
-$$
-
-$$
-\sigma=\frac{12.5(0.125)}{0.001302}
-=1200\text{ psi}
-$$
-
-**Safety Factor:**
-
-Using an assumed aluminum yield strength of 35,000 psi:
-
-$$
-SF=\frac{35000}{1200}=29.17
-$$
-
-**Maximum Deflection:**
-
-$$
-\delta=\frac{FL^3}{48EI}
-$$
-
-$$
-\delta=
-\frac{10(5)^3}
-{48(10\times10^6)(0.001302)}
-$$
-
-$$
-\boxed{\delta=0.0020\text{ in}}
-$$
+**Figure 8.** Handwritten frame analysis calculations showing maximum bending moment, moment of inertia, bending stress, safety factor, and maximum deflection.
 
 The simplified frame member satisfies the minimum safety factor requirement. The complete frame, including its bearing mounts and connections, would require additional verification.
 
-**Figure 4.** Proposed pulley support frame.
+<img width="341" height="173" alt="image" src="https://github.com/user-attachments/assets/36014098-becc-4548-9ec0-ac4454e44a8b" />
+
+**Figure 9.** Proposed pulley support frame.
 
 *Insert a labeled sketch of the frame showing the base, supports, shafts, and 5-inch center distance.*
 
