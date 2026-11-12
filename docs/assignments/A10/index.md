@@ -1,10 +1,5 @@
 # A10 – Lead Screw Translating System
 
-MY PICS ARNT IN YET, THEY ARE JUST PLACEHOLDERS!!
-
-[Assem2.zip](https://github.com/user-attachments/files/34669260/Assem2.zip)
-
-
 ## Parametric Modeling and CAD Assembly – Kaileigh Hill
 
 ### Objective
@@ -26,13 +21,13 @@ Next, I created two circular openings for the lead screws and bronze flange nuts
 | Height | 3.684 in |
 | Lead Screw Opening Diameter | 0.510 in |
 | Lead Screw Center Spacing | 10.00 in |
-| Material | [INSERT FINAL MATERIAL] |
+| Material | A36 Low Carbon Steel |
 
-![Initial Crosshead](INSERT_IMAGE_LINK)
+<img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/dde21ab3-a162-4c19-b113-25595c0aabb6" />
 
 *Figure 1: Initial SolidWorks crosshead model before adding the lead screw openings.*
 
-![Crosshead with Holes](INSERT_IMAGE_LINK)
+<img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/c9d4eb3e-d79a-4626-9064-69ef4d9a6c7d" />
 
 *Figure 2: Completed crosshead model showing the two lead screw openings.*
 
@@ -52,11 +47,11 @@ The components included:
 - [Bronze Flange Nut – McMaster-Carr](https://www.mcmaster.com/95120A592/)
 - [T-Slot Framing – Grainger](https://www.grainger.com/product/80-20-T-Slot-Framing-System-Rectangle-804T48)
 
-![Bronze Flange Nut](INSERT_IMAGE_LINK)
+<img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/67b3ee42-274f-4259-9dd5-ecd0a2453d9f" />
 
 *Figure 3: Manufacturer CAD model of the bronze Acme flange nut.*
 
-![Lead Screw](INSERT_IMAGE_LINK)
+<img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/62e8d474-b98e-4cfc-9dce-502b1d3796c5" />
 
 *Figure 4: Manufacturer CAD model of the 3/8"-12 Acme lead screw.*
 
@@ -72,15 +67,15 @@ Next, I inserted two Acme lead screws and aligned them with their corresponding 
 
 Finally, I incorporated the framing components into the assembly to represent the overall tensile tester structure.
 
-![Crosshead and Nuts](INSERT_IMAGE_LINK)
+<img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/3d28f4ba-af76-4e79-ae5c-d5eaef791a7f" />
 
 *Figure 5: Crosshead assembly showing both bronze flange nuts positioned underneath the crosshead.*
 
-![Lead Screw Assembly](INSERT_IMAGE_LINK)
+<img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/d78998ab-44d5-4194-861c-32d321561d8b" />
 
 *Figure 6: SolidWorks assembly showing the lead screws aligned with the crosshead and bronze flange nuts.*
 
-![Final Assembly](INSERT_IMAGE_LINK)
+<img width="960" height="600" alt="image" src="https://github.com/user-attachments/assets/f0d4743e-ddaa-48bc-950b-b4cef81cd20d" />
 
 *Figure 7: Overall SolidWorks CAD assembly of the tensile tester.*
 
