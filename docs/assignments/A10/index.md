@@ -712,6 +712,7 @@ nuts, framing components, and overall assembly.
 
 <hr>
 
+
 <!-- ============================================ -->
 <!-- KELSEY SKIPPER - BLUE SECTION -->
 <!-- ============================================ -->
@@ -720,57 +721,144 @@ nuts, framing components, and overall assembly.
 
 <h2>10. MEGR 2157 – Finite Element Analysis and Optimization – Kelsey Skipper</h2>
 
-<p><strong>[INSERT KELSEY'S MEGR 2157 DOCUMENTATION HERE]</strong></p>
+<h3>Objective</h3>
 
-<h3>10.1 FEA Model Setup</h3>
+<p>
+The objective of my portion of this group assignment was to perform
+Finite Element Analysis (FEA) on the tensile tester crosshead using
+SolidWorks Simulation. I evaluated the crosshead under a 2,000 N axial
+load to determine its stress, displacement, and factor of safety.
+</p>
 
-<p>[INSERT MODEL SETUP AND MATERIAL PROPERTIES]</p>
+<p>
+The design requirements included a minimum factor of safety of
+<strong>4</strong> and a maximum vertical deflection of
+<strong>0.1 mm</strong>.
+</p>
 
-<h3>10.2 Boundary Conditions and Loading</h3>
+<p>
+I was also responsible for creating a detailed engineering drawing
+of the crosshead with appropriate dimensions, tolerances, and a
+title block.
+</p>
 
-<p>[INSERT BOUNDARY CONDITIONS AND 2 kN LOAD APPLICATION]</p>
+<hr>
 
-<h3>10.3 Mesh Refinement and Convergence</h3>
+<h3>10.1 Analyze – Simulation Setup</h3>
 
-<p>[INSERT MESH REFINEMENT RESULTS AND IMAGES]</p>
+<p>
+I began by importing the team's tensile tester assembly into
+SolidWorks and creating a static simulation study.
+</p>
 
-<h3>10.4 FEA Results</h3>
+<p>
+I applied a <strong>2,000 N downward force</strong> to the
+crosshead and selected the two lead screw/nut mounting regions
+as fixed supports.
+</p>
 
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Initial Design</th>
-<th>Optimized Design</th>
-</tr>
-</thead>
-<tbody>
-<tr><td>Maximum von Mises Stress</td><td>[INSERT]</td><td>[INSERT]</td></tr>
-<tr><td>Maximum Vertical Deflection</td><td>[INSERT]</td><td>[INSERT]</td></tr>
-<tr><td>Minimum Factor of Safety</td><td>[INSERT]</td><td>[INSERT]</td></tr>
-<tr><td>Mass or Volume</td><td>[INSERT]</td><td>[INSERT]</td></tr>
-</tbody>
-</table>
+<img width="960" style="max-width:100%; height:auto;"
+alt="SolidWorks FEA Simulation Setup"
+src="https://github.com/user-attachments/assets/a7412365-4644-4086-9fd5-d6fc9a4bafea">
 
-<h3>10.5 Design Optimization</h3>
+<p><em>Figure 15: SolidWorks Simulation setup showing the tensile tester crosshead.</em></p>
 
-<p>[INSERT OPTIMIZATION RESULTS AND DISCUSSION]</p>
+<img width="960" style="max-width:100%; height:auto;"
+alt="FEA Boundary Conditions"
+src="https://github.com/user-attachments/assets/ef69c8be-1cc0-41e1-97b5-62ab791b058d">
+
+<p><em>Figure 16: Applied loading and fixed support locations used for the static analysis.</em></p>
+
+<h3>10.2 Material Properties and Meshing</h3>
+
+<p>
+I assigned the selected material properties and generated
+a solid mesh to evaluate the crosshead's structural behavior.
+</p>
+
+<p>
+The mesh divides the crosshead into smaller elements,
+allowing SolidWorks Simulation to approximate the
+distribution of stress and displacement throughout
+the component.
+</p>
+
+<img width="607" style="max-width:100%; height:auto;"
+alt="SolidWorks FEA Mesh"
+src="https://github.com/user-attachments/assets/2daa7e67-f124-4f4f-8052-2feded689d84">
+
+<p><em>Figure 17: Solid mesh generated for the tensile tester crosshead.</em></p>
+
+<h3>10.3 FEA Results</h3>
+
+<p>
+I evaluated the maximum von Mises stress, vertical
+displacement, and factor of safety to determine whether
+the crosshead satisfied the project requirements.
+</p>
+
+<p>
+I also refined the mesh to check the consistency
+of the simulation results.
+</p>
+
+<img width="960" style="max-width:100%; height:auto;"
+alt="SolidWorks FEA Results"
+src="https://github.com/user-attachments/assets/a5b6921c-4a2a-4504-be27-3a66ee103463">
+
+<p><em>Figure 18: SolidWorks Simulation results for the tensile tester crosshead.</em></p>
+
+<img width="960" style="max-width:100%; height:auto;"
+alt="Additional FEA Results"
+src="https://github.com/user-attachments/assets/ae881999-23fa-4953-ad09-853eed2b4715">
+
+<p><em>Figure 19: Additional FEA results used to evaluate crosshead performance.</em></p>
+
+<h3>10.4 Decide – Design Evaluation</h3>
+
+<p>
+Based on the FEA results, I concluded that the selected
+crosshead design did not provide sufficient structural
+performance under the applied 2 kN load.
+</p>
+
+<p>
+The simulation demonstrated the importance of evaluating
+both material properties and component geometry when
+designing a structural member subjected to tensile loading.
+</p>
+
+<p>
+Further design modifications or material changes would
+need to be evaluated to satisfy the required factor
+of safety and deflection limits.
+</p>
 
 <hr>
 
 <h2>11. MEGR 2157 – Detailed Engineering Drawing – Kelsey Skipper</h2>
 
+<h3>11.1 Communicate – Engineering Drawing</h3>
+
 <p>
-The detailed engineering drawing will include the crosshead
-geometry, third-angle projection views, dimensions, tolerances,
-and mounting interfaces.
+I documented the simulation setup, boundary conditions,
+and FEA results using screenshots from SolidWorks.
 </p>
 
-<h3>Required General Tolerances</h3>
+<p>
+I also created a multiview engineering drawing of
+the crosshead with dimensions, tolerances, and a
+title block following ASME Y14.5 standards.
+</p>
+
+<h3>General Tolerance Requirements</h3>
 
 <table>
 <thead>
-<tr><th>Decimal Precision</th><th>Tolerance</th></tr>
+<tr>
+<th>Decimal Precision</th>
+<th>Tolerance</th>
+</tr>
 </thead>
 <tbody>
 <tr><td>X.X</td><td>±0.02 in</td></tr>
@@ -779,112 +867,41 @@ and mounting interfaces.
 </tbody>
 </table>
 
-<p><strong>[INSERT ENGINEERING DRAWING IMAGE]</strong></p>
+<img width="823" style="max-width:100%; height:auto;"
+alt="Crosshead Engineering Drawing"
+src="https://github.com/user-attachments/assets/75371664-f118-46c5-852b-8c5e30228bd8">
 
-</div>
-
-<hr>
-
-<h2>12. Project Time and Resources</h2>
-
-<p>
-The project involved engineering calculations, component
-research, CAD modeling, assembly development, analysis,
-and documentation.
-</p>
-
-<table>
-<thead>
-<tr><th>Task</th><th>Time</th></tr>
-</thead>
-<tbody>
-<tr><td>Research and Component Selection</td><td>[INSERT]</td></tr>
-<tr><td>Lead Screw and Nut Calculations</td><td>[INSERT]</td></tr>
-<tr><td>Crosshead Strength and Deflection Calculations</td><td>[INSERT]</td></tr>
-<tr><td>Preliminary Engineering Sketch</td><td>[INSERT]</td></tr>
-<tr><td>SolidWorks Crosshead Modeling</td><td>[INSERT]</td></tr>
-<tr><td>SolidWorks Assembly</td><td>[INSERT]</td></tr>
-<tr><td>FEA and Optimization</td><td>[INSERT]</td></tr>
-<tr><td>Engineering Drawing</td><td>[INSERT]</td></tr>
-<tr><td>Documentation</td><td>[INSERT]</td></tr>
-<tr>
-<td><strong>Total Project Time</strong></td>
-<td><strong>[INSERT]</strong></td>
-</tr>
-</tbody>
-</table>
-
-<h3>Resources Used</h3>
-
-<ul>
-<li>SolidWorks CAD</li>
-<li>McMaster-Carr</li>
-<li>Grainger</li>
-<li>Machinery's Handbook</li>
-<li>Engineering Mechanics course materials</li>
-<li>MEGR 2156 and MEGR 2157 lecture materials</li>
-</ul>
+<p><em>Figure 20: Detailed SolidWorks engineering drawing of the tensile tester crosshead.</em></p>
 
 <hr>
 
-<h2>13. Challenges and Lessons Learned</h2>
-
-<div style="background-color: #DDF3E4; color: #243B2B; padding: 20px; border-radius: 10px; margin: 20px 0;">
-
-<h3>Gracie Steelmon</h3>
-
-<p><strong>[INSERT GRACIE'S SPECIFIC CHALLENGES AND LESSONS LEARNED]</strong></p>
-
-</div>
-
-<div style="background-color: #FCE3E3; color: #4A2424; padding: 20px; border-radius: 10px; margin: 20px 0;">
-
-<h3>Kaileigh Hill</h3>
+<h3>11.2 Lessons Learned – Kelsey Skipper</h3>
 
 <p>
-Through this project, I gained experience developing a mechanical
-assembly from engineering calculations and commercially available
-components.
+Through this assignment, I learned how to apply axial
+loading and boundary conditions in SolidWorks Simulation
+to evaluate the structural behavior of a mechanical
+component.
 </p>
 
 <p>
-One important lesson was understanding how individual component
-dimensions affect the overall assembly. The crosshead openings,
-lead screw spacing, and flange nut positioning all needed to be
-consistent for the components to align correctly.
+I also gained experience interpreting stress and
+displacement results and understanding how changes
+in geometry can affect the performance of a design.
+</p>
+
+<h3>11.3 Time Spent</h3>
+
+<p>
+The total time spent on my portion of the assignment
+was approximately <strong>3 hours</strong>.
 </p>
 
 <p>
-I also gained experience using SolidWorks assembly mates to
-position mechanical components and represent their intended
-relationships.
-</p>
-
-<p>
-Using manufacturer CAD files demonstrated how existing mechanical
-components can be incorporated into a custom engineering design
-while reducing unnecessary modeling work.
+Because I had not previously used SolidWorks,
+additional time was spent becoming familiar with
+the simulation tools and engineering drawing features.
 </p>
 
 </div>
 
-<div style="background-color: #E8F1FA; color: #243B53; padding: 20px; border-radius: 10px; margin: 20px 0;">
-
-<h3>Kelsey Skipper</h3>
-
-<p><strong>[INSERT KELSEY'S SPECIFIC CHALLENGES AND LESSONS LEARNED]</strong></p>
-
-</div>
-
-<hr>
-
-<h2>14. References</h2>
-
-<ol>
-<li>Machinery's Handbook, 31st Edition, Simple Mechanisms – Screws.</li>
-<li>Machinery's Handbook, 31st Edition, Ball and Acme Lead Screws.</li>
-<li>Engineering Mechanics, Chapter 6/5 – Screws.</li>
-<li><a href="https://www.mcmaster.com/99030A993/">McMaster-Carr – Lead Screw</a></li>
-<li><a href="https://www.mcmaster.com/95120A592/">McMaster-Carr – Bronze Flange Nut</a></li>
-<li><a href="https://www.grainger.com/product/80-20-T-Slot-Framing-System-Rectangle-804T48">Grainger – T-Slot Framing</a></li>
-</ol>
