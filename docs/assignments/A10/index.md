@@ -450,7 +450,7 @@ The purpose of the sketch was to establish the initial geometry
 before creating the SolidWorks model.
 </p>
 
-<img src="multiviewsketch.jpg" width="900" style="max-width:100%; height:auto;" alt="Crosshead Multiview Sketch">
+<img width="1796" height="2364" alt="image" src="https://github.com/user-attachments/assets/f49ef004-394b-4722-bd9e-192b35f878ea" />
 
 <p><em>Figure 7: Preliminary multiview engineering sketch of the crosshead.</em></p>
 
