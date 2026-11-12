@@ -96,9 +96,9 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 ## Group Members
 
-- <span style="background-color: #DDF3E4; padding: 3px 8px; border-radius: 5px;"><strong>Gracie Steelmon</strong></span>
-- <span style="background-color: #FCE3E3; padding: 3px 8px; border-radius: 5px;"><strong>Kaileigh Hill</strong></span>
-- <span style="background-color: #E8F1FA; padding: 3px 8px; border-radius: 5px;"><strong>Kelsey Skipper</strong></span>
+- **Gracie Steelmon**
+- **Kaileigh Hill**
+- **Kelsey Skipper**
 
 ---
 
@@ -127,9 +127,9 @@ Additional work for MEGR 2157 includes finite element analysis (FEA), design opt
 
 ---
 
-## 1. Lead Screw Diameter Analysis
+<div style="background-color: #DDF3E4; color: #243B2B; padding: 20px; border-radius: 10px;" markdown="1">
 
-<span style="background-color: #DDF3E4; padding: 3px 8px; border-radius: 5px;"><strong>Gracie Steelmon</strong></span>
+## 1. Lead Screw Diameter Analysis – Gracie Steelmon
 
 ### Minimum Lead Screw Diameter
 
@@ -147,9 +147,7 @@ The analysis included identifying known and unknown variables, developing a free
 
 ---
 
-## 2. Lead Screw Rotational Speed
-
-<span style="background-color: #DDF3E4; padding: 3px 8px; border-radius: 5px;"><strong>Gracie Steelmon</strong></span>
+## 2. Lead Screw Rotational Speed – Gracie Steelmon
 
 The required rotational speed range was determined using the specified crosshead translation speed of 1–50 mm/min.
 
@@ -163,9 +161,7 @@ The calculations establish the rotational speeds necessary to achieve the requir
 
 ---
 
-## 3. Lead Screw Torque and Selection
-
-<span style="background-color: #DDF3E4; padding: 3px 8px; border-radius: 5px;"><strong>Gracie Steelmon</strong></span>
+## 3. Lead Screw Torque and Selection – Gracie Steelmon
 
 ### Maximum Torque Analysis
 
@@ -199,9 +195,7 @@ The longer screw provides additional material for cutting to the required assemb
 
 ---
 
-## 4. Bronze Nut and Flange Selection
-
-<span style="background-color: #DDF3E4; padding: 3px 8px; border-radius: 5px;"><strong>Gracie Steelmon</strong></span>
+## 4. Bronze Nut and Flange Selection – Gracie Steelmon
 
 The bronze flange nuts were selected to support the axial loading transmitted through the lead screws.
 
@@ -225,9 +219,7 @@ The analysis included a free-body diagram, symbolic equations, and numerical cal
 
 ---
 
-## 5. Crosshead Stress and Strength Analysis
-
-<span style="background-color: #DDF3E4; padding: 3px 8px; border-radius: 5px;"><strong>Gracie Steelmon</strong></span>
+## 5. Crosshead Stress and Strength Analysis – Gracie Steelmon
 
 The crosshead was designed to transfer the tensile testing load between the two lead screws while maintaining structural integrity.
 
@@ -241,9 +233,7 @@ The analysis considered the applied loading, support locations, bending stress, 
 
 ---
 
-## 6. Crosshead Beam Deflection Analysis
-
-<span style="background-color: #DDF3E4; padding: 3px 8px; border-radius: 5px;"><strong>Gracie Steelmon</strong></span>
+## 6. Crosshead Beam Deflection Analysis – Gracie Steelmon
 
 The crosshead was evaluated for vertical deflection under the applied 2 kN tensile load.
 
@@ -257,9 +247,7 @@ Beam deflection equations were used to evaluate the relationship between materia
 
 ---
 
-## 7. Crosshead Multiview Sketch
-
-<span style="background-color: #DDF3E4; padding: 3px 8px; border-radius: 5px;"><strong>Gracie Steelmon</strong></span>
+## 7. Crosshead Multiview Sketch – Gracie Steelmon
 
 A preliminary multiview sketch was created to communicate the proposed crosshead geometry.
 
@@ -269,13 +257,13 @@ The sketch includes the overall dimensions, lead screw locations, and mounting f
 
 *Figure 7: Preliminary multiview engineering sketch of the crosshead.*
 
+</div>
+
 ---
 
 ## 8. Material Cost Analysis
 
 The cost of the commercially available mechanical components was estimated using supplier pricing.
-
-The following table includes the selected components, quantities, individual prices, and total estimated costs.
 
 | Item | Quantity | Component | Cost per Item | Total Cost | Purchase Link |
 |---|---|---|---|---|---|
@@ -288,13 +276,13 @@ The total estimated purchased component cost was **$540.07**, excluding custom-f
 
 ---
 
-## 9. Parametric Modeling and CAD Assembly
+<div style="background-color: #FCE3E3; color: #4A2424; padding: 20px; border-radius: 10px;" markdown="1">
 
-<span style="background-color: #FCE3E3; padding: 3px 8px; border-radius: 5px;"><strong>Kaileigh Hill</strong></span>
+## 9. Parametric Modeling and CAD Assembly – Kaileigh Hill
 
 ### Objective
 
-The objective of this portion of the project was to create a 3D CAD model of the tensile tester using SolidWorks.
+The objective of my portion of this project was to create a 3D CAD model of the tensile tester using SolidWorks.
 
 I modeled the crosshead and assembled the selected lead screws, bronze flange nuts, and framing components.
 
@@ -391,11 +379,13 @@ The SolidWorks CAD files for this project are available in the downloadable ZIP 
 
 The folder includes the crosshead, lead screws, bronze flange nuts, framing components, and overall assembly.
 
+</div>
+
 ---
 
-## 10. MEGR 2157 – Finite Element Analysis and Optimization
+<div style="background-color: #E8F1FA; color: #243B53; padding: 20px; border-radius: 10px;" markdown="1">
 
-<span style="background-color: #E8F1FA; padding: 3px 8px; border-radius: 5px;"><strong>Kelsey Skipper</strong></span>
+## 10. MEGR 2157 – Finite Element Analysis and Optimization – Kelsey Skipper
 
 **[INSERT KELSEY'S MEGR 2157 DOCUMENTATION HERE]**
 
@@ -412,9 +402,7 @@ This section will include:
 
 ---
 
-## 11. MEGR 2157 – Detailed Engineering Drawing
-
-<span style="background-color: #E8F1FA; padding: 3px 8px; border-radius: 5px;"><strong>Kelsey Skipper</strong></span>
+## 11. MEGR 2157 – Detailed Engineering Drawing – Kelsey Skipper
 
 **[INSERT ENGINEERING DRAWING DOCUMENTATION HERE]**
 
@@ -427,6 +415,8 @@ The required general tolerances are:
 | X.X | ±0.02 in |
 | X.XX | ±0.01 in |
 | X.XXX | ±0.005 in |
+
+</div>
 
 ---
 
@@ -460,15 +450,17 @@ The project involved engineering calculations, component research, CAD modeling,
 
 ## 13. Challenges and Lessons Learned
 
-### Gracie Steelmon
+<div style="background-color: #DDF3E4; color: #243B2B; padding: 20px; border-radius: 10px;" markdown="1">
 
-<span style="background-color: #DDF3E4; padding: 3px 8px; border-radius: 5px;"><strong>Gracie Steelmon</strong></span>
+### Gracie Steelmon
 
 **[INSERT GRACIE'S SPECIFIC CHALLENGES AND LESSONS LEARNED]**
 
-### Kaileigh Hill
+</div>
 
-<span style="background-color: #FCE3E3; padding: 3px 8px; border-radius: 5px;"><strong>Kaileigh Hill</strong></span>
+<div style="background-color: #FCE3E3; color: #4A2424; padding: 20px; border-radius: 10px;" markdown="1">
+
+### Kaileigh Hill
 
 Through this project, I gained experience developing a mechanical assembly from engineering calculations and commercially available components.
 
@@ -478,11 +470,15 @@ I also gained experience using SolidWorks assembly mates to position mechanical 
 
 Using manufacturer CAD files demonstrated how existing mechanical components can be incorporated into a custom engineering design while reducing unnecessary modeling work.
 
+</div>
+
+<div style="background-color: #E8F1FA; color: #243B53; padding: 20px; border-radius: 10px;" markdown="1">
+
 ### Kelsey Skipper
 
-<span style="background-color: #E8F1FA; padding: 3px 8px; border-radius: 5px;"><strong>Kelsey Skipper</strong></span>
-
 **[INSERT KELSEY'S SPECIFIC CHALLENGES AND LESSONS LEARNED]**
+
+</div>
 
 ---
 
@@ -494,4 +490,3 @@ Using manufacturer CAD files demonstrated how existing mechanical components can
 4. [McMaster-Carr – Lead Screw](https://www.mcmaster.com/99030A993/)
 5. [McMaster-Carr – Bronze Flange Nut](https://www.mcmaster.com/95120A592/)
 6. [Grainger – T-Slot Framing](https://www.grainger.com/product/80-20-T-Slot-Framing-System-Rectangle-804T48)
-
