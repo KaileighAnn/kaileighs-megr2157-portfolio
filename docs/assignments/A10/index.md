@@ -343,7 +343,7 @@ developing a free-body diagram, solving the governing equations
 symbolically, and calculating the thread bending stress numerically.
 </p>
 
-<img src="selectingnut.jpg" width="900" style="max-width:100%; height:auto;" alt="Bronze Nut Selection">
+<img width="1800" height="2408" alt="image" src="https://github.com/user-attachments/assets/b9c1b330-5509-4edb-b046-5df9507ad84a" />
 
 <p><em>Figure 4: Internal thread analysis used to evaluate the bronze flange nut.</em></p>
 
@@ -395,7 +395,7 @@ loading from the tensile specimen and supported at the lead
 screw locations.
 </p>
 
-<img src="designcrosshead.jpg" width="900" style="max-width:100%; height:auto;" alt="Crosshead Strength Analysis">
+<img width="1820" height="2356" alt="image" src="https://github.com/user-attachments/assets/34af6662-71ff-4374-9932-6b10a0f673f6" />
 
 <p><em>Figure 5: Beam stress and strength analysis for the tensile tester crosshead.</em></p>
 
@@ -425,7 +425,7 @@ The analysis helped establish the crosshead dimensions necessary
 to limit bending during tensile testing.
 </p>
 
-<img src="beamdeflectionanalysis.jpg" width="900" style="max-width:100%; height:auto;" alt="Beam Deflection Analysis">
+<img width="1836" height="2408" alt="image" src="https://github.com/user-attachments/assets/f723f418-93d1-4be7-bb61-61c2c73579ab" />
 
 <p><em>Figure 6: Beam deflection calculations used to evaluate crosshead stiffness.</em></p>
 
