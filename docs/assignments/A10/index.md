@@ -91,14 +91,13 @@ The folder includes the crosshead, lead screws, bronze flange nuts, framing comp
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 
-
 # A10 – Lead Screw Translating System Design
 
 ## Group Members
 
-- **Gracie Steelmon**
-- **Kaileigh Hill**
-- **Kelsey Skipper**
+- **Gracie Steelmon** – Lead Screw and Crosshead Calculations
+- **Kaileigh Hill** – Parametric Modeling and CAD Assembly
+- **Kelsey Skipper** – MEGR 2157 Analysis and Documentation
 
 ---
 
@@ -106,7 +105,9 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 The objective of this project was to conceptually design a mechanically driven tensile testing system capable of applying a controlled axial tensile load of up to **2 kN** to a material specimen.
 
-The system uses two lead screws to translate a crosshead vertically, allowing materials to be tested under controlled loading conditions. The design emphasizes structural strength, minimal deflection, proper component alignment, and safe mechanical operation.
+A tensile tester is used to evaluate the mechanical properties of materials by applying a controlled pulling force and measuring the resulting deformation. This allows engineers to determine material properties such as yield strength, ultimate tensile strength, and elongation at failure.
+
+Our proposed design uses two Acme lead screws to translate a crosshead vertically, allowing a tensile force to be applied to the specimen. The system was designed to emphasize structural strength, controlled movement, proper component alignment, and minimal crosshead deflection.
 
 ### Design Requirements
 
@@ -121,25 +122,41 @@ The system uses two lead screws to translate a crosshead vertically, allowing ma
 | Operating System | Fully Mechanical |
 | Configuration | Bench-Top Tensile Tester |
 
-The project involved determining the minimum lead screw diameter, calculating rotational speed and torque requirements, selecting bronze flange nuts, analyzing crosshead strength and deflection, and creating a SolidWorks CAD assembly.
+### Project Scope
 
-Additional work for MEGR 2157 includes finite element analysis (FEA), design optimization, and a fully dimensioned engineering drawing following ASME Y14.5 standards.
+The project involved:
+
+1. Determining the minimum lead screw diameter using axial stress analysis.
+2. Calculating the required lead screw rotational speed range.
+3. Determining the torque required to produce the specified tensile load.
+4. Selecting appropriate Acme lead screws and bronze flange nuts.
+5. Analyzing crosshead strength and deflection.
+6. Developing a preliminary multiview crosshead sketch.
+7. Tabulating the costs of commercially available components.
+8. Creating a SolidWorks model and assembly of the proposed tensile tester.
+9. Performing additional FEA and engineering drawing work for MEGR 2157.
+
+The overall goal was to develop a mechanically feasible tensile tester design that could provide consistent loading while maintaining structural integrity and alignment.
 
 ---
 
-<div style="background-color: #DDF3E4; color: #243B2B; padding: 20px; border-radius: 10px;" markdown="1">
+<div style="background-color: #DDF3E4; color: #243B2B; padding: 20px; border-radius: 10px;" markdown="block">
 
 ## 1. Lead Screw Diameter Analysis – Gracie Steelmon
 
-### Minimum Lead Screw Diameter
+### 1.1 Minimum Lead Screw Diameter
 
 The minimum diameter of the lead screws was determined using axial stress analysis.
 
 Because the tensile tester uses two identical lead screws, the applied 2 kN tensile load was assumed to be distributed equally between them.
 
-A safety factor of 4 was applied to determine the minimum acceptable diameter.
+The force supported by each lead screw was therefore:
 
-The analysis included identifying known and unknown variables, developing a free-body diagram, solving the governing equations symbolically, and calculating the minimum diameter numerically.
+**Force per Lead Screw = 1,000 N**
+
+A safety factor of 4 was applied when determining the minimum acceptable screw diameter.
+
+The analysis included identifying the known and unknown variables, developing a free-body diagram, solving the governing equations symbolically, and calculating the required diameter numerically.
 
 ![Lead Screw Diameter Calculations](leadscrewdiameter.jpg)
 
@@ -149,11 +166,23 @@ The analysis included identifying known and unknown variables, developing a free
 
 ## 2. Lead Screw Rotational Speed – Gracie Steelmon
 
+### 2.1 Rotational Speed Range
+
 The required rotational speed range was determined using the specified crosshead translation speed of 1–50 mm/min.
 
 The relationship between linear translation and rotational speed depends on the lead of the selected screw.
 
-The calculations establish the rotational speeds necessary to achieve the required crosshead movement.
+For a lead screw, the linear translation per revolution is equal to the screw lead.
+
+The governing relationship is:
+
+**Linear Speed = Rotational Speed × Screw Lead**
+
+Rearranging:
+
+**Rotational Speed = Linear Speed / Screw Lead**
+
+The calculations were used to determine the rotational speeds necessary to achieve the required crosshead movement.
 
 ![Rotational Speed Calculations](rangerotationalspeed.jpg)
 
@@ -163,17 +192,21 @@ The calculations establish the rotational speeds necessary to achieve the requir
 
 ## 3. Lead Screw Torque and Selection – Gracie Steelmon
 
-### Maximum Torque Analysis
+### 3.1 Maximum Torque Analysis
 
 The maximum torque required to produce the specified 2 kN tensile load was determined using lead screw mechanics.
 
-This analysis considered the mechanical relationship between rotational input torque and the resulting axial force.
+This analysis considered the relationship between rotational input torque and the resulting axial force.
+
+The torque requirement is influenced by the applied load, screw geometry, thread friction, and lead angle.
+
+The calculations were used to evaluate the torque required to operate the proposed system.
 
 ![Lead Screw Selection Calculations](selectingleadscrew.jpg)
 
 *Figure 3: Torque analysis used to evaluate and select the lead screws.*
 
-### Final Lead Screw Selection
+### 3.2 Final Lead Screw Selection
 
 The selected component was a **right-hand, 3/8"-12 Acme lead screw**, specified as 1018 carbon steel in the original selection notes.
 
@@ -183,37 +216,44 @@ The longer screw provides additional material for cutting to the required assemb
 
 **Selected Component:**
 
-- Thread Type: Acme
-- Thread Size: 3/8"-12
-- Thread Direction: Right-Hand
-- Purchased Length: 3 ft
-- Quantity: 2
+| Feature | Specification |
+|---|---|
+| Thread Type | Acme |
+| Thread Size | 3/8"-12 |
+| Thread Direction | Right-Hand |
+| Material | Carbon Steel – Grade to Verify |
+| Purchased Length | 3 ft |
+| Quantity | 2 |
 
 [McMaster-Carr Lead Screw](https://www.mcmaster.com/99030A993/)
 
-**Note:** Confirm the steel grade against the purchased component listing before final submission, since the original cost table identifies a different grade.
+**Material Verification:** The original selection notes specify 1018 carbon steel, while the initial cost table lists 1080 carbon steel. The material grade should be confirmed using the selected supplier part number.
 
 ---
 
 ## 4. Bronze Nut and Flange Selection – Gracie Steelmon
 
+### 4.1 Internal Thread Analysis
+
 The bronze flange nuts were selected to support the axial loading transmitted through the lead screws.
 
 Thread bending stress analysis was performed to evaluate whether the internal threads could withstand the applied load while satisfying the required safety factor.
 
-The analysis included a free-body diagram, symbolic equations, and numerical calculations.
+The analysis included identifying the known and unknown variables, developing a free-body diagram, solving the governing equations symbolically, and calculating the thread bending stress numerically.
 
 ![Bronze Nut Selection](selectingnut.jpg)
 
 *Figure 4: Internal thread analysis used to evaluate the bronze flange nut.*
 
-### Selected Component
+### 4.2 Selected Component
 
-- Component: Acme Bronze Flange Nut
-- Thread Size: 3/8"-12
-- Thread Direction: Right-Hand
-- Material: Bearing Bronze
-- Quantity: 2
+| Feature | Specification |
+|---|---|
+| Component | Acme Bronze Flange Nut |
+| Thread Size | 3/8"-12 |
+| Thread Direction | Right-Hand |
+| Material | Bearing Bronze |
+| Quantity | 2 |
 
 [McMaster-Carr Bronze Flange Nut](https://www.mcmaster.com/95120A592/)
 
@@ -221,11 +261,15 @@ The analysis included a free-body diagram, symbolic equations, and numerical cal
 
 ## 5. Crosshead Stress and Strength Analysis – Gracie Steelmon
 
+### 5.1 Beam Strength Analysis
+
 The crosshead was designed to transfer the tensile testing load between the two lead screws while maintaining structural integrity.
 
 Simple beam stress and strength calculations were used to evaluate the required crosshead dimensions and material.
 
 The analysis considered the applied loading, support locations, bending stress, and required safety factor.
+
+The crosshead was treated as a structural member subjected to loading from the tensile specimen and supported at the lead screw locations.
 
 ![Crosshead Strength Analysis](designcrosshead.jpg)
 
@@ -235,11 +279,15 @@ The analysis considered the applied loading, support locations, bending stress, 
 
 ## 6. Crosshead Beam Deflection Analysis – Gracie Steelmon
 
+### 6.1 Deflection Requirements
+
 The crosshead was evaluated for vertical deflection under the applied 2 kN tensile load.
 
 The maximum allowable deflection was specified as **0.1 mm**.
 
-Beam deflection equations were used to evaluate the relationship between material stiffness, crosshead geometry, and the applied loading.
+Beam deflection equations were used to evaluate the relationship between material stiffness, crosshead geometry, and applied loading.
+
+The analysis helped establish the crosshead dimensions necessary to limit bending during tensile testing.
 
 ![Beam Deflection Analysis](beamdeflectionanalysis.jpg)
 
@@ -249,9 +297,13 @@ Beam deflection equations were used to evaluate the relationship between materia
 
 ## 7. Crosshead Multiview Sketch – Gracie Steelmon
 
+### 7.1 Preliminary Crosshead Design
+
 A preliminary multiview sketch was created to communicate the proposed crosshead geometry.
 
 The sketch includes the overall dimensions, lead screw locations, and mounting features required for the bronze flange nuts.
+
+The purpose of the sketch was to establish the initial geometry before creating the SolidWorks model.
 
 ![Crosshead Multiview Sketch](multiviewsketch.jpg)
 
@@ -265,6 +317,8 @@ The sketch includes the overall dimensions, lead screw locations, and mounting f
 
 The cost of the commercially available mechanical components was estimated using supplier pricing.
 
+The following table includes the selected components, quantities, individual prices, and total estimated costs.
+
 | Item | Quantity | Component | Cost per Item | Total Cost | Purchase Link |
 |---|---|---|---|---|---|
 | 1 | 2 | Carbon Steel Acme Lead Screw, RH, 3/8"-12, 3 ft | $35.32 | $70.64 | [McMaster-Carr](https://www.mcmaster.com/99030A993/) |
@@ -276,7 +330,7 @@ The total estimated purchased component cost was **$540.07**, excluding custom-f
 
 ---
 
-<div style="background-color: #FCE3E3; color: #4A2424; padding: 20px; border-radius: 10px;" markdown="1">
+<div style="background-color: #FCE3E3; color: #4A2424; padding: 20px; border-radius: 10px;" markdown="block">
 
 ## 9. Parametric Modeling and CAD Assembly – Kaileigh Hill
 
@@ -325,7 +379,7 @@ Using existing CAD files allowed me to incorporate accurate component geometry w
 
 The components included:
 
-- Two 3/8"-12 Acme lead screws made from 1018 carbon steel.
+- Two 3/8"-12 Acme lead screws made from 1018 carbon steel, as specified in the original selection notes.
 - Two 3/8"-12 Acme flange nuts made from 932 bearing bronze.
 - T-slot framing components obtained from Grainger.
 
@@ -383,38 +437,54 @@ The folder includes the crosshead, lead screws, bronze flange nuts, framing comp
 
 ---
 
-<div style="background-color: #E8F1FA; color: #243B53; padding: 20px; border-radius: 10px;" markdown="1">
+<div style="background-color: #E8F1FA; color: #243B53; padding: 20px; border-radius: 10px;" markdown="block">
 
 ## 10. MEGR 2157 – Finite Element Analysis and Optimization – Kelsey Skipper
 
 **[INSERT KELSEY'S MEGR 2157 DOCUMENTATION HERE]**
 
-This section will include:
+### 10.1 FEA Model Setup
 
-- FEA model setup and boundary conditions
-- Applied 2 kN tensile load
-- Mesh refinement and convergence
-- Maximum von Mises stress
-- Maximum vertical deflection
-- Factor of safety
-- Crosshead geometry optimization
-- Before-and-after analysis
+[INSERT]
+
+### 10.2 Boundary Conditions and Loading
+
+[INSERT]
+
+### 10.3 Mesh Refinement and Convergence
+
+[INSERT]
+
+### 10.4 FEA Results
+
+| Parameter | Initial Design | Optimized Design |
+|---|---|---|
+| Maximum von Mises Stress | [INSERT] | [INSERT] |
+| Maximum Vertical Deflection | [INSERT] | [INSERT] |
+| Minimum Factor of Safety | [INSERT] | [INSERT] |
+| Mass or Volume | [INSERT] | [INSERT] |
+
+### 10.5 Design Optimization
+
+[INSERT]
 
 ---
 
 ## 11. MEGR 2157 – Detailed Engineering Drawing – Kelsey Skipper
 
-**[INSERT ENGINEERING DRAWING DOCUMENTATION HERE]**
+**[INSERT KELSEY'S ENGINEERING DRAWING DOCUMENTATION HERE]**
 
 The detailed engineering drawing will include the crosshead geometry, third-angle projection views, dimensions, tolerances, and mounting interfaces.
 
-The required general tolerances are:
+### Required General Tolerances
 
 | Decimal Precision | Tolerance |
 |---|---|
 | X.X | ±0.02 in |
 | X.XX | ±0.01 in |
 | X.XXX | ±0.005 in |
+
+[INSERT ENGINEERING DRAWING IMAGE]
 
 </div>
 
@@ -450,7 +520,7 @@ The project involved engineering calculations, component research, CAD modeling,
 
 ## 13. Challenges and Lessons Learned
 
-<div style="background-color: #DDF3E4; color: #243B2B; padding: 20px; border-radius: 10px;" markdown="1">
+<div style="background-color: #DDF3E4; color: #243B2B; padding: 20px; border-radius: 10px;" markdown="block">
 
 ### Gracie Steelmon
 
@@ -458,7 +528,7 @@ The project involved engineering calculations, component research, CAD modeling,
 
 </div>
 
-<div style="background-color: #FCE3E3; color: #4A2424; padding: 20px; border-radius: 10px;" markdown="1">
+<div style="background-color: #FCE3E3; color: #4A2424; padding: 20px; border-radius: 10px;" markdown="block">
 
 ### Kaileigh Hill
 
@@ -472,7 +542,7 @@ Using manufacturer CAD files demonstrated how existing mechanical components can
 
 </div>
 
-<div style="background-color: #E8F1FA; color: #243B53; padding: 20px; border-radius: 10px;" markdown="1">
+<div style="background-color: #E8F1FA; color: #243B53; padding: 20px; border-radius: 10px;" markdown="block">
 
 ### Kelsey Skipper
 
