@@ -481,9 +481,11 @@ mates and manufacturer CAD files to assemble a mechanical system.
 <div style="background-color: #E8F1FA; color: #243B53; padding: 20px; border-radius: 10px; margin: 20px 0;">
 
 <p>
-This project provided experience with SolidWorks Simulation,
-including applying loads and supports, interpreting FEA results,
-and creating an engineering drawing.
+Through this assignment, I learned how to apply axial loading and boundary conditions
+in SolidWorks Simulation to evaluate the structural behavior of a mechanical
+component. I also gained experience interpreting stress and displacement results and
+understanding how changes in geometry can affect the performance of a design. I also
+learned that I should keep using Fusion.
 </p>
 
 </div>
