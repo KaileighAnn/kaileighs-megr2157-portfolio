@@ -206,7 +206,7 @@ developing a free-body diagram, solving the governing equations
 symbolically, and calculating the required diameter numerically.
 </p>
 
-<img src="leadscrewdiameter.jpg" width="900" style="max-width:100%; height:auto;" alt="Lead Screw Diameter Calculations">
+<img width="1904" height="2540" alt="image" src="https://github.com/user-attachments/assets/0bc8769c-7e0f-414c-87d1-cb67aca92aaa" />
 
 <p><em>Figure 1: Axial stress analysis used to determine the minimum lead screw diameter.</em></p>
 
@@ -242,7 +242,7 @@ The calculations were used to determine the rotational speeds
 necessary to achieve the required crosshead movement.
 </p>
 
-<img src="rangerotationalspeed.jpg" width="900" style="max-width:100%; height:auto;" alt="Rotational Speed Calculations">
+<img width="1844" height="2364" alt="image" src="https://github.com/user-attachments/assets/5793dd42-ea1c-4d6d-a522-5dc81a2d18b7" />
 
 <p><em>Figure 2: Calculations determining the required lead screw rotational speed range.</em></p>
 
@@ -272,7 +272,7 @@ The calculations were used to evaluate the torque required to
 operate the proposed system.
 </p>
 
-<img src="selectingleadscrew.jpg" width="900" style="max-width:100%; height:auto;" alt="Lead Screw Torque Calculations">
+<img width="1820" height="2368" alt="image" src="https://github.com/user-attachments/assets/9f676d49-c27e-41a1-a888-4aa0584f988e" />
 
 <p><em>Figure 3: Torque analysis used to evaluate and select the lead screws.</em></p>
 
