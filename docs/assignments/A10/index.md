@@ -1,3 +1,28 @@
+<div style="background-color: #DDF3E4; padding: 20px; border-radius: 10px; color: #243B2B;">
+
+<h2>1. Lead Screw Diameter Analysis – Gracie Steelmon</h2>
+
+<h3>Minimum Lead Screw Diameter</h3>
+
+<p>
+The minimum diameter of the lead screws was determined using
+axial stress analysis.
+</p>
+
+<p>
+Because the tensile tester uses two identical lead screws,
+the applied <strong>2 kN tensile load</strong> was distributed
+equally between them.
+</p>
+
+<img src="leadscrewdiameter.jpg" width="800"
+alt="Lead Screw Diameter Calculations">
+
+<p><em>Figure 1: Axial stress analysis used to determine
+the minimum lead screw diameter.</em></p>
+
+</div>
+
 # A10 – Lead Screw Translating System
 
 ## Parametric Modeling and CAD Assembly – Kaileigh Hill
