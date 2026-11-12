@@ -301,11 +301,11 @@
 <table>
 <thead><tr><th>Task</th><th>Time</th></tr></thead>
 <tbody>
-<tr><td>Calculations and component selection</td><td>[INSERT]</td></tr>
-<tr><td>Crosshead CAD and assembly</td><td>[INSERT]</td></tr>
+<tr><td>Calculations and component selection</td><td>5 hours</td></tr>
+<tr><td>Crosshead CAD and assembly</td><td>1 hour</td></tr>
 <tr><td>FEA and engineering drawing</td><td>3 hours</td></tr>
-<tr><td>Documentation</td><td>[INSERT]</td></tr>
-<tr><td><strong>Total</strong></td><td><strong>[INSERT]</strong></td></tr>
+<tr><td>Documentation</td><td>3 hours</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>12 hours</strong></td></tr>
 </tbody>
 </table>
 
@@ -321,7 +321,8 @@
 
 <div style="background-color:#DDF3E4; padding:20px; border-radius:10px; margin:20px 0; color:#24313B;">
 
-<p>[INSERT LESSONS LEARNED FROM CALCULATIONS AND COMPONENT SELECTION]</p>
+<p>From this assignment I have learned how to apply all of the equations and concepts we have learned in the semester thus far. This took me around 5 hours to complete all of the calculations.
+</p>
 
 </div>
 
