@@ -438,11 +438,11 @@ ASME Y14.5 standards.
 <tr><th>Task</th><th>Time</th></tr>
 </thead>
 <tbody>
-<tr><td>Calculations and Component Selection</td><td>[INSERT]</td></tr>
-<tr><td>Crosshead CAD and Assembly</td><td>[INSERT]</td></tr>
+<tr><td>Calculations and Component Selection</td><td>2 hours</td></tr>
+<tr><td>Crosshead CAD and Assembly</td><td>1 hour</td></tr>
 <tr><td>FEA and Engineering Drawing</td><td>3 hours</td></tr>
-<tr><td>Documentation</td><td>[INSERT]</td></tr>
-<tr><td><strong>Total</strong></td><td><strong>[INSERT]</strong></td></tr>
+<tr><td>Documentation</td><td>1 hour</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>7 hours</strong></td></tr>
 </tbody>
 </table>
 
