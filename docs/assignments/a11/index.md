@@ -151,7 +151,8 @@ For the mesh I ran into several problems. I initially tried to create it doing a
 This FEA did not turn out as bad as I thought. Some design aterations could be to change the material to be stronger. the torque had more effect than the 1kN load did. 
 
 ### CAD Files
-![](Assem2.zip)
+[Assem2 (2).zip](https://github.com/user-attachments/files/35052800/Assem2.2.zip)
+
 
 
 ## Bill of Materials and Engineering Drawing Package – Kaileigh Hill
