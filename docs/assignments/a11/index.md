@@ -154,3 +154,162 @@ This FEA did not turn out as bad as I thought. Some design aterations could be t
 ![](Assem2.zip)
 
 
+## Bill of Materials and Engineering Drawing Package – Kaileigh Hill
+
+### Objective
+
+My objective for this portion of the assignment was to organize the Bill of Materials (BOM) for both A10 and A11, calculate the total engineering labor costs, and create an engineering drawing package for the tensile tester using SolidWorks.
+
+## Bill of Materials and Labor Costs
+
+### Bill of Materials
+
+The following table includes the components selected for our tensile tester. Costs were taken from our previous assignment, McMaster-Carr, and Grainger.
+
+| Component | Qty. | Unit Cost | Total | Supplier |
+|---|---:|---:|---:|---|
+| 3/8"-12 Acme Lead Screw | 2 | $35.32 | $70.64 | [McMaster-Carr](https://www.mcmaster.com/99030A993/) |
+| Bronze Flange Nut | 2 | $111.78 | $223.56 | [McMaster-Carr](https://www.mcmaster.com/95120A592/) |
+| T-Slot Framing | 1 | $245.87 | $245.87 | [Grainger](https://www.grainger.com/product/80-20-T-Slot-Framing-System-Rectangle-804T48) |
+| DC Gearmotor | 2 | $500.00* | $1,000.00 | [McMaster-Carr](https://www.mcmaster.com/6470K84/) |
+| Thrust Bearing | 2 | $25.00* | $50.00 | [McMaster-Carr](https://www.mcmaster.com/thrust-bearings/) |
+| Bronze Bushing | 2 | $5.00* | $10.00 | [McMaster-Carr](https://www.mcmaster.com/bushings/) |
+| M4 x 0.7 mm, 70 mm Screws (Pack of 10) | 1 pack | $12.88 | $12.88 | [McMaster-Carr](https://www.mcmaster.com/92010A819/) |
+| M4 x 0.7 mm Hex Nuts (Pack of 4,000) | 1 pack | $85.12 | $85.12 | McMaster-Carr |
+| Assorted Mounting Hardware | 1 set | $40.00* | $40.00 | [McMaster-Carr](https://www.mcmaster.com/) |
+| **Current Material Subtotal** | | | **$1,738.07** | |
+
+*Prices marked with an asterisk are estimated. Screw and nut prices reflect full package costs.*
+
+The current subtotal includes the components priced so far. Custom-fabricated components, additional frame connectors, and specimen clamps still require cost estimates.
+
+### Engineering Labor Costs
+
+Engineering labor was calculated using the required rate of $35 per hour. This includes the time spent on both A10 and A11.
+
+| Team Member | A10 Hours | A11 Hours | Total Hours | Labor Cost |
+|---|---:|---:|---:|---:|
+| Kaileigh Hill | 4 | [INSERT] | [INSERT] | [INSERT] |
+| Kelsey Skipper | 3 | 5 | 8 | $280.00 |
+| Gracie Steelmon | 5 | [INSERT] | [INSERT] | [INSERT] |
+| **Total** | **12** | **[INSERT]** | **[INSERT]** | **[INSERT]** |
+
+**Labor Cost = Total Hours × $35/hr**
+
+### Total Engineering Cost
+
+| Category | Cost |
+|---|---:|
+| Materials Priced So Far | $1,738.07 |
+| A10 Engineering Labor | $420.00 |
+| A11 Engineering Labor | $[INSERT] |
+| Additional Material/Fabrication Costs | $[INSERT] |
+| **Total Project Cost** | **$[INSERT]** |
+
+The total project cost includes the material expenses and engineering labor required for both assignments.
+
+---
+
+## Engineering Drawing Package
+
+### Objective
+
+The objective of this portion was to create engineering drawings for the designed tensile tester components and the overall assembly. These drawings document the dimensions, tolerances, and assembly details needed for manufacturing.
+
+### Drawing Standards
+
+All drawings were prepared using third-angle projection and ASME Y14.5 dimensioning and tolerancing standards.
+
+The following general tolerances were used:
+
+| Dimension | Tolerance |
+|---|---|
+| X.X | ±0.02 in |
+| X.XX | ±0.01 in |
+| X.XXX | ±0.005 in |
+
+Each drawing includes a title block with the part name, material, scale, and units.
+
+### Component Drawings
+
+#### Crosshead
+
+The crosshead drawing from A10 was included to show the overall dimensions, lead screw openings, and mounting features.
+
+<img src="https://github.com/user-attachments/assets/75371664-f118-46c5-852b-8c5e30228bd8" width="750">
+
+**Figure 1:** Engineering drawing of the crosshead from A10.
+
+#### Motor Mount Bracket
+
+The motor mount drawing shows the bracket dimensions, motor mounting holes, and frame attachment locations.
+
+[INSERT MOTOR MOUNT DRAWING]
+
+**Figure 2:** Engineering drawing of the motor mounting bracket.
+
+#### Motor-to-Leadscrew Coupler
+
+The coupler drawing shows the dimensions and connection features needed to attach the motor shaft to the lead screw.
+
+[INSERT COUPLER DRAWING]
+
+**Figure 3:** Engineering drawing of the motor-to-leadscrew coupler.
+
+#### Floating Bearing Mount
+
+The floating bearing mount drawing includes the mounting hole locations and RC3 fit tolerances.
+
+[INSERT FLOATING BEARING DRAWING]
+
+**Figure 4:** Engineering drawing of the floating bearing mount.
+
+#### Frame Components
+
+The frame drawing shows the heavy 40 Series T-slot framing and connection locations.
+
+[INSERT FRAME DRAWING]
+
+**Figure 5:** Engineering drawing of the frame components.
+
+#### Specimen Clamps
+
+The clamp drawing shows the dimensions and features needed to secure the specimen during testing.
+
+[INSERT CLAMP DRAWING]
+
+**Figure 6:** Engineering drawing of the specimen clamp.
+
+### Complete Assembly Drawing
+
+The assembly drawing shows the tensile tester with the frame, crosshead, motors, lead screws, and other components. The drawing includes an isometric view and a Bill of Materials with corresponding item balloons.
+
+[INSERT ASSEMBLY DRAWING]
+
+**Figure 7:** Isometric engineering drawing of the complete tensile tester assembly.
+
+### Drawing Package and CAD Files
+
+The engineering drawings and SolidWorks CAD files are provided below.
+
+[Download Engineering Drawing Package](INSERT_LINK)
+
+[Download SolidWorks CAD Assembly](https://github.com/user-attachments/files/34669260/Assem2.zip)
+
+---
+
+## Lessons Learned
+
+Through this assignment, I learned how to organize a Bill of Materials and calculate engineering labor costs for a mechanical system. I also learned how to create engineering drawings in SolidWorks and apply dimensions and tolerances to communicate the requirements needed for manufacturing and assembly.
+
+## Time Spent
+
+| Task | Time |
+|---|---|
+| Bill of Materials | [INSERT] |
+| Labor Cost Calculations | [INSERT] |
+| Component Drawings | [INSERT] |
+| Assembly Drawing | [INSERT] |
+| Documentation | [INSERT] |
+| **Total** | **[INSERT]** |
+
