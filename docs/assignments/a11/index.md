@@ -1,4 +1,3 @@
-
 # A11 – Motor Selection and Tensile Tester Design
 
 ## Team Members
