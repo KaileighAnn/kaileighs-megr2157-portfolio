@@ -1,316 +1,341 @@
-# A11 – Motor Selection
 
-## Motor Selection and Calculations -- Kelsey Skipper
+# A11 – Motor Selection and Tensile Tester Design
 
-## Objective
+## Team Members
 
-My objective for this assignment was to perform the engineering calculations necessary to support the design of the mechanical tensile tester. This included motor and material selection, motor mount bearing stress analysis, coupler torsional stress analysis, frame reaction force calculations, and floating bearing fit tolerances. I also established the loading conditions for my teammates' finite element analyses and updated the bill of materials. These calculations were performed to evaluate the design's ability to withstand a maximum tensile load of 2 kN while maintaining a minimum factor of safety of 4.
+- **Kelsey Skipper** – Engineering calculations, motor selection, and component analysis
+- **Gracie Steelmon** – Motor mount CAD, assembly updates, and FEA
+- **Kaileigh Hill** – Bill of materials, labor costs, documentation, and MEGR 2157 engineering drawings
 
-## Analyze
+## Project Objective
 
-### Design Parameters
+The objective of A11 was to continue the design of the bench-top tensile tester developed in A10. The system uses two lead screws to move a crosshead and is designed for a maximum tensile load of **2,000 N**. This phase focused on motor selection, supporting component calculations, CAD updates, structural analysis, cost estimates, and engineering drawings.
 
-Using the calculations completed in Part 1, I established the following design parameters:
+### Design Requirements
 
 | Parameter | Value |
 |---|---:|
 | Maximum tensile load | 2,000 N |
-| Load per leadscrew | 1,000 N |
-| Factor of safety | 4 |
-| Leadscrew diameter | 3/8 in |
-| Leadscrew length | 24 in |
-| Thread specification | 3/8-12 ACME |
-| Operational torque | 4.759 N·m |
-| Required design torque | 19.036 N·m |
-| Rotational speed | 0.473–23.62 RPM |
+| Load per lead screw | 1,000 N |
+| Required factor of safety | 4 |
+| Crosshead speed | 1–50 mm/min |
+| Lead screw diameter | 3/8 in |
+| Lead screw length used in A11 calculations | 24 in |
+| Lead screw thread | 3/8-12 ACME |
+| Calculated operating torque | 4.759 N·m |
+| Design torque | 19.036 N·m |
+| Required rotational speed | 0.473–23.62 RPM |
 
-### Motor Selection
+*The A10 documentation listed 3-ft lead screws, while A11 calculations use 24 in. The final purchased length should be confirmed against the CAD model.*
 
-I selected two McMaster-Carr DC gearmotors (6470K84), one for each leadscrew. Each motor has a listed rated torque of 24.857 N·m and a rated speed of 31 RPM. The rated torque exceeds the calculated design torque requirement. Low-speed operation and the complete torque-speed relationship require further verification.
+---
 
-<img width="3094" height="4641" alt="IMG_7871" src="https://github.com/user-attachments/assets/9a6996eb-44a8-4d83-a464-82720e6b1d81" />
+## 1. Engineering Calculations and Motor Selection
 
-<img width="377" height="284" alt="Screenshot 2026-11-16 214242" src="https://github.com/user-attachments/assets/bc217370-819a-4948-9e19-d67b5a2ef96b" />
+### 1.1 Motor Selection
 
-### Motor Mount
+Two [McMaster-Carr DC gearmotors (6470K84)](https://www.mcmaster.com/6470K84/) were selected, one for each lead screw. Each motor has a listed rated torque of **24.857 N·m** and rated speed of **31 RPM**. The rated torque exceeds the calculated design torque of **19.036 N·m**. Operation throughout the required low-speed range still needs verification using the motor's torque-speed characteristics.
 
-I selected Aluminum 6061-T6 for the motor mounts due to its strength, low weight, and machinability. I analyzed the reaction forces acting on the mounting bolts and calculated the minimum plate thickness based on allowable bearing stress.
+<img src="https://github.com/user-attachments/assets/9a6996eb-44a8-4d83-a464-82720e6b1d81" width="750" alt="Motor selection calculations">
 
-<img width="3641" height="3134" alt="IMG_7872" src="https://github.com/user-attachments/assets/e4f8e94c-af0f-4362-a341-dde0a9757f14" />
+**Figure 1:** Motor selection and torque calculations.
 
-### Coupler
+<img src="https://github.com/user-attachments/assets/bc217370-819a-4948-9e19-d67b5a2ef96b" width="500" alt="Selected motor specifications">
 
-I analyzed the coupler using torsional shear stress equations to determine the minimum outer diameter and wall thickness. Aluminum 6061-T6 was selected as the coupler material. The motor-side bore must accommodate the selected motor's 15.875 mm output shaft.
+**Figure 2:** Selected DC gearmotor specifications.
 
-<img width="3504" height="4484" alt="IMG_7873" src="https://github.com/user-attachments/assets/32f3199c-6238-4d86-8980-e942582fc552" />
+### 1.2 Motor Mount Analysis
 
-### Frame Connectors
+**6061-T6 aluminum** was selected for the motor mounting brackets because of its strength, low weight, and machinability. The mounting bolt reactions and minimum bracket thickness were evaluated using allowable bearing stress.
 
-I calculated the vertical and transverse reaction forces acting on the frame connectors due to the axial loads and motor reaction moments. These forces were used to determine the stresses acting on the connectors and evaluate their required thickness.
+<img src="https://github.com/user-attachments/assets/e4f8e94c-af0f-4362-a341-dde0a9757f14" width="750" alt="Motor mount bearing stress calculations">
 
-<img width="3340" height="4556" alt="IMG_7874" src="https://github.com/user-attachments/assets/6c29c214-e570-498b-801e-90fa1341909e" />
+**Figure 3:** Motor mounting bracket calculations.
 
-### Horizontal Frame Analysis
+### 1.3 Coupler Analysis
 
-The horizontal frame consists of heavy 40 Series aluminum T-slot extrusion. The loading conditions for the finite element analysis consist of two 1,000 N axial loads and two motor reaction moments of approximately 25 N·m.
+A proposed motor-to-lead-screw coupler was evaluated using torsional shear stress equations to estimate its minimum outside diameter and wall thickness. The proposed material was **6061-T6 aluminum**, and the motor-side opening must accommodate the selected motor's **15.875 mm output shaft**.
 
-<img width="3709" height="3083" alt="IMG_7875" src="https://github.com/user-attachments/assets/257fe632-75c8-437f-8d8d-da1577e5486e" />
+<img src="https://github.com/user-attachments/assets/32f3199c-6238-4d86-8980-e942582fc552" width="750" alt="Coupler torsional calculations">
 
-### Vertical Frame Analysis
+**Figure 4:** Coupler torsional stress calculations.
 
-The vertical frame members were analyzed under axial compression and transverse loading resulting from the motor reaction moments. The objective of the analysis was to verify that the frame maintains a minimum factor of safety of 4.
+*The coupler was analyzed but was not included in the submitted CAD assembly.*
 
-<img width="3796" height="3391" alt="IMG_7876" src="https://github.com/user-attachments/assets/d7c3873f-7bf6-4ed2-9c3e-936bf32fc5ed" />
+### 1.4 Frame Connector Analysis
 
-### Floating Bearing Mount
+Vertical and transverse reaction forces were calculated for the frame connections based on the applied loads and motor reaction moments. These calculations were used to evaluate connector stresses and required thickness.
 
-I selected an RC3 running fit for the floating bearing interface to allow rotation without excessive clearance. I determined the shaft and hole tolerances, minimum and maximum clearances, and mounting bolt clearance requirements.
+<img src="https://github.com/user-attachments/assets/6c29c214-e570-498b-801e-90fa1341909e" width="750" alt="Frame connector calculations">
 
-<img width="1985" height="4967" alt="IMG_7877" src="https://github.com/user-attachments/assets/bb661d98-5aed-4e39-83a1-99564ad583f8" />
+**Figure 5:** Frame connection calculations.
 
-<img width="2101" height="2043" alt="IMG_7878" src="https://github.com/user-attachments/assets/ef7e0db4-5df1-47b1-be97-cb71e951ad53" />
+*Separate corner brackets were not included in the submitted CAD assembly.*
 
-## Decide
+### 1.5 Horizontal Frame Analysis
 
-Based on the preliminary engineering calculations, the following components and materials were selected:
+The horizontal frame members use **heavy 40 Series aluminum T-slot extrusion**. The loading conditions established for FEA were two **1,000 N** axial loads and two motor reaction moments of approximately **25 N·m**.
 
-| Component | Selection |
+<img src="https://github.com/user-attachments/assets/257fe632-75c8-437f-8d8d-da1577e5486e" width="750" alt="Horizontal frame loading calculations">
+
+**Figure 6:** Horizontal frame loading calculations.
+
+### 1.6 Vertical Frame Analysis
+
+The vertical frame members were evaluated under axial compression and transverse loading from the motor reaction moments, with a target factor of safety of **4**.
+
+<img src="https://github.com/user-attachments/assets/d7c3873f-7bf6-4ed2-9c3e-936bf32fc5ed" width="750" alt="Vertical frame calculations">
+
+**Figure 7:** Vertical frame calculations.
+
+### 1.7 Floating Bearing Fit
+
+An **RC3 running fit** was selected for the proposed floating bearing interface. The analysis considered shaft and hole tolerances, clearance limits, and mounting bolt clearance requirements.
+
+<img src="https://github.com/user-attachments/assets/bb661d98-5aed-4e39-83a1-99564ad583f8" width="750" alt="RC3 fit calculations">
+
+**Figure 8:** Floating bearing RC3 fit calculations.
+
+<img src="https://github.com/user-attachments/assets/ef7e0db4-5df1-47b1-be97-cb71e951ad53" width="650" alt="Floating bearing mounting calculations">
+
+**Figure 9:** Additional bearing mount and clearance calculations.
+
+*The floating bearing mount was analyzed but was not identified as a modeled component in the submitted assembly.*
+
+### 1.8 Component and Material Selections
+
+| Component | Selected material or specification |
 |---|---|
-| Motors | McMaster-Carr 6470K84 |
-| Leadscrews | 1080 carbon steel |
-| Leadscrew nuts | SAE 932 bearing bronze |
-| Motor mounts | Aluminum 6061-T6 |
-| Couplers | Aluminum 6061-T6 |
-| Frame connectors | Aluminum 6061-T6 |
-| Horizontal frame | Heavy 40 Series aluminum extrusion |
-| Vertical frame | Heavy 40 Series aluminum extrusion |
-| Floating bearing mounts | Aluminum 6061-T6 |
-| Fasteners | Steel |
+| DC gearmotors | McMaster-Carr 6470K84 |
+| Lead screws | 1080 carbon steel, 3/8-12 ACME |
+| Lead screw nuts | SAE 932 bearing bronze |
+| Motor mounting brackets | 6061-T6 aluminum |
+| Proposed couplers | 6061-T6 aluminum |
+| Proposed frame connectors | 6061-T6 aluminum |
+| Horizontal and vertical frame | Heavy 40 Series aluminum T-slot extrusion |
+| Proposed floating bearing mounts | 6061-T6 aluminum |
+| Fasteners | Steel / selected stainless steel hardware |
 
-These selections were made based on strength, machinability, availability, and compatibility with the existing assembly. Final verification is dependent on the FEA results, actual component dimensions, motor operating characteristics, and leadscrew capacity.
+These selections were based on strength, machinability, availability, and compatibility with the tensile tester. Final verification depends on the FEA results and the actual component specifications.
 
-## Communicate
+---
 
-### Bill of Materials
+## 2. SolidWorks CAD and Finite Element Analysis
+
+### 2.1 Motor Mount Bracket and Assembly
+
+Using the motor mount calculations, the mounting bracket was modeled in SolidWorks and added to the existing A10 tensile tester assembly.
+
+<img src="https://github.com/user-attachments/assets/a1085504-8fa4-4a4e-b3ba-a5e19ddcca66" width="750" alt="Motor mounting bracket CAD">
+
+**Figure 10:** Motor mounting bracket CAD model.
+
+### 2.2 Fastener Selection
+
+The bracket hole diameter was **6.6 mm**. The team selected **M4 × 0.7 mm**, **70 mm** long 18-8 stainless steel screws and matching nuts. The selected length was based on the combined component thickness, with additional thread length for nut engagement.
+
+<img src="https://github.com/user-attachments/assets/1571c766-708f-41bd-84e3-2383c41fd2ae" width="700" alt="Selected mounting screw">
+
+**Figure 11:** Selected mounting screw.
+
+<img src="https://github.com/user-attachments/assets/3fbd0ece-8c9d-4f42-b50b-8665ed00ff3d" width="700" alt="Selected mounting nut">
+
+**Figure 12:** Selected mounting nut.
+
+<img src="https://github.com/user-attachments/assets/755ec001-5631-436f-96a5-6d5318dd7a6d" width="700" alt="Mounting hardware dimensions">
+
+**Figure 13:** Mounting hardware specifications.
+
+*The 6.6 mm holes are considerably larger than the nominal 4 mm screw diameter. The fit and bolt loading should be checked before manufacturing.*
+
+### 2.3 FEA Setup
+
+A SolidWorks Simulation study was created with the bottom of the bracket fixed. Two **1,000 N downward loads** were applied at the lead screw locations, along with a **24.857 N·m** motor reaction torque at the mounting regions.
+
+<img src="https://github.com/user-attachments/assets/1f53a527-4558-45c3-95c4-e20c1afe05c6" width="750" alt="FEA fixed geometry">
+
+**Figure 14:** Fixed geometry for the FEA study.
+
+<img src="https://github.com/user-attachments/assets/335c16fd-3642-4dca-b334-5ea432f82544" width="750" alt="FEA applied forces">
+
+**Figure 15:** Applied loads and motor torque.
+
+<img src="https://github.com/user-attachments/assets/46b9834c-2a4f-4a5f-bfaf-96e327b5e141" width="750" alt="FEA setup additional view">
+
+**Figure 16:** Additional FEA setup view.
+
+### 2.4 Mesh
+
+The initial medium mesh did not generate correctly, and a coarser mesh also caused problems. After retrying the medium mesh, the simulation generated successfully.
+
+### 2.5 FEA Results
+
+The study was reviewed using von Mises stress, factor of safety, and strain plots.
+
+<img src="https://github.com/user-attachments/assets/2d898f73-c823-4d27-ada1-fb55e13b7eb8" width="750" alt="Von Mises stress results">
+
+**Figure 17:** Von Mises stress results.
+
+<img src="https://github.com/user-attachments/assets/3d213265-15a0-4a0c-88ba-adc5180b6d2d" width="750" alt="Factor of safety results">
+
+**Figure 18:** Factor of safety results.
+
+<img src="https://github.com/user-attachments/assets/bbbaa978-45cc-4060-aa4f-eca9d73241d7" width="750" alt="Strain results">
+
+**Figure 19:** Strain results.
+
+### 2.6 Evaluation
+
+The simulation suggested that the applied motor torque had a greater effect on the bracket than the axial loads. A possible improvement would be to select a stronger material or revise the bracket geometry. The final design should be checked against the required factor of safety before manufacturing.
+
+---
+
+## 3. Bill of Materials and Engineering Labor
+
+### 3.1 Bill of Materials
+
+The table combines the previously selected A10 components with the A11 motor and hardware selections. Prices marked with an asterisk are estimates.
 
 | Component | Qty. | Unit Cost | Total | Supplier |
 |---|---:|---:|---:|---|
-| 3/8"-12 Acme Lead Screw | 2 | $35.32 | $70.64 | [McMaster-Carr](https://www.mcmaster.com/99030A993/) |
-| Bronze Flange Nut | 2 | $111.78 | $223.56 | [McMaster-Carr](https://www.mcmaster.com/95120A592/) |
-| DC Gearmotor | 2 | $500.00* | $1,000.00 | [McMaster-Carr](https://www.mcmaster.com/6470K84/) |
-| Thrust Bearing | 2 | $25.00* | $50.00 | [McMaster-Carr](https://www.mcmaster.com/thrust-bearings/) |
-| Bronze Bushing | 2 | $5.00* | $10.00 | [McMaster-Carr](https://www.mcmaster.com/bushings/) |
-| Assorted Mounting Hardware | 1 set | $40.00* | $40.00 | [McMaster-Carr](https://www.mcmaster.com/) |
-| **Total** | | | **$1,394.20** | |
-
-*Prices marked with an asterisk are estimated and subject to supplier verification.*
-
-### Lessons Learned
-
-Through this assignment, I learned how motor torque influences the design of mechanical components and supporting structures. I also gained a better understanding of bearing tolerances, torsional loading, and how hand calculations can be used alongside FEA to evaluate a mechanical system. Additionally, I learned the importance of verifying purchased component specifications before finalizing a design.
-
-### Time Spent
-The total time spent on my portion of this assignment was roughly 5 hours to complete all of the calculations and select the motor.
-
-## FEA - Gracie Steelmon
-
-For this assignment I started by taking Kelseys calculations for the mounting bracket and designing it in Solidworks. Once I had that completed I opened up our previous CAD model from A10 and started to assemble. 
-
-<img width="2101" height="2043" alt="<img width="767" height="322" alt="Screenshot 2026-11-17 105937" src="https://github.com/user-attachments/assets/a1085504-8fa4-4a4e-b3ba-a5e19ddcca66" />
-
-Once I had the bracket on I then needed to decide on screws and nuts to use. The diameter of the hole was 6.6mm which is roughly 0.259843 inches. The screw I selected was a M4 x 0.7mm. This screw seemed more fit for a 6.6mm hole. Especially if this was the minimum diameter. For the length I added the thickness of the motor mount and the thickness of the cross head to become around 2.07 inches. From there I selected the 70mm long screw. This was the excess left over on the bottom can ensure that the nut will have enough length to fit and any vibrations will not cause things to fall apart. These are made out of 18-8 stainless steel. 
-
-<img width="886" height="388" alt="image" src="https://github.com/user-attachments/assets/1571c766-708f-41bd-84e3-2383c41fd2ae" />
-<img width="751" height="310" alt="image" src="https://github.com/user-attachments/assets/3fbd0ece-8c9d-4f42-b50b-8665ed00ff3d" />
-<img width="793" height="380" alt="Screenshot 2026-11-17 105946" src="https://github.com/user-attachments/assets/755ec001-5631-436f-96a5-6d5318dd7a6d" />
-
-
-
-### Fixed Geometry and Loads
-For the fixed geometry I fixed the bottom of the entire bracket down. I did two loads of 1kN each down on the leadscrews. I also applied a torque going the same direction into the holes where the motor will sit at. This torque applied was 24.857 N-M. 
-<img width="1242" height="729" alt="Screenshot 2026-11-17 125500 (1)" src="https://github.com/user-attachments/assets/1f53a527-4558-45c3-95c4-e20c1afe05c6" />
-<img width="1632" height="885" alt="Screenshot 2026-11-17 130717" src="https://github.com/user-attachments/assets/335c16fd-3642-4dca-b334-5ea432f82544" />
-
-<img width="1465" height="931" alt="Screenshot 2026-11-17 124428 (1)" src="https://github.com/user-attachments/assets/46b9834c-2a4f-4a5f-bfaf-96e327b5e141" />
-
-### Mesh
-For the mesh I ran into several problems. I initially tried to create it doing a medium sized mesh and it did not generate correctly other than blowing my computer up. Next I tried the course ones, this did not work either. So I went back to medium size and it worked that time. 
-
-### Results
-#### - Von Misses
-<img width="1648" height="862" alt="Screenshot 2026-11-17 132749" src="https://github.com/user-attachments/assets/2d898f73-c823-4d27-ada1-fb55e13b7eb8" />
-
-#### - FOS
-<img width="1658" height="838" alt="Screenshot 2026-11-17 133239" src="https://github.com/user-attachments/assets/3d213265-15a0-4a0c-88ba-adc5180b6d2d" />
-
-#### - Strain
-<img width="1670" height="854" alt="Screenshot 2026-11-17 133032" src="https://github.com/user-attachments/assets/bbbaa978-45cc-4060-aa4f-eca9d73241d7" />
-
-
-### Alternate Design Suggestions
-This FEA did not turn out as bad as I thought. Some design aterations could be to change the material to be stronger. the torque had more effect than the 1kN load did. 
-
-### CAD Files
-[Assem2 (2).zip](https://github.com/user-attachments/files/35052800/Assem2.2.zip)
-
-
-
-## Bill of Materials and Engineering Drawing Package – Kaileigh Hill
-
-### Objective
-
-My objective for this portion of the assignment was to organize the Bill of Materials (BOM) for both A10 and A11, calculate the total engineering labor costs, and create an engineering drawing package for the tensile tester using SolidWorks.
-
-## Bill of Materials and Labor Costs
-
-### Bill of Materials
-
-The following table includes the components selected for our tensile tester. Costs were taken from our previous assignment, McMaster-Carr, and Grainger.
-
-| Component | Qty. | Unit Cost | Total | Supplier |
-|---|---:|---:|---:|---|
-| 3/8"-12 Acme Lead Screw | 2 | $35.32 | $70.64 | [McMaster-Carr](https://www.mcmaster.com/99030A993/) |
+| 3/8"-12 ACME Lead Screw | 2 | $35.32 | $70.64 | [McMaster-Carr](https://www.mcmaster.com/99030A993/) |
 | Bronze Flange Nut | 2 | $111.78 | $223.56 | [McMaster-Carr](https://www.mcmaster.com/95120A592/) |
 | T-Slot Framing | 1 | $245.87 | $245.87 | [Grainger](https://www.grainger.com/product/80-20-T-Slot-Framing-System-Rectangle-804T48) |
 | DC Gearmotor | 2 | $500.00* | $1,000.00 | [McMaster-Carr](https://www.mcmaster.com/6470K84/) |
 | Thrust Bearing | 2 | $25.00* | $50.00 | [McMaster-Carr](https://www.mcmaster.com/thrust-bearings/) |
 | Bronze Bushing | 2 | $5.00* | $10.00 | [McMaster-Carr](https://www.mcmaster.com/bushings/) |
-| M4 x 0.7 mm, 70 mm Screws (Pack of 10) | 1 pack | $12.88 | $12.88 | [McMaster-Carr](https://www.mcmaster.com/92010A819/) |
-| M4 x 0.7 mm Hex Nuts (Pack of 4,000) | 1 pack | $85.12 | $85.12 | McMaster-Carr |
+| M4 × 0.7 mm, 70 mm Screws (pack of 10) | 1 pack | $12.88 | $12.88 | [McMaster-Carr](https://www.mcmaster.com/92010A819/) |
+| M4 × 0.7 mm Hex Nuts (pack of 4,000) | 1 pack | $85.12 | $85.12 | McMaster-Carr |
 | Assorted Mounting Hardware | 1 set | $40.00* | $40.00 | [McMaster-Carr](https://www.mcmaster.com/) |
-| **Current Material Subtotal** | | | **$1,738.07** | |
+| **Priced Material Subtotal** | | | **$1,738.07** | |
 
-*Prices marked with an asterisk are estimated. Screw and nut prices reflect full package costs.*
+*This is a preliminary cost estimate, not a complete as-built BOM. Purchased motors, thrust bearings, bushings, and proposed components are not all shown in the current CAD assembly. Custom-fabricated parts and any additional frame connections have not been priced. The $40 hardware allowance should be checked to avoid double counting the listed screws and nuts.*
 
-The current subtotal includes the components priced so far. Custom-fabricated components, additional frame connectors, and specimen clamps still require cost estimates.
+### 3.2 Engineering Labor Costs
 
-### Engineering Labor Costs
-
-Engineering labor was calculated using the required rate of $35 per hour. This includes the time spent on both A10 and A11.
+Engineering labor was calculated at the required rate of **$35 per hour**, including the work completed in both A10 and A11.
 
 | Team Member | A10 Hours | A11 Hours | Total Hours | Labor Cost |
 |---|---:|---:|---:|---:|
-| Kaileigh Hill | 4 | [INSERT] | [INSERT] | [INSERT] |
+| Kaileigh Hill | 4 | 4 | 8 | $280.00 |
 | Kelsey Skipper | 3 | 5 | 8 | $280.00 |
-| Gracie Steelmon | 5 | [INSERT] | [INSERT] | [INSERT] |
-| **Total** | **12** | **[INSERT]** | **[INSERT]** | **[INSERT]** |
+| Gracie Steelmon | 5 | 5 | 10 | $350.00 |
+| **Total** | **12** | **14** | **26** | **$910.00** |
 
 **Labor Cost = Total Hours × $35/hr**
 
-### Total Engineering Cost
+### 3.3 Total Engineering Cost
 
 | Category | Cost |
 |---|---:|
-| Materials Priced So Far | $1,738.07 |
-| A10 Engineering Labor | $420.00 |
-| A11 Engineering Labor | $[INSERT] |
-| Additional Material/Fabrication Costs | $[INSERT] |
-| **Total Project Cost** | **$[INSERT]** |
+| Priced Materials | $1,738.07 |
+| A10 Engineering Labor (12 hours) | $420.00 |
+| A11 Engineering Labor (14 hours) | $490.00 |
+| **Current Project Total** | **$2,648.07** |
 
-The total project cost includes the material expenses and engineering labor required for both assignments.
+*The current project total includes the materials priced so far and all reported engineering labor. It excludes unpriced custom components and additional fabrication costs.*
 
 ---
 
-## Engineering Drawing Package
+## 4. MEGR 2157 – Engineering Drawing Package
 
-### Objective
+### 4.1 Objective
 
-The objective of this portion was to create engineering drawings for the designed tensile tester components and the overall assembly. These drawings document the dimensions, tolerances, and assembly details needed for manufacturing.
+The objective of this portion was to prepare engineering drawings of the components modeled for the tensile tester and document the overall assembly. The drawings communicate dimensions, tolerances, materials, and assembly information.
 
-### Drawing Standards
+### 4.2 Drawing Standards
 
-All drawings were prepared using third-angle projection and ASME Y14.5 dimensioning and tolerancing standards.
+The drawings use **third-angle projection**, **ASME Y14.5** dimensioning and tolerancing conventions, and the following general inch tolerances:
 
-The following general tolerances were used:
-
-| Dimension | Tolerance |
+| Dimension Precision | General Tolerance |
 |---|---|
 | X.X | ±0.02 in |
 | X.XX | ±0.01 in |
 | X.XXX | ±0.005 in |
 
-Each drawing includes a title block with the part name, material, scale, and units.
+Drawing sheets include title blocks with the part or assembly name, scale, and drawing information.
 
-### Component Drawings
+### 4.3 Crosshead Drawing (A10)
 
-#### Crosshead
+The previously completed crosshead drawing shows the part dimensions and lead screw mounting locations.
 
-The crosshead drawing from A10 was included to show the overall dimensions, lead screw openings, and mounting features.
+<img src="https://github.com/user-attachments/assets/75371664-f118-46c5-852b-8c5e30228bd8" width="750" alt="Crosshead engineering drawing">
 
-<img src="https://github.com/user-attachments/assets/75371664-f118-46c5-852b-8c5e30228bd8" width="750">
+**Figure 20:** Crosshead engineering drawing from A10.
 
-**Figure 1:** Engineering drawing of the crosshead from A10.
+### 4.4 Motor Mount Bracket Drawing
 
-#### Motor Mount Bracket
+A detailed drawing was prepared for the motor mounting bracket, including orthographic and isometric views, mounting holes, and dimensions.
 
-The motor mount drawing shows the bracket dimensions, motor mounting holes, and frame attachment locations.
+<img src="https://github.com/user-attachments/assets/974c1fb8-5c24-4379-bd07-07a4157b4e12" width="750" alt="Motor mounting bracket engineering drawing">
 
-<img width="1612" height="873" alt="bracket" src="https://github.com/user-attachments/assets/974c1fb8-5c24-4379-bd07-07a4157b4e12" />
+**Figure 21:** Motor mounting bracket engineering drawing.
 
-**Figure 2:** Engineering drawing of the motor mounting bracket.
+### 4.5 Final Assembly Drawing
 
-#### Motor-to-Leadscrew Coupler
+The final SolidWorks assembly drawing shows the modeled tensile tester frame, crosshead, lead screws, bronze flange nuts, mounting brackets, and fasteners. The drawing includes an isometric view, a Bill of Materials, and numbered balloons identifying the components.
 
-The coupler drawing shows the dimensions and connection features needed to attach the motor shaft to the lead screw.
+[INSERT FINAL ASSEMBLY DRAWING IMAGE]
 
-[INSERT COUPLER DRAWING]
+**Figure 22:** Final tensile tester assembly drawing with BOM and item balloons.
 
-**Figure 3:** Engineering drawing of the motor-to-leadscrew coupler.
+*The drawing documents the current CAD assembly; components selected or analyzed but not modeled are not shown as installed.*
 
-#### Floating Bearing Mount
+### 4.6 CAD and Drawing Files
 
-The floating bearing mount drawing includes the mounting hole locations and RC3 fit tolerances.
+[Download SolidWorks CAD Assembly (Assem2.zip)](https://github.com/user-attachments/files/35060613/Assem2.zip)
 
-[INSERT FLOATING BEARING DRAWING]
-
-**Figure 4:** Engineering drawing of the floating bearing mount.
-
-#### Frame Components
-
-The frame drawing shows the heavy 40 Series T-slot framing and connection locations.
-
-[INSERT FRAME DRAWING]
-
-**Figure 5:** Engineering drawing of the frame components.
-
-#### Specimen Clamps
-
-The clamp drawing shows the dimensions and features needed to secure the specimen during testing.
-
-[INSERT CLAMP DRAWING]
-
-**Figure 6:** Engineering drawing of the specimen clamp.
-
-### Complete Assembly Drawing
-
-The assembly drawing shows the tensile tester with the frame, crosshead, motors, lead screws, and other components. The drawing includes an isometric view and a Bill of Materials with corresponding item balloons.
-
-[INSERT ASSEMBLY DRAWING]
-
-**Figure 7:** Isometric engineering drawing of the complete tensile tester assembly.
-
-### Drawing Package and CAD Files
-
-The engineering drawings and SolidWorks CAD files are provided below.
-
-[Download Engineering Drawing Package](INSERT_LINK)
-
-[Download SolidWorks CAD Assembly](https://github.com/user-attachments/files/34669260/Assem2.zip)
+[INSERT ENGINEERING DRAWING PDF LINK, IF AVAILABLE]
 
 ---
 
-## Lessons Learned
+## 5. Lessons Learned
 
-Through this assignment, I learned how to organize a Bill of Materials and calculate engineering labor costs for a mechanical system. I also learned how to create engineering drawings in SolidWorks and apply dimensions and tolerances to communicate the requirements needed for manufacturing and assembly.
+### Kelsey Skipper – Engineering Calculations
 
-## Time Spent
+Through this assignment, I learned how motor torque affects the design of mechanical components and supporting structures. I gained a better understanding of bearing tolerances, torsional loading, and how hand calculations support FEA. I also learned the importance of verifying purchased component specifications before finalizing a design.
+
+### Gracie Steelmon – CAD and FEA
+
+Through this assignment, I improved my SolidWorks CAD skills by designing the motor mounting brackets and working with the tensile tester assembly. I became more comfortable modeling parts and understanding how they fit together. I also gained more experience setting up and troubleshooting FEA simulations.
+
+### Kaileigh Hill – BOM and MEGR 2157 Drawings
+
+Through this assignment, I learned how to organize a Bill of Materials and calculate engineering labor costs. For the MEGR 2157 portion, I gained experience creating engineering drawings in SolidWorks, adding dimensions and tolerances, editing title blocks, and creating an assembly drawing with a BOM and numbered balloons.
+
+---
+
+## 6. Project Time
+
+### A10 and A11 Team Hours
+
+| Team Member | A10 Hours | A11 Hours | Total Hours |
+|---|---:|---:|---:|
+| Kaileigh Hill | 4 | 4 | 8 |
+| Kelsey Skipper | 3 | 5 | 8 |
+| Gracie Steelmon | 5 | 5 | 10 |
+| **Total** | **12** | **14** | **26** |
+
+### Kaileigh Hill – A11 Task Breakdown
 
 | Task | Time |
-|---|---|
-| Bill of Materials | [INSERT] |
-| Labor Cost Calculations | [INSERT] |
-| Component Drawings | [INSERT] |
-| Assembly Drawing | [INSERT] |
-| Documentation | [INSERT] |
-| **Total** | **[INSERT]** |
+|---|---:|
+| Bill of Materials | 0.5 hr |
+| Labor Cost Calculations | 0.5 hr |
+| Component Drawings | 1 hr |
+| Assembly Drawing | 1 hr |
+| Documentation | 1 hr |
+| **Total A11 Time** | **4 hrs** |
 
+---
+
+## 7. References and Resources
+
+1. [McMaster-Carr – ACME Lead Screw](https://www.mcmaster.com/99030A993/)
+2. [McMaster-Carr – Bronze Flange Nut](https://www.mcmaster.com/95120A592/)
+3. [McMaster-Carr – DC Gearmotor](https://www.mcmaster.com/6470K84/)
+4. [McMaster-Carr – M4 Mounting Screws](https://www.mcmaster.com/92010A819/)
+5. [Grainger – T-Slot Framing](https://www.grainger.com/product/80-20-T-Slot-Framing-System-Rectangle-804T48)
+6. SolidWorks and SolidWorks Simulation
+7. *Machinery's Handbook*, 31st Edition
+8. MEGR 2156 and MEGR 2157 course materials
