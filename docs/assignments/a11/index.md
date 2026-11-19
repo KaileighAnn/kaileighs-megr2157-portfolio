@@ -275,7 +275,7 @@ A detailed drawing was prepared for the motor mounting bracket, including orthog
 
 The final SolidWorks assembly drawing shows the modeled tensile tester frame, crosshead, lead screws, bronze flange nuts, mounting brackets, and fasteners. The drawing includes an isometric view, a Bill of Materials, and numbered balloons identifying the components.
 
-[INSERT FINAL ASSEMBLY DRAWING IMAGE]
+<img width="1612" height="873" alt="Assem2" src="https://github.com/user-attachments/assets/19210085-4985-4894-a918-28cd5d74febf" />
 
 **Figure 22:** Final tensile tester assembly drawing with BOM and item balloons.
 
@@ -284,8 +284,6 @@ The final SolidWorks assembly drawing shows the modeled tensile tester frame, cr
 ### 4.6 CAD and Drawing Files
 
 [Download SolidWorks CAD Assembly (Assem2.zip)](https://github.com/user-attachments/files/35060613/Assem2.zip)
-
-[INSERT ENGINEERING DRAWING PDF LINK, IF AVAILABLE]
 
 ---
 
@@ -315,19 +313,6 @@ Through this assignment, I learned how to organize a Bill of Materials and calcu
 | Kelsey Skipper | 3 | 5 | 8 |
 | Gracie Steelmon | 5 | 5 | 10 |
 | **Total** | **12** | **14** | **26** |
-
-### Kaileigh Hill – A11 Task Breakdown
-
-| Task | Time |
-|---|---:|
-| Bill of Materials | 0.5 hr |
-| Labor Cost Calculations | 0.5 hr |
-| Component Drawings | 1 hr |
-| Assembly Drawing | 1 hr |
-| Documentation | 1 hr |
-| **Total A11 Time** | **4 hrs** |
-
----
 
 ## 7. References and Resources
 
