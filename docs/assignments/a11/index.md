@@ -245,7 +245,7 @@ The crosshead drawing from A10 was included to show the overall dimensions, lead
 
 The motor mount drawing shows the bracket dimensions, motor mounting holes, and frame attachment locations.
 
-[INSERT MOTOR MOUNT DRAWING]
+<img width="1612" height="873" alt="bracket" src="https://github.com/user-attachments/assets/974c1fb8-5c24-4379-bd07-07a4157b4e12" />
 
 **Figure 2:** Engineering drawing of the motor mounting bracket.
 
